@@ -40,6 +40,12 @@
   .btn-light:hover{background:var(--gold);color:var(--green-deep)}
   .btn-dark{background:var(--green);border-color:var(--green);color:var(--ivory)}
   .btn-dark:hover{background:var(--green-deep)}
+  .btn-gold{background:var(--gold);border-color:var(--gold);color:var(--green-deep)}
+  .btn-gold:hover{background:var(--gold-soft);border-color:var(--gold-soft)}
+  .btn-outline{color:var(--green)}
+  .btn-outline:hover{background:var(--green);color:var(--ivory)}
+  .btn-row{display:flex;flex-wrap:wrap;gap:14px}
+  .contact .btn-row{justify-content:center}
 
   /* Hero */
   .hero{position:relative;color:var(--ivory);padding:180px 0 0;overflow:hidden;
@@ -129,6 +135,7 @@
     .logo .ur{font-size:1rem}
     .logo .sep{height:26px}
     .btn{display:block;text-align:center;padding:18px 20px}
+    .btn-row{flex-direction:column;align-items:stretch}
   }
 </style>
 </head>
@@ -141,7 +148,7 @@
       <span class="sep"></span>
       <span class="ur" lang="ur" dir="rtl">نورانی ہومز</span>
     </a>
-    <a class="nav-link" href="mailto:anurani@nuranihomes.com?subject=Enquiry%20from%20nuranihomes.com">Enquire</a>
+    <a class="nav-link" href="#register">Register interest</a>
   </div>
 </header>
 
@@ -151,7 +158,10 @@
       <span class="label">Residences in Karachi</span>
       <h1>A home in Karachi, for those who work abroad.</h1>
       <p>NuraniHomes develops quality, affordable apartments for overseas Pakistanis, with structured payment plans that fit the life you have built away from home.</p>
-      <a class="btn btn-light" href="mailto:anurani@nuranihomes.com?subject=Enquiry%20from%20nuranihomes.com">Enquire by Email</a>
+      <div class="btn-row">
+        <a class="btn btn-gold" href="/buyers.html">I&rsquo;m looking for a home</a>
+        <a class="btn btn-light" href="/partners.html">Partner with us</a>
+      </div>
     </div>
     <svg class="hero-art" viewBox="0 0 440 530" fill="none" aria-hidden="true"><path class="grid" d="M20 20V510M60 20V510M100 20V510M140 20V510M180 20V510M220 20V510M260 20V510M300 20V510M340 20V510M380 20V510M420 20V510M20 20H440M20 60H440M20 100H440M20 140H440M20 180H440M20 220H440M20 260H440M20 300H440M20 340H440M20 380H440M20 420H440M20 460H440M20 500H440"/><path class="dash" d="M220 60A160 160 0 0 1 380 220"/><path class="dash" d="M380 60V220M220 60H380"/><circle cx="380" cy="60" r="3" class="dot"/><rect x="100" y="90" width="240" height="410" class="strong"/><path d="M92 90H348M92 100H348"/><path d="M122 120h12v30h-12zM156 120h12v36h-12zM190 120h12v36h-12zM224 120h12v30h-12zM258 120h12v36h-12zM292 120h12v36h-12zM326 120h12v30h-12zM122 172h12v36h-12zM156 172h12v36h-12zM190 172h12v30h-12zM224 172h12v36h-12zM258 172h12v36h-12zM292 172h12v30h-12zM326 172h12v36h-12zM122 224h12v36h-12zM156 224h12v30h-12zM190 224h12v36h-12zM224 224h12v36h-12zM258 224h12v30h-12zM292 224h12v36h-12zM326 224h12v36h-12zM122 276h12v30h-12zM156 276h12v36h-12zM190 276h12v36h-12zM224 276h12v30h-12zM258 276h12v36h-12zM292 276h12v36h-12zM326 276h12v30h-12zM122 328h12v36h-12zM156 328h12v36h-12zM190 328h12v30h-12zM224 328h12v36h-12zM258 328h12v36h-12zM292 328h12v30h-12zM326 328h12v36h-12zM122 380h12v36h-12zM156 380h12v30h-12zM190 380h12v36h-12zM224 380h12v36h-12zM258 380h12v30h-12zM292 380h12v36h-12zM326 380h12v36h-12z"/><path class="thin" d="M100 112H340M100 164H340M100 216H340M100 268H340M100 320H340M100 372H340M100 424H340"/><path class="strong" d="M106 500V456A18.0 18.0 0 0 1 142 456V500M154 500V456A18.0 18.0 0 0 1 190 456V500M202 500V456A18.0 18.0 0 0 1 238 456V500M250 500V456A18.0 18.0 0 0 1 286 456V500M298 500V456A18.0 18.0 0 0 1 334 456V500"/><path d="M100 420H340"/><path class="strong" d="M0 500H440"/><path class="thin" d="M30 516H110M30 512v8M50 512v8M70 512v8M90 512v8M110 512v8"/></svg>
   </div>
@@ -222,12 +232,15 @@
      END
 ============================================================= -->
 
-<section class="contact">
+<section class="contact" id="register">
   <div class="wrap">
     <span class="label">Register Your Interest</span>
     <h2>Begin your journey home.</h2>
-    <p>Write to us and our team will be in touch with details on upcoming residences and payment plans.</p>
-    <a class="btn btn-dark" href="mailto:anurani@nuranihomes.com?subject=Enquiry%20from%20nuranihomes.com">Contact Us</a>
+    <p>Tell us what you&rsquo;re looking for and our team will be in touch. It takes two minutes.</p>
+    <div class="btn-row">
+      <a class="btn btn-dark" href="/buyers.html">I&rsquo;m looking for a home</a>
+      <a class="btn btn-outline" href="/partners.html">Partner with us</a>
+    </div>
     <div class="direct">or email <a href="mailto:anurani@nuranihomes.com">anurani@nuranihomes.com</a></div>
   </div>
 </section>

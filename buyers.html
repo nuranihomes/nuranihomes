@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Register Your Interest | NuraniHomes</title>
+<meta name="description" content="Tell NuraniHomes what kind of home you need in Karachi. Takes two minutes; not a booking.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Lato:wght@300;400;700&family=Noto+Nastaliq+Urdu:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green:#123c32; --green-deep:#0c2c24; --ivory:#faf7f1; --stone:#efe9dd;
+    --ink:#1f2522; --muted:#5f6862; --gold:#b58a4c; --gold-soft:#d8bf94; --line:#ddd4c3;
+    --serif:"Cormorant Garamond",Georgia,serif; --urdu:"Noto Nastaliq Urdu","Jameel Noori Nastaleeq",serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Lato,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--ivory);line-height:1.75;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  .label{font-size:.72rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+  .rule{width:64px;height:1px;background:var(--gold);margin-top:22px}
+
+  /* Logo lockup */
+  .logo{display:flex;align-items:center;gap:16px;line-height:1}
+  .logo .en{display:flex;flex-direction:column}
+  .logo b{font-family:var(--serif);font-weight:600;font-size:1.6rem;letter-spacing:.14em;text-transform:uppercase}
+  .logo small{font-size:.6rem;letter-spacing:.38em;text-transform:uppercase;color:var(--gold-soft);margin-top:7px}
+  .logo .sep{width:1px;height:38px;background:var(--gold)}
+  .logo .ur{font-family:var(--urdu);font-size:1.3rem;line-height:1.9;padding-top:4px;color:var(--gold-soft)}
+
+  header{position:absolute;top:0;left:0;right:0;z-index:2;padding:30px 0;color:var(--ivory)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .nav-link{font-size:.74rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;border-bottom:1px solid var(--gold);padding-bottom:4px;transition:color .2s}
+  .nav-link:hover{color:var(--gold-soft)}
+
+  .btn{display:inline-block;font-size:.76rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;padding:18px 34px;border:1px solid var(--gold);transition:background .25s,color .25s}
+  .btn-light{color:var(--ivory)}
+  .btn-light:hover{background:var(--gold);color:var(--green-deep)}
+  .btn-dark{background:var(--green);border-color:var(--green);color:var(--ivory)}
+  .btn-dark:hover{background:var(--green-deep)}
+
+  /* Hero */
+  .hero{position:relative;color:var(--ivory);padding:180px 0 0;overflow:hidden;
+        background:radial-gradient(ellipse at 85% 15%,rgba(181,138,76,.14),transparent 55%),linear-gradient(180deg,var(--green) 0%,var(--green-deep) 100%)}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:end}
+  .hero-copy{padding-bottom:120px}
+  .hero .label{color:var(--gold-soft)}
+  .hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(2.6rem,6vw,4.5rem);line-height:1.06;max-width:15ch;margin:22px 0 28px}
+  .hero p{font-weight:300;font-size:1.12rem;max-width:44ch;color:rgba(250,247,241,.82);margin-bottom:44px}
+  .hero-art{width:100%;max-width:430px;justify-self:end;display:block;color:var(--gold-soft)}
+  .hero-art path,.hero-art rect{stroke:currentColor;stroke-width:1;opacity:.7}
+  .hero-art .strong{stroke-width:1.4;opacity:.9}
+  .hero-art .thin{stroke-width:.6;opacity:.5}
+  .hero-art .grid{stroke-width:.5;opacity:.12}
+  .hero-art .dash{stroke-width:.7;stroke-dasharray:3 5;opacity:.45}
+  .hero-art .dot{fill:currentColor;stroke:none}
+
+  /* Intro */
+  .intro{padding:120px 0 100px}
+  .intro .wrap{display:grid;grid-template-columns:5fr 7fr;gap:80px;align-items:start}
+  .intro h2,.contact h2{font-family:var(--serif);font-weight:500;line-height:1.15;color:var(--green)}
+  .intro h2{font-size:clamp(2rem,3.6vw,2.8rem);margin-top:18px}
+  .intro p{font-size:1.06rem;color:var(--muted);margin-bottom:18px}
+  .intro p:first-child{font-size:1.2rem;color:var(--ink)}
+
+  /* Pillars */
+  .pillars{padding:0 0 110px}
+  .pillars .grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
+  .pillar{padding:44px 40px 10px 0}
+  .pillar + .pillar{padding-left:40px;border-left:1px solid var(--line)}
+  .num{font-family:var(--serif);font-size:1.1rem;color:var(--gold);letter-spacing:.1em}
+  .pillar h3{font-family:var(--serif);font-weight:600;font-size:1.6rem;line-height:1.2;color:var(--green);margin:14px 0}
+  .pillar p{color:var(--muted);font-size:1rem}
+
+  /* Architectural band */
+  .band{background:var(--stone);padding:96px 0 0;text-align:center;overflow:hidden}
+  .band blockquote{font-family:var(--serif);font-weight:500;font-size:clamp(1.8rem,3.6vw,2.6rem);line-height:1.25;color:var(--green);max-width:24ch;margin:18px auto 64px}
+  .frieze{display:block;width:100%;height:210px;color:var(--green)}
+  .frieze path{stroke:currentColor;stroke-width:1;opacity:.55}
+  .frieze .strong{stroke-width:1.3;opacity:.8}
+  .frieze .thin{stroke-width:.6;opacity:.35}
+
+  /* Testimonials (enable once real quotes are available) */
+  .voices{padding:110px 0}
+  .voices .head{text-align:center;margin-bottom:56px}
+  .voices .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+  .voice{border-top:1px solid var(--gold);padding-top:28px}
+  .voice q{display:block;font-family:var(--serif);font-size:1.35rem;line-height:1.45;color:var(--ink);quotes:"\201C" "\201D"}
+  .voice cite{display:block;margin-top:20px;font-style:normal;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+  /* Contact */
+  .contact{padding:110px 0;text-align:center}
+  .contact h2{font-size:clamp(2rem,4vw,3rem);margin:18px auto;max-width:18ch}
+  .contact p{color:var(--muted);max-width:48ch;margin:0 auto 40px;font-size:1.05rem}
+  .contact .direct{margin-top:26px;font-size:.95rem;color:var(--muted)}
+  .contact .direct a{color:var(--green);border-bottom:1px solid var(--gold-soft)}
+
+  footer{background:var(--green-deep);color:rgba(250,247,241,.7);padding:44px 0;font-size:.85rem}
+  footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:22px}
+  footer .logo{color:var(--ivory)}
+  footer .logo b{font-size:1.2rem}
+  footer .logo .ur{font-size:1.05rem}
+  footer .logo .sep{height:28px}
+  footer .meta{display:flex;gap:28px;flex-wrap:wrap;letter-spacing:.04em}
+  footer a:hover{color:var(--gold-soft)}
+
+  @media (max-width:860px){
+    header{padding:22px 0}
+    .hero{padding-top:140px}
+    .hero-grid{grid-template-columns:1fr;gap:0}
+    .hero-copy{padding-bottom:56px}
+    .hero-art{max-width:320px;justify-self:center}
+    .intro{padding:84px 0 70px}
+    .intro .wrap{grid-template-columns:1fr;gap:28px}
+    .pillars{padding-bottom:84px}
+    .pillars .grid,.voices .grid{grid-template-columns:1fr}
+    .pillar,.pillar + .pillar{padding:34px 0 30px;border-left:none}
+    .pillar + .pillar{border-top:1px solid var(--line)}
+    .band{padding-top:72px}
+    .frieze{height:150px}
+    .contact,.voices{padding:84px 0}
+  }
+  @media (max-width:480px){
+    .logo{gap:10px}
+    .logo b{font-size:1.15rem;letter-spacing:.1em}
+    .logo small{display:none}
+    .logo .ur{font-size:1rem}
+    .logo .sep{height:26px}
+    .btn{display:block;text-align:center;padding:18px 20px}
+  }
+
+  .page-head{background:linear-gradient(180deg,var(--green) 0%,var(--green-deep) 100%);color:var(--ivory);padding:28px 0 64px}
+  .page-head .top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:56px}
+  .page-head h1{font-family:var(--serif);font-weight:500;font-size:clamp(2.2rem,5vw,3.4rem);line-height:1.1;max-width:18ch;margin:18px 0 18px}
+  .page-head p{font-weight:300;font-size:1.08rem;max-width:52ch;color:rgba(250,247,241,.82)}
+  .page-head .label{color:var(--gold-soft)}
+  .form-wrap{max-width:760px;margin:0 auto;padding:64px 24px 100px}
+  form.nh{display:flex;flex-direction:column;gap:40px}
+  form.nh fieldset{border:0;display:flex;flex-direction:column;gap:22px}
+  form.nh legend{font-family:var(--serif);font-weight:600;font-size:1.55rem;color:var(--green);padding-bottom:10px;margin-bottom:6px;border-bottom:1px solid var(--line);width:100%}
+  .field{display:flex;flex-direction:column;gap:8px}
+  .field > span,.q{font-weight:700;font-size:.95rem;color:var(--ink)}
+  .field small,.q small{font-weight:400;color:var(--muted);font-size:.85rem}
+  .req{color:var(--gold)}
+  input[type=text],input[type=email],input[type=tel],input[type=number],select,textarea{font:inherit;font-size:1rem;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:0;padding:14px 14px;width:100%}
+  textarea{min-height:110px;resize:vertical}
+  input:focus,select:focus,textarea:focus{outline:2px solid var(--gold);outline-offset:1px;border-color:var(--gold)}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .opts{display:flex;flex-wrap:wrap;gap:10px}
+  .opt{position:relative}
+  .opt input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+  .opt span{display:inline-block;padding:10px 16px;border:1px solid var(--line);background:#fff;font-size:.92rem;cursor:pointer;transition:background .15s,border-color .15s}
+  .opt input:checked + span{background:var(--green);border-color:var(--green);color:var(--ivory)}
+  .opt input:focus-visible + span{outline:2px solid var(--gold);outline-offset:2px}
+  .scale .opt span{min-width:52px;text-align:center}
+  .scale-ends{display:flex;justify-content:space-between;max-width:320px;font-size:.8rem;color:var(--muted)}
+  .consent{display:flex;gap:12px;align-items:flex-start;font-size:.95rem}
+  .consent input{margin-top:6px;width:18px;height:18px;accent-color:var(--green);flex:none}
+  .note{font-size:.85rem;color:var(--muted);border-left:2px solid var(--gold);padding-left:14px}
+  .form-actions{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+  button.btn{font-family:inherit;cursor:pointer}
+  .err{color:#9b2c1f;font-size:.9rem}
+  .hp{position:absolute;left:-9999px}
+  [hidden]{display:none!important}
+  .back{font-size:.74rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;border-bottom:1px solid var(--gold);padding-bottom:4px}
+  @media (max-width:600px){.two{grid-template-columns:1fr}.page-head .top{margin-bottom:36px}}
+</style>
+</head>
+<body>
+
+<section class="page-head">
+  <div class="wrap">
+    <div class="top">
+    <a class="logo" href="/" aria-label="NuraniHomes home">
+      <span class="en"><b>NuraniHomes</b><small>Karachi &middot; Dubai</small></span>
+      <span class="sep"></span>
+      <span class="ur" lang="ur" dir="rtl">نورانی ہومز</span>
+    </a>
+      <a class="back" href="/">Back to home</a>
+    </div>
+    <span class="label">For Homebuyers</span>
+    <h1>Tell us about the home you need.</h1>
+    <p>We're planning affordable apartments in Karachi for Pakistanis working in the Gulf. Your answers shape what we build. It takes about two minutes. This is not a booking and no payment is required.</p>
+  </div>
+</section>
+
+<div class="form-wrap">
+<form class="nh" name="buyer-interest" method="POST" novalidate>
+  <input type="hidden" name="form-name" value="buyer-interest">
+  <input type="hidden" name="source" value="">
+  <p class="hp"><label>Leave this empty <input name="company_website" tabindex="-1" autocomplete="off"></label></p>
+  <fieldset>
+    <legend>About you</legend>
+    <div class="two">
+      <label class="field"><span>First name</span><input type="text" name="name" id="f-name" placeholder="" autocomplete="given-name"></label>
+      <label class="field" data-required="whatsapp" data-label="whatsapp number"><span>WhatsApp number <span class="req">*</span></span><input type="tel" name="whatsapp" id="f-whatsapp" placeholder="+971 5x xxx xxxx" autocomplete="tel"></label>
+    </div>
+    <div class="field" data-required="country" data-label="country you work in"><span class="q">Country you work in <span class="req">*</span></span><div class="opts "><label class="opt"><input type="radio" name="country" value="UAE" id="country-0"><span>UAE</span></label><label class="opt"><input type="radio" name="country" value="Saudi Arabia" id="country-1"><span>Saudi Arabia</span></label><label class="opt"><input type="radio" name="country" value="Qatar" id="country-2"><span>Qatar</span></label><label class="opt"><input type="radio" name="country" value="Oman" id="country-3"><span>Oman</span></label><label class="opt"><input type="radio" name="country" value="Kuwait" id="country-4"><span>Kuwait</span></label><label class="opt"><input type="radio" name="country" value="Bahrain" id="country-5"><span>Bahrain</span></label><label class="opt"><input type="radio" name="country" value="Other" id="country-6"><span>Other</span></label></div></div>
+    <div class="field" data-required="job" data-label="your work"><span class="q">Your work <span class="req">*</span></span><div class="opts "><label class="opt"><input type="radio" name="job" value="Office / admin staff" id="job-0"><span>Office / admin staff</span></label><label class="opt"><input type="radio" name="job" value="Accounts / bookkeeping" id="job-1"><span>Accounts / bookkeeping</span></label><label class="opt"><input type="radio" name="job" value="Sales / retail" id="job-2"><span>Sales / retail</span></label><label class="opt"><input type="radio" name="job" value="Customer service" id="job-3"><span>Customer service</span></label><label class="opt"><input type="radio" name="job" value="IT support" id="job-4"><span>IT support</span></label><label class="opt"><input type="radio" name="job" value="Healthcare (nurse, lab, pharmacy)" id="job-5"><span>Healthcare (nurse, lab, pharmacy)</span></label><label class="opt"><input type="radio" name="job" value="Hospitality supervisor" id="job-6"><span>Hospitality supervisor</span></label><label class="opt"><input type="radio" name="job" value="Site / facilities supervisor" id="job-7"><span>Site / facilities supervisor</span></label><label class="opt"><input type="radio" name="job" value="Engineering technician / draughtsman" id="job-8"><span>Engineering technician / draughtsman</span></label><label class="opt"><input type="radio" name="job" value="Security supervisor" id="job-9"><span>Security supervisor</span></label><label class="opt"><input type="radio" name="job" value="Teacher / trainer" id="job-10"><span>Teacher / trainer</span></label><label class="opt"><input type="radio" name="job" value="Other" id="job-11"><span>Other</span></label></div></div>
+    <label class="field"><span>If other, what do you do?</span><input type="text" name="job_other" id="f-job_other" placeholder=""></label>
+    <div class="field"><span class="q">Where does your family live in Pakistan?</span><div class="opts "><label class="opt"><input type="radio" name="family_region" value="Karachi" id="family_region-0"><span>Karachi</span></label><label class="opt"><input type="radio" name="family_region" value="Other Sindh" id="family_region-1"><span>Other Sindh</span></label><label class="opt"><input type="radio" name="family_region" value="Punjab" id="family_region-2"><span>Punjab</span></label><label class="opt"><input type="radio" name="family_region" value="KP" id="family_region-3"><span>KP</span></label><label class="opt"><input type="radio" name="family_region" value="Balochistan" id="family_region-4"><span>Balochistan</span></label><label class="opt"><input type="radio" name="family_region" value="Other" id="family_region-5"><span>Other</span></label></div></div>
+    <div class="field"><span class="q">Your family's home today</span><div class="opts "><label class="opt"><input type="radio" name="housing_now" value="Own" id="housing_now-0"><span>Own</span></label><label class="opt"><input type="radio" name="housing_now" value="Rent" id="housing_now-1"><span>Rent</span></label><label class="opt"><input type="radio" name="housing_now" value="Living with relatives" id="housing_now-2"><span>Living with relatives</span></label></div></div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Your home</legend>
+    <div class="field scale" data-required="interest" data-label="how seriously you would consider buying">
+      <span class="q">How seriously would you consider buying an apartment in Karachi on monthly instalments? <span class="req">*</span></span>
+      <div class="opts scale"><label class="opt"><input type="radio" name="interest" value="1" id="interest-0"><span>1</span></label><label class="opt"><input type="radio" name="interest" value="2" id="interest-1"><span>2</span></label><label class="opt"><input type="radio" name="interest" value="3" id="interest-2"><span>3</span></label><label class="opt"><input type="radio" name="interest" value="4" id="interest-3"><span>4</span></label><label class="opt"><input type="radio" name="interest" value="5" id="interest-4"><span>5</span></label></div>
+      <div class="scale-ends"><span>1 &middot; not at all</span><span>5 &middot; very seriously</span></div>
+    </div>
+    <div class="field"><span class="q">Deposit you could pay (AED)</span><div class="opts "><label class="opt"><input type="radio" name="deposit" value="Under 10,000" id="deposit-0"><span>Under 10,000</span></label><label class="opt"><input type="radio" name="deposit" value="10,000–25,000" id="deposit-1"><span>10,000–25,000</span></label><label class="opt"><input type="radio" name="deposit" value="25,000–40,000" id="deposit-2"><span>25,000–40,000</span></label><label class="opt"><input type="radio" name="deposit" value="40,000+" id="deposit-3"><span>40,000+</span></label></div></div>
+    <div class="field"><span class="q">Monthly instalment you could manage (AED)</span><div class="opts "><label class="opt"><input type="radio" name="monthly" value="Under 1,000" id="monthly-0"><span>Under 1,000</span></label><label class="opt"><input type="radio" name="monthly" value="1,000–1,500" id="monthly-1"><span>1,000–1,500</span></label><label class="opt"><input type="radio" name="monthly" value="1,500–2,000" id="monthly-2"><span>1,500–2,000</span></label><label class="opt"><input type="radio" name="monthly" value="2,000+" id="monthly-3"><span>2,000+</span></label></div></div>
+    <div class="field"><span class="q">Bedrooms</span><div class="opts "><label class="opt"><input type="radio" name="bedrooms" value="1 bedroom" id="bedrooms-0"><span>1 bedroom</span></label><label class="opt"><input type="radio" name="bedrooms" value="2 bedrooms" id="bedrooms-1"><span>2 bedrooms</span></label><label class="opt"><input type="radio" name="bedrooms" value="3 bedrooms" id="bedrooms-2"><span>3 bedrooms</span></label></div></div>
+    <div class="field"><span class="q">Furnished or unfurnished?</span><div class="opts "><label class="opt"><input type="radio" name="furnished" value="Furnished" id="furnished-0"><span>Furnished</span></label><label class="opt"><input type="radio" name="furnished" value="Unfurnished" id="furnished-1"><span>Unfurnished</span></label><label class="opt"><input type="radio" name="furnished" value="Not sure" id="furnished-2"><span>Not sure</span></label></div></div>
+    <div class="field"><span class="q">What would worry you most? <small>Choose any</small></span><div class="opts "><label class="opt"><input type="checkbox" name="worries" value="Being cheated" id="worries-0"><span>Being cheated</span></label><label class="opt"><input type="checkbox" name="worries" value="Affordability" id="worries-1"><span>Affordability</span></label><label class="opt"><input type="checkbox" name="worries" value="Location" id="worries-2"><span>Location</span></label><label class="opt"><input type="checkbox" name="worries" value="Construction delays" id="worries-3"><span>Construction delays</span></label><label class="opt"><input type="checkbox" name="worries" value="Legal ownership" id="worries-4"><span>Legal ownership</span></label><label class="opt"><input type="checkbox" name="worries" value="Paying from abroad" id="worries-5"><span>Paying from abroad</span></label></div></div>
+    <label class="field"><span>Anything else you'd like us to know?</span><textarea name="message" id="f-message" placeholder=""></textarea></label>
+  </fieldset>
+  <fieldset>
+    <div class="field" data-required="consent" data-label="your agreement to be contacted">
+      <label class="consent"><input type="checkbox" name="consent" value="Yes" id="f-consent"><span>I agree to be contacted on WhatsApp about NuraniHomes. I understand this is not a booking and no payment is required. <span class="req">*</span></span></label>
+    </div>
+    <p class="note">We use your details only to contact you about NuraniHomes and to understand demand. We never sell or share them. Email anurani@nuranihomes.com to have them removed at any time.</p>
+  </fieldset>
+  <div class="form-actions">
+    <button type="submit" class="btn btn-dark">Submit</button>
+    <p class="err" role="alert" hidden></p>
+  </div>
+</form>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span class="logo">
+      <span class="en"><b>NuraniHomes</b></span>
+      <span class="sep"></span>
+      <span class="ur" lang="ur" dir="rtl">نورانی ہومز</span>
+    </span>
+    <div class="meta">
+      <a href="mailto:anurani@nuranihomes.com">anurani@nuranihomes.com</a>
+      <span>Dubai &middot; Karachi</span>
+      <span>&copy; 2026 NuraniHomes</span>
+    </div>
+  </div>
+</footer>
+<script src="/form-endpoint.js"></script>
+<script>
+(function(){
+  // Record which link or QR code brought the visitor (e.g. ?src=fb-ads)
+  try{
+    var p = new URLSearchParams(location.search), s = p.get('src') || p.get('utm_source') || '';
+    var f = document.querySelector('input[name="source"]'); if(f) f.value = s.slice(0,60);
+  }catch(e){}
+  var form = document.querySelector('form.nh');
+  form.addEventListener('submit', function(e){
+    var msg = form.querySelector('.err'); msg.hidden = true;
+    var bad = [];
+    form.querySelectorAll('[data-required]').forEach(function(g){
+      var name = g.getAttribute('data-required');
+      var els = form.querySelectorAll('[name="'+name+'"]');
+      var ok = false;
+      els.forEach(function(el){
+        if(el.type==='radio'||el.type==='checkbox'){ if(el.checked) ok = true; }
+        else if(el.value.trim()) ok = true;
+      });
+      if(!ok) bad.push(g.getAttribute('data-label'));
+    });
+    e.preventDefault();
+    if(bad.length){ msg.textContent = 'Please complete: ' + bad.join(', ') + '.'; msg.hidden = false; return; }
+    var hp = form.querySelector('[name="company_website"]');
+    if(hp && hp.value){ location.href = '/thank-you.html'; return; }
+    var url = window.NH_FORM_ENDPOINT;
+    if(!url){ msg.textContent = 'This form is not connected yet. Please email anurani@nuranihomes.com.'; msg.hidden = false; return; }
+    var btn = form.querySelector('button[type="submit"]'); btn.disabled = true; btn.textContent = 'Sending…';
+    var data = new URLSearchParams();
+    new FormData(form).forEach(function(v,k){ if(k !== 'company_website') data.append(k, v); });
+    fetch(url, {method:'POST', mode:'no-cors', body:data})
+      .then(function(){ location.href = '/thank-you.html'; })
+      .catch(function(){
+        btn.disabled = false; btn.textContent = 'Submit';
+        msg.textContent = 'We couldn\'t send your answers. Check your connection and try again.'; msg.hidden = false;
+      });
+  });
+  
+})();
+</script>
+</body>
+</html>
