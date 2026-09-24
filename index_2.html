@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NuraniHomes | نورانی ہومز | Homes in Karachi for Pakistanis Abroad</title>
+<meta name="description" content="NuraniHomes develops quality, affordable apartments in Karachi for overseas Pakistanis, with structured instalment plans payable in USD or AED.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Lato:wght@300;400;700&family=Noto+Nastaliq+Urdu:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green:#123c32; --green-deep:#0c2c24; --ivory:#faf7f1; --stone:#efe9dd;
+    --ink:#1f2522; --muted:#5f6862; --gold:#b58a4c; --gold-soft:#d8bf94; --line:#ddd4c3;
+    --serif:"Cormorant Garamond",Georgia,serif; --urdu:"Noto Nastaliq Urdu","Jameel Noori Nastaleeq",serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Lato,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--ivory);line-height:1.75;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  .label{font-size:.72rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+  .rule{width:64px;height:1px;background:var(--gold);margin-top:22px}
+
+  /* Logo lockup */
+  .logo{display:flex;align-items:center;gap:16px;line-height:1}
+  .logo .en{display:flex;flex-direction:column}
+  .logo b{font-family:var(--serif);font-weight:600;font-size:1.6rem;letter-spacing:.14em;text-transform:uppercase}
+  .logo small{font-size:.6rem;letter-spacing:.38em;text-transform:uppercase;color:var(--gold-soft);margin-top:7px}
+  .logo .sep{width:1px;height:38px;background:var(--gold)}
+  .logo .ur{font-family:var(--urdu);font-size:1.3rem;line-height:1.9;padding-top:4px;color:var(--gold-soft)}
+
+  header{position:absolute;top:0;left:0;right:0;z-index:2;padding:30px 0;color:var(--ivory)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .nav-link{font-size:.74rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;border-bottom:1px solid var(--gold);padding-bottom:4px;transition:color .2s}
+  .nav-link:hover{color:var(--gold-soft)}
+
+  .btn{display:inline-block;font-size:.76rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;padding:18px 34px;border:1px solid var(--gold);transition:background .25s,color .25s}
+  .btn-light{color:var(--ivory)}
+  .btn-light:hover{background:var(--gold);color:var(--green-deep)}
+  .btn-dark{background:var(--green);border-color:var(--green);color:var(--ivory)}
+  .btn-dark:hover{background:var(--green-deep)}
+
+  /* Hero */
+  .hero{position:relative;color:var(--ivory);padding:180px 0 0;overflow:hidden;
+        background:radial-gradient(ellipse at 85% 15%,rgba(181,138,76,.14),transparent 55%),linear-gradient(180deg,var(--green) 0%,var(--green-deep) 100%)}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:end}
+  .hero-copy{padding-bottom:120px}
+  .hero .label{color:var(--gold-soft)}
+  .hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(2.6rem,6vw,4.5rem);line-height:1.06;max-width:15ch;margin:22px 0 28px}
+  .hero p{font-weight:300;font-size:1.12rem;max-width:44ch;color:rgba(250,247,241,.82);margin-bottom:44px}
+  .hero-art{width:100%;max-width:430px;justify-self:end;display:block;color:var(--gold-soft)}
+  .hero-art path,.hero-art rect{stroke:currentColor;stroke-width:1;opacity:.7}
+  .hero-art .strong{stroke-width:1.4;opacity:.9}
+  .hero-art .thin{stroke-width:.6;opacity:.5}
+  .hero-art .grid{stroke-width:.5;opacity:.12}
+  .hero-art .dash{stroke-width:.7;stroke-dasharray:3 5;opacity:.45}
+  .hero-art .dot{fill:currentColor;stroke:none}
+
+  /* Intro */
+  .intro{padding:120px 0 100px}
+  .intro .wrap{display:grid;grid-template-columns:5fr 7fr;gap:80px;align-items:start}
+  .intro h2,.contact h2{font-family:var(--serif);font-weight:500;line-height:1.15;color:var(--green)}
+  .intro h2{font-size:clamp(2rem,3.6vw,2.8rem);margin-top:18px}
+  .intro p{font-size:1.06rem;color:var(--muted);margin-bottom:18px}
+  .intro p:first-child{font-size:1.2rem;color:var(--ink)}
+
+  /* Pillars */
+  .pillars{padding:0 0 110px}
+  .pillars .grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
+  .pillar{padding:44px 40px 10px 0}
+  .pillar + .pillar{padding-left:40px;border-left:1px solid var(--line)}
+  .num{font-family:var(--serif);font-size:1.1rem;color:var(--gold);letter-spacing:.1em}
+  .pillar h3{font-family:var(--serif);font-weight:600;font-size:1.6rem;line-height:1.2;color:var(--green);margin:14px 0}
+  .pillar p{color:var(--muted);font-size:1rem}
+
+  /* Architectural band */
+  .band{background:var(--stone);padding:96px 0 0;text-align:center;overflow:hidden}
+  .band blockquote{font-family:var(--serif);font-weight:500;font-size:clamp(1.8rem,3.6vw,2.6rem);line-height:1.25;color:var(--green);max-width:24ch;margin:18px auto 64px}
+  .frieze{display:block;width:100%;height:210px;color:var(--green)}
+  .frieze path{stroke:currentColor;stroke-width:1;opacity:.55}
+  .frieze .strong{stroke-width:1.3;opacity:.8}
+  .frieze .thin{stroke-width:.6;opacity:.35}
+
+  /* Testimonials (enable once real quotes are available) */
+  .voices{padding:110px 0}
+  .voices .head{text-align:center;margin-bottom:56px}
+  .voices .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+  .voice{border-top:1px solid var(--gold);padding-top:28px}
+  .voice q{display:block;font-family:var(--serif);font-size:1.35rem;line-height:1.45;color:var(--ink);quotes:"\201C" "\201D"}
+  .voice cite{display:block;margin-top:20px;font-style:normal;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+  /* Contact */
+  .contact{padding:110px 0;text-align:center}
+  .contact h2{font-size:clamp(2rem,4vw,3rem);margin:18px auto;max-width:18ch}
+  .contact p{color:var(--muted);max-width:48ch;margin:0 auto 40px;font-size:1.05rem}
+  .contact .direct{margin-top:26px;font-size:.95rem;color:var(--muted)}
+  .contact .direct a{color:var(--green);border-bottom:1px solid var(--gold-soft)}
+
+  footer{background:var(--green-deep);color:rgba(250,247,241,.7);padding:44px 0;font-size:.85rem}
+  footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:22px}
+  footer .logo{color:var(--ivory)}
+  footer .logo b{font-size:1.2rem}
+  footer .logo .ur{font-size:1.05rem}
+  footer .logo .sep{height:28px}
+  footer .meta{display:flex;gap:28px;flex-wrap:wrap;letter-spacing:.04em}
+  footer a:hover{color:var(--gold-soft)}
+
+  @media (max-width:860px){
+    header{padding:22px 0}
+    .hero{padding-top:140px}
+    .hero-grid{grid-template-columns:1fr;gap:0}
+    .hero-copy{padding-bottom:56px}
+    .hero-art{max-width:320px;justify-self:center}
+    .intro{padding:84px 0 70px}
+    .intro .wrap{grid-template-columns:1fr;gap:28px}
+    .pillars{padding-bottom:84px}
+    .pillars .grid,.voices .grid{grid-template-columns:1fr}
+    .pillar,.pillar + .pillar{padding:34px 0 30px;border-left:none}
+    .pillar + .pillar{border-top:1px solid var(--line)}
+    .band{padding-top:72px}
+    .frieze{height:150px}
+    .contact,.voices{padding:84px 0}
+  }
+  @media (max-width:480px){
+    .logo{gap:10px}
+    .logo b{font-size:1.15rem;letter-spacing:.1em}
+    .logo small{display:none}
+    .logo .ur{font-size:1rem}
+    .logo .sep{height:26px}
+    .btn{display:block;text-align:center;padding:18px 20px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="NuraniHomes">
+      <span class="en"><b>NuraniHomes</b><small>Karachi &middot; Dubai</small></span>
+      <span class="sep"></span>
+      <span class="ur" lang="ur" dir="rtl">نورانی ہومز</span>
+    </a>
+    <a class="nav-link" href="mailto:anurani@nuranihomes.com?subject=Enquiry%20from%20nuranihomes.com">Enquire</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="label">Residences in Karachi</span>
+      <h1>A home in Karachi, for those who work abroad.</h1>
+      <p>NuraniHomes develops quality, affordable apartments for overseas Pakistanis, with structured payment plans that fit the life you have built away from home.</p>
+      <a class="btn btn-light" href="mailto:anurani@nuranihomes.com?subject=Enquiry%20from%20nuranihomes.com">Enquire by Email</a>
+    </div>
+    <svg class="hero-art" viewBox="0 0 440 530" fill="none" aria-hidden="true"><path class="grid" d="M20 20V510M60 20V510M100 20V510M140 20V510M180 20V510M220 20V510M260 20V510M300 20V510M340 20V510M380 20V510M420 20V510M20 20H440M20 60H440M20 100H440M20 140H440M20 180H440M20 220H440M20 260H440M20 300H440M20 340H440M20 380H440M20 420H440M20 460H440M20 500H440"/><path class="dash" d="M220 60A160 160 0 0 1 380 220"/><path class="dash" d="M380 60V220M220 60H380"/><circle cx="380" cy="60" r="3" class="dot"/><rect x="100" y="90" width="240" height="410" class="strong"/><path d="M92 90H348M92 100H348"/><path d="M122 120h12v30h-12zM156 120h12v36h-12zM190 120h12v36h-12zM224 120h12v30h-12zM258 120h12v36h-12zM292 120h12v36h-12zM326 120h12v30h-12zM122 172h12v36h-12zM156 172h12v36h-12zM190 172h12v30h-12zM224 172h12v36h-12zM258 172h12v36h-12zM292 172h12v30h-12zM326 172h12v36h-12zM122 224h12v36h-12zM156 224h12v30h-12zM190 224h12v36h-12zM224 224h12v36h-12zM258 224h12v30h-12zM292 224h12v36h-12zM326 224h12v36h-12zM122 276h12v30h-12zM156 276h12v36h-12zM190 276h12v36h-12zM224 276h12v30h-12zM258 276h12v36h-12zM292 276h12v36h-12zM326 276h12v30h-12zM122 328h12v36h-12zM156 328h12v36h-12zM190 328h12v30h-12zM224 328h12v36h-12zM258 328h12v36h-12zM292 328h12v30h-12zM326 328h12v36h-12zM122 380h12v36h-12zM156 380h12v30h-12zM190 380h12v36h-12zM224 380h12v36h-12zM258 380h12v30h-12zM292 380h12v36h-12zM326 380h12v36h-12z"/><path class="thin" d="M100 112H340M100 164H340M100 216H340M100 268H340M100 320H340M100 372H340M100 424H340"/><path class="strong" d="M106 500V456A18.0 18.0 0 0 1 142 456V500M154 500V456A18.0 18.0 0 0 1 190 456V500M202 500V456A18.0 18.0 0 0 1 238 456V500M250 500V456A18.0 18.0 0 0 1 286 456V500M298 500V456A18.0 18.0 0 0 1 334 456V500"/><path d="M100 420H340"/><path class="strong" d="M0 500H440"/><path class="thin" d="M30 516H110M30 512v8M50 512v8M70 512v8M90 512v8M110 512v8"/></svg>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="wrap">
+    <div>
+      <span class="label">Our Approach</span>
+      <h2>Home ownership, made attainable.</h2>
+      <div class="rule"></div>
+    </div>
+    <div>
+      <p>For many Pakistanis working overseas, owning a home back in Karachi has felt out of reach, with developments priced for a few and payment terms that assume you live next door.</p>
+      <p>NuraniHomes was founded to change that. We partner with established local developers to deliver well-built apartments at an accessible price, offered directly to overseas families under a clear and transparent process.</p>
+    </div>
+  </div>
+</section>
+
+<section class="pillars">
+  <div class="wrap">
+    <div class="grid">
+      <div class="pillar">
+        <span class="num">01</span>
+        <h3>Thoughtfully designed homes</h3>
+        <p>Well-planned apartments designed for families, with a choice of sizes and furnishing options, priced within reach.</p>
+      </div>
+      <div class="pillar">
+        <span class="num">02</span>
+        <h3>Structured instalment plans</h3>
+        <p>Pay over several years through a direct plan with the developer. No bank loan or mortgage required.</p>
+      </div>
+      <div class="pillar">
+        <span class="num">03</span>
+        <h3>Pay from abroad in USD or AED</h3>
+        <p>Make your payments in US dollars or UAE dirhams, with freehold ownership transferred to you in Pakistan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <span class="label">Our Promise</span>
+    <blockquote>Built on trust, designed for the families who build Pakistan from abroad.</blockquote>
+  </div>
+  <svg class="frieze" viewBox="0 0 1200 210" preserveAspectRatio="xMidYMax slice" fill="none" aria-hidden="true"><path class="strong" d="M0 200H1200M0 40H1200M0 48H1200"/><path class="strong" d="M14 200V130A36 36 0 0 1 86 130V200M114 200V130A36 36 0 0 1 186 130V200M214 200V130A36 36 0 0 1 286 130V200M314 200V130A36 36 0 0 1 386 130V200M414 200V130A36 36 0 0 1 486 130V200M514 200V130A36 36 0 0 1 586 130V200M614 200V130A36 36 0 0 1 686 130V200M714 200V130A36 36 0 0 1 786 130V200M814 200V130A36 36 0 0 1 886 130V200M914 200V130A36 36 0 0 1 986 130V200M1014 200V130A36 36 0 0 1 1086 130V200M1114 200V130A36 36 0 0 1 1186 130V200"/><path class="thin" d="M26 200V134A24 24 0 0 1 74 134V200M126 200V134A24 24 0 0 1 174 134V200M226 200V134A24 24 0 0 1 274 134V200M326 200V134A24 24 0 0 1 374 134V200M426 200V134A24 24 0 0 1 474 134V200M526 200V134A24 24 0 0 1 574 134V200M626 200V134A24 24 0 0 1 674 134V200M726 200V134A24 24 0 0 1 774 134V200M826 200V134A24 24 0 0 1 874 134V200M926 200V134A24 24 0 0 1 974 134V200M1026 200V134A24 24 0 0 1 1074 134V200M1126 200V134A24 24 0 0 1 1174 134V200"/><path d="M50 62l14 14l-14 14l-14 -14zM0 90H100M150 62l14 14l-14 14l-14 -14zM100 90H200M250 62l14 14l-14 14l-14 -14zM200 90H300M350 62l14 14l-14 14l-14 -14zM300 90H400M450 62l14 14l-14 14l-14 -14zM400 90H500M550 62l14 14l-14 14l-14 -14zM500 90H600M650 62l14 14l-14 14l-14 -14zM600 90H700M750 62l14 14l-14 14l-14 -14zM700 90H800M850 62l14 14l-14 14l-14 -14zM800 90H900M950 62l14 14l-14 14l-14 -14zM900 90H1000M1050 62l14 14l-14 14l-14 -14zM1000 90H1100M1150 62l14 14l-14 14l-14 -14zM1100 90H1200"/></svg>
+</section>
+
+<!-- ============================================================
+     TESTIMONIALS: hidden until real quotes are available.
+     To switch on: delete the two comment lines marked START/END,
+     and replace each quote and name with the real words and
+     permission-approved name of someone you have spoken to.
+     START
+<section class="voices">
+  <div class="wrap">
+    <div class="head">
+      <span class="label">What Families Are Saying</span>
+    </div>
+    <div class="grid">
+      <div class="voice"><q>REAL QUOTE 1</q><cite>First name, city of work</cite></div>
+      <div class="voice"><q>REAL QUOTE 2</q><cite>First name, city of work</cite></div>
+      <div class="voice"><q>REAL QUOTE 3</q><cite>First name, city of work</cite></div>
+    </div>
+  </div>
+</section>
+     END
+============================================================= -->
+
+<section class="contact">
+  <div class="wrap">
+    <span class="label">Register Your Interest</span>
+    <h2>Begin your journey home.</h2>
+    <p>Write to us and our team will be in touch with details on upcoming residences and payment plans.</p>
+    <a class="btn btn-dark" href="mailto:anurani@nuranihomes.com?subject=Enquiry%20from%20nuranihomes.com">Contact Us</a>
+    <div class="direct">or email <a href="mailto:anurani@nuranihomes.com">anurani@nuranihomes.com</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="logo">
+      <span class="en"><b>NuraniHomes</b></span>
+      <span class="sep"></span>
+      <span class="ur" lang="ur" dir="rtl">نورانی ہومز</span>
+    </span>
+    <div class="meta">
+      <a href="mailto:anurani@nuranihomes.com">anurani@nuranihomes.com</a>
+      <span>Dubai &middot; Karachi</span>
+      <span>&copy; 2026 NuraniHomes</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
