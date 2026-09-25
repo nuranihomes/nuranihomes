@@ -4,9 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Thank You | NuraniHomes</title>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#123c32">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NuraniHomes">
+<meta property="og:title" content="Thank you · NuraniHomes">
+<meta property="og:description" content="We'll be in touch soon.">
+<meta property="og:url" content="https://nuranihomes.com/">
+<meta property="og:image" content="https://nuranihomes.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Lato:wght@300;400;700&family=Noto+Nastaliq+Urdu:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Lato:wght@300;400;700&family=Noto+Nastaliq+Urdu:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --green:#123c32; --green-deep:#0c2c24; --ivory:#faf7f1; --stone:#efe9dd;
@@ -169,14 +182,33 @@
   .thanks{max-width:640px;margin:0 auto;padding:90px 24px 110px;text-align:center}
   .thanks h2{font-family:var(--serif);font-weight:500;font-size:clamp(2rem,4vw,2.8rem);color:var(--green);margin:18px 0}
   .thanks p{color:var(--muted);margin-bottom:36px}
+
+  .top-right{display:flex;align-items:center;gap:22px}
+  .lang-toggle{display:inline-flex;border:1px solid var(--gold);direction:ltr}
+  .lang-toggle button{font:inherit;font-size:.78rem;font-weight:700;letter-spacing:.08em;background:transparent;color:var(--ivory);border:0;padding:7px 12px;cursor:pointer;line-height:1.4}
+  .lang-toggle button[lang="ur"]{font-family:var(--urdu);font-size:.95rem;letter-spacing:0;padding:3px 12px 7px}
+  .lang-toggle button[aria-pressed="true"]{background:var(--gold);color:var(--green-deep)}
+  .lang-toggle button:focus-visible{outline:2px solid var(--gold-soft);outline-offset:2px}
+  html[lang="ur"] body{font-family:var(--urdu),Lato,sans-serif;line-height:2.1}
+  html[lang="ur"] .page-head h1,html[lang="ur"] form.nh legend,html[lang="ur"] .thanks h2{font-family:var(--urdu);line-height:1.9;font-weight:700}
+  html[lang="ur"] .page-head h1{font-size:clamp(1.7rem,4vw,2.5rem)}
+  html[lang="ur"] .label,html[lang="ur"] .btn,html[lang="ur"] .back,html[lang="ur"] .field > span,html[lang="ur"] .q{letter-spacing:0;text-transform:none}
+  html[lang="ur"] .label{font-size:.95rem}
+  html[lang="ur"] .btn{font-size:1rem;padding-top:12px;padding-bottom:16px}
+  html[lang="ur"] .note{border-left:0;border-right:2px solid var(--gold);padding-left:0;padding-right:14px}
+  html[lang="ur"] .opt span{padding:6px 16px 10px}
+  .page-head .top{flex-wrap:wrap}
+  @media (max-width:600px){.top-right .back{display:none}}
+  input[type=tel],input[type=email]{direction:ltr;text-align:left}
+  html[lang="ur"] input[type=tel],html[lang="ur"] input[type=email]{text-align:right}
 </style>
 </head>
 <body>
 <section class="page-head"><div class="wrap"><div class="top" style="margin-bottom:0"><a class="logo" href="/" aria-label="NuraniHomes home">
       <span class="en"><b>NuraniHomes</b><small>Karachi &middot; Dubai</small></span>
       <span class="sep"></span>
-      <span class="ur" lang="ur" dir="rtl">نورانی ہومز</span>
-    </a><a class="back" href="/">Back to home</a></div></div></section>
+      <span class="ur" lang="ur" dir="rtl">نورانی</span>
+    </a><div class="top-right"><div class="lang-toggle" role="group" aria-label="Language"><button type="button" data-lang="en" lang="en" aria-pressed="true">English</button><button type="button" data-lang="ur" lang="ur" aria-pressed="false">اردو</button></div><a class="back" href="/">Back to home</a></div></div></div></section>
 <section class="thanks">
   <span class="label">Received</span>
   <h2>Thank you. We'll be in touch.</h2>
@@ -188,7 +220,7 @@
     <span class="logo">
       <span class="en"><b>NuraniHomes</b></span>
       <span class="sep"></span>
-      <span class="ur" lang="ur" dir="rtl">نورانی ہومز</span>
+      <span class="ur" lang="ur" dir="rtl">نورانی</span>
     </span>
     <div class="meta">
       <a href="mailto:anurani@nuranihomes.com">anurani@nuranihomes.com</a>
@@ -197,5 +229,6 @@
     </div>
   </div>
 </footer>
+<script src="/lang.js"></script>
 </body>
 </html>

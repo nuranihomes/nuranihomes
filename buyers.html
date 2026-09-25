@@ -5,9 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Register Your Interest | NuraniHomes</title>
 <meta name="description" content="Tell NuraniHomes what kind of home you need in Karachi. Takes two minutes; not a booking.">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#123c32">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NuraniHomes">
+<meta property="og:title" content="Register your interest · NuraniHomes">
+<meta property="og:description" content="For overseas Pakistanis: tell us what kind of home you need in Karachi. Two minutes, in English or Urdu. Not a booking, no payment.">
+<meta property="og:url" content="https://nuranihomes.com/buyers.html">
+<meta property="og:image" content="https://nuranihomes.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Lato:wght@300;400;700&family=Noto+Nastaliq+Urdu:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Lato:wght@300;400;700&family=Noto+Nastaliq+Urdu:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --green:#123c32; --green-deep:#0c2c24; --ivory:#faf7f1; --stone:#efe9dd;
@@ -162,10 +175,29 @@
   .form-actions{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
   button.btn{font-family:inherit;cursor:pointer}
   .err{color:#9b2c1f;font-size:.9rem}
-  .hp{position:absolute;left:-9999px}
+  .hp{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
   [hidden]{display:none!important}
   .back{font-size:.74rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;border-bottom:1px solid var(--gold);padding-bottom:4px}
   @media (max-width:600px){.two{grid-template-columns:1fr}.page-head .top{margin-bottom:36px}}
+
+  .top-right{display:flex;align-items:center;gap:22px}
+  .lang-toggle{display:inline-flex;border:1px solid var(--gold);direction:ltr}
+  .lang-toggle button{font:inherit;font-size:.78rem;font-weight:700;letter-spacing:.08em;background:transparent;color:var(--ivory);border:0;padding:7px 12px;cursor:pointer;line-height:1.4}
+  .lang-toggle button[lang="ur"]{font-family:var(--urdu);font-size:.95rem;letter-spacing:0;padding:3px 12px 7px}
+  .lang-toggle button[aria-pressed="true"]{background:var(--gold);color:var(--green-deep)}
+  .lang-toggle button:focus-visible{outline:2px solid var(--gold-soft);outline-offset:2px}
+  html[lang="ur"] body{font-family:var(--urdu),Lato,sans-serif;line-height:2.1}
+  html[lang="ur"] .page-head h1,html[lang="ur"] form.nh legend,html[lang="ur"] .thanks h2{font-family:var(--urdu);line-height:1.9;font-weight:700}
+  html[lang="ur"] .page-head h1{font-size:clamp(1.7rem,4vw,2.5rem)}
+  html[lang="ur"] .label,html[lang="ur"] .btn,html[lang="ur"] .back,html[lang="ur"] .field > span,html[lang="ur"] .q{letter-spacing:0;text-transform:none}
+  html[lang="ur"] .label{font-size:.95rem}
+  html[lang="ur"] .btn{font-size:1rem;padding-top:12px;padding-bottom:16px}
+  html[lang="ur"] .note{border-left:0;border-right:2px solid var(--gold);padding-left:0;padding-right:14px}
+  html[lang="ur"] .opt span{padding:6px 16px 10px}
+  .page-head .top{flex-wrap:wrap}
+  @media (max-width:600px){.top-right .back{display:none}}
+  input[type=tel],input[type=email]{direction:ltr;text-align:left}
+  html[lang="ur"] input[type=tel],html[lang="ur"] input[type=email]{text-align:right}
 </style>
 </head>
 <body>
@@ -176,13 +208,13 @@
     <a class="logo" href="/" aria-label="NuraniHomes home">
       <span class="en"><b>NuraniHomes</b><small>Karachi &middot; Dubai</small></span>
       <span class="sep"></span>
-      <span class="ur" lang="ur" dir="rtl">نورانی ہومز</span>
+      <span class="ur" lang="ur" dir="rtl">نورانی</span>
     </a>
-      <a class="back" href="/">Back to home</a>
+      <div class="top-right"><div class="lang-toggle" role="group" aria-label="Language"><button type="button" data-lang="en" lang="en" aria-pressed="true">English</button><button type="button" data-lang="ur" lang="ur" aria-pressed="false">اردو</button></div><a class="back" href="/">Back to home</a></div>
     </div>
     <span class="label">For Homebuyers</span>
     <h1>Tell us about the home you need.</h1>
-    <p>We're planning affordable apartments in Karachi for Pakistanis working in the Gulf. Your answers shape what we build. It takes about two minutes. This is not a booking and no payment is required.</p>
+    <p>We're planning affordable apartments in Karachi, exclusively for overseas Pakistanis. Your answers shape what we build. It takes about two minutes. This is not a booking and no payment is required.</p>
   </div>
 </section>
 
@@ -190,6 +222,7 @@
 <form class="nh" name="buyer-interest" method="POST" novalidate>
   <input type="hidden" name="form-name" value="buyer-interest">
   <input type="hidden" name="source" value="">
+  <input type="hidden" name="language" value="English">
   <p class="hp"><label>Leave this empty <input name="company_website" tabindex="-1" autocomplete="off"></label></p>
   <fieldset>
     <legend>About you</legend>
@@ -197,7 +230,7 @@
       <label class="field"><span>First name</span><input type="text" name="name" id="f-name" placeholder="" autocomplete="given-name"></label>
       <label class="field" data-required="whatsapp" data-label="whatsapp number"><span>WhatsApp number <span class="req">*</span></span><input type="tel" name="whatsapp" id="f-whatsapp" placeholder="+971 5x xxx xxxx" autocomplete="tel"></label>
     </div>
-    <div class="field" data-required="country" data-label="country you work in"><span class="q">Country you work in <span class="req">*</span></span><div class="opts "><label class="opt"><input type="radio" name="country" value="UAE" id="country-0"><span>UAE</span></label><label class="opt"><input type="radio" name="country" value="Saudi Arabia" id="country-1"><span>Saudi Arabia</span></label><label class="opt"><input type="radio" name="country" value="Qatar" id="country-2"><span>Qatar</span></label><label class="opt"><input type="radio" name="country" value="Oman" id="country-3"><span>Oman</span></label><label class="opt"><input type="radio" name="country" value="Kuwait" id="country-4"><span>Kuwait</span></label><label class="opt"><input type="radio" name="country" value="Bahrain" id="country-5"><span>Bahrain</span></label><label class="opt"><input type="radio" name="country" value="Other" id="country-6"><span>Other</span></label></div></div>
+    <div class="field" data-required="country" data-label="country you work in"><span class="q">Country you work in <span class="req">*</span></span><div class="opts "><label class="opt"><input type="radio" name="country" value="UAE" id="country-0"><span>UAE</span></label><label class="opt"><input type="radio" name="country" value="Saudi Arabia" id="country-1"><span>Saudi Arabia</span></label><label class="opt"><input type="radio" name="country" value="Qatar" id="country-2"><span>Qatar</span></label><label class="opt"><input type="radio" name="country" value="Oman" id="country-3"><span>Oman</span></label><label class="opt"><input type="radio" name="country" value="Kuwait" id="country-4"><span>Kuwait</span></label><label class="opt"><input type="radio" name="country" value="Bahrain" id="country-5"><span>Bahrain</span></label><label class="opt"><input type="radio" name="country" value="Other" id="country-6"><span>Other country abroad</span></label></div></div>
     <div class="field" data-required="job" data-label="your work"><span class="q">Your work <span class="req">*</span></span><div class="opts "><label class="opt"><input type="radio" name="job" value="Office / admin staff" id="job-0"><span>Office / admin staff</span></label><label class="opt"><input type="radio" name="job" value="Accounts / bookkeeping" id="job-1"><span>Accounts / bookkeeping</span></label><label class="opt"><input type="radio" name="job" value="Sales / retail" id="job-2"><span>Sales / retail</span></label><label class="opt"><input type="radio" name="job" value="Customer service" id="job-3"><span>Customer service</span></label><label class="opt"><input type="radio" name="job" value="IT support" id="job-4"><span>IT support</span></label><label class="opt"><input type="radio" name="job" value="Healthcare (nurse, lab, pharmacy)" id="job-5"><span>Healthcare (nurse, lab, pharmacy)</span></label><label class="opt"><input type="radio" name="job" value="Hospitality supervisor" id="job-6"><span>Hospitality supervisor</span></label><label class="opt"><input type="radio" name="job" value="Site / facilities supervisor" id="job-7"><span>Site / facilities supervisor</span></label><label class="opt"><input type="radio" name="job" value="Engineering technician / draughtsman" id="job-8"><span>Engineering technician / draughtsman</span></label><label class="opt"><input type="radio" name="job" value="Security supervisor" id="job-9"><span>Security supervisor</span></label><label class="opt"><input type="radio" name="job" value="Teacher / trainer" id="job-10"><span>Teacher / trainer</span></label><label class="opt"><input type="radio" name="job" value="Other" id="job-11"><span>Other</span></label></div></div>
     <label class="field"><span>If other, what do you do?</span><input type="text" name="job_other" id="f-job_other" placeholder=""></label>
     <div class="field"><span class="q">Where does your family live in Pakistan?</span><div class="opts "><label class="opt"><input type="radio" name="family_region" value="Karachi" id="family_region-0"><span>Karachi</span></label><label class="opt"><input type="radio" name="family_region" value="Other Sindh" id="family_region-1"><span>Other Sindh</span></label><label class="opt"><input type="radio" name="family_region" value="Punjab" id="family_region-2"><span>Punjab</span></label><label class="opt"><input type="radio" name="family_region" value="KP" id="family_region-3"><span>KP</span></label><label class="opt"><input type="radio" name="family_region" value="Balochistan" id="family_region-4"><span>Balochistan</span></label><label class="opt"><input type="radio" name="family_region" value="Other" id="family_region-5"><span>Other</span></label></div></div>
@@ -211,8 +244,8 @@
       <div class="opts scale"><label class="opt"><input type="radio" name="interest" value="1" id="interest-0"><span>1</span></label><label class="opt"><input type="radio" name="interest" value="2" id="interest-1"><span>2</span></label><label class="opt"><input type="radio" name="interest" value="3" id="interest-2"><span>3</span></label><label class="opt"><input type="radio" name="interest" value="4" id="interest-3"><span>4</span></label><label class="opt"><input type="radio" name="interest" value="5" id="interest-4"><span>5</span></label></div>
       <div class="scale-ends"><span>1 &middot; not at all</span><span>5 &middot; very seriously</span></div>
     </div>
-    <div class="field"><span class="q">Deposit you could pay (AED)</span><div class="opts "><label class="opt"><input type="radio" name="deposit" value="Under 10,000" id="deposit-0"><span>Under 10,000</span></label><label class="opt"><input type="radio" name="deposit" value="10,000–25,000" id="deposit-1"><span>10,000–25,000</span></label><label class="opt"><input type="radio" name="deposit" value="25,000–40,000" id="deposit-2"><span>25,000–40,000</span></label><label class="opt"><input type="radio" name="deposit" value="40,000+" id="deposit-3"><span>40,000+</span></label></div></div>
-    <div class="field"><span class="q">Monthly instalment you could manage (AED)</span><div class="opts "><label class="opt"><input type="radio" name="monthly" value="Under 1,000" id="monthly-0"><span>Under 1,000</span></label><label class="opt"><input type="radio" name="monthly" value="1,000–1,500" id="monthly-1"><span>1,000–1,500</span></label><label class="opt"><input type="radio" name="monthly" value="1,500–2,000" id="monthly-2"><span>1,500–2,000</span></label><label class="opt"><input type="radio" name="monthly" value="2,000+" id="monthly-3"><span>2,000+</span></label></div></div>
+    <div class="field"><span class="q">Deposit you could pay (AED)</span><div class="opts "><label class="opt"><input type="radio" name="deposit" value="Under 25,000" id="deposit-0"><span>Under 25,000</span></label><label class="opt"><input type="radio" name="deposit" value="25,000–50,000" id="deposit-1"><span>25,000–50,000</span></label><label class="opt"><input type="radio" name="deposit" value="50,000–80,000" id="deposit-2"><span>50,000–80,000</span></label><label class="opt"><input type="radio" name="deposit" value="80,000–110,000" id="deposit-3"><span>80,000–110,000</span></label><label class="opt"><input type="radio" name="deposit" value="110,000+" id="deposit-4"><span>110,000+</span></label></div></div>
+    <div class="field"><span class="q">Monthly instalment you could manage (AED)</span><div class="opts "><label class="opt"><input type="radio" name="monthly" value="Under 1,500" id="monthly-0"><span>Under 1,500</span></label><label class="opt"><input type="radio" name="monthly" value="1,500–2,000" id="monthly-1"><span>1,500–2,000</span></label><label class="opt"><input type="radio" name="monthly" value="2,000–2,500" id="monthly-2"><span>2,000–2,500</span></label><label class="opt"><input type="radio" name="monthly" value="2,500–3,500" id="monthly-3"><span>2,500–3,500</span></label><label class="opt"><input type="radio" name="monthly" value="3,500–4,500" id="monthly-4"><span>3,500–4,500</span></label><label class="opt"><input type="radio" name="monthly" value="4,500+" id="monthly-5"><span>4,500+</span></label></div></div>
     <div class="field"><span class="q">Bedrooms</span><div class="opts "><label class="opt"><input type="radio" name="bedrooms" value="1 bedroom" id="bedrooms-0"><span>1 bedroom</span></label><label class="opt"><input type="radio" name="bedrooms" value="2 bedrooms" id="bedrooms-1"><span>2 bedrooms</span></label><label class="opt"><input type="radio" name="bedrooms" value="3 bedrooms" id="bedrooms-2"><span>3 bedrooms</span></label></div></div>
     <div class="field"><span class="q">Furnished or unfurnished?</span><div class="opts "><label class="opt"><input type="radio" name="furnished" value="Furnished" id="furnished-0"><span>Furnished</span></label><label class="opt"><input type="radio" name="furnished" value="Unfurnished" id="furnished-1"><span>Unfurnished</span></label><label class="opt"><input type="radio" name="furnished" value="Not sure" id="furnished-2"><span>Not sure</span></label></div></div>
     <div class="field"><span class="q">What would worry you most? <small>Choose any</small></span><div class="opts "><label class="opt"><input type="checkbox" name="worries" value="Being cheated" id="worries-0"><span>Being cheated</span></label><label class="opt"><input type="checkbox" name="worries" value="Affordability" id="worries-1"><span>Affordability</span></label><label class="opt"><input type="checkbox" name="worries" value="Location" id="worries-2"><span>Location</span></label><label class="opt"><input type="checkbox" name="worries" value="Construction delays" id="worries-3"><span>Construction delays</span></label><label class="opt"><input type="checkbox" name="worries" value="Legal ownership" id="worries-4"><span>Legal ownership</span></label><label class="opt"><input type="checkbox" name="worries" value="Paying from abroad" id="worries-5"><span>Paying from abroad</span></label></div></div>
@@ -220,7 +253,7 @@
   </fieldset>
   <fieldset>
     <div class="field" data-required="consent" data-label="your agreement to be contacted">
-      <label class="consent"><input type="checkbox" name="consent" value="Yes" id="f-consent"><span>I agree to be contacted on WhatsApp about NuraniHomes. I understand this is not a booking and no payment is required. <span class="req">*</span></span></label>
+      <label class="consent"><input type="checkbox" name="consent" value="Yes" id="f-consent"><span>I confirm I am a Pakistani living and working outside Pakistan, and I agree to be contacted on WhatsApp about NuraniHomes. I understand this is not a booking and no payment is required. <span class="req">*</span></span></label>
     </div>
     <p class="note">We use your details only to contact you about NuraniHomes and to understand demand. We never sell or share them. Email anurani@nuranihomes.com to have them removed at any time.</p>
   </fieldset>
@@ -236,7 +269,7 @@
     <span class="logo">
       <span class="en"><b>NuraniHomes</b></span>
       <span class="sep"></span>
-      <span class="ur" lang="ur" dir="rtl">نورانی ہومز</span>
+      <span class="ur" lang="ur" dir="rtl">نورانی</span>
     </span>
     <div class="meta">
       <a href="mailto:anurani@nuranihomes.com">anurani@nuranihomes.com</a>
@@ -246,6 +279,7 @@
   </div>
 </footer>
 <script src="/form-endpoint.js"></script>
+<script src="/lang.js"></script>
 <script>
 (function(){
   // Record which link or QR code brought the visitor (e.g. ?src=fb-ads)
@@ -268,19 +302,19 @@
       if(!ok) bad.push(g.getAttribute('data-label'));
     });
     e.preventDefault();
-    if(bad.length){ msg.textContent = 'Please complete: ' + bad.join(', ') + '.'; msg.hidden = false; return; }
+    if(bad.length){ msg.textContent = NH_MSG('incomplete', bad); msg.hidden = false; return; }
     var hp = form.querySelector('[name="company_website"]');
     if(hp && hp.value){ location.href = '/thank-you.html'; return; }
     var url = window.NH_FORM_ENDPOINT;
-    if(!url){ msg.textContent = 'This form is not connected yet. Please email anurani@nuranihomes.com.'; msg.hidden = false; return; }
-    var btn = form.querySelector('button[type="submit"]'); btn.disabled = true; btn.textContent = 'Sending…';
+    if(!url){ msg.textContent = NH_MSG('notConnected'); msg.hidden = false; return; }
+    var btn = form.querySelector('button[type="submit"]'); btn.disabled = true; btn.textContent = NH_MSG('sending');
     var data = new URLSearchParams();
     new FormData(form).forEach(function(v,k){ if(k !== 'company_website') data.append(k, v); });
     fetch(url, {method:'POST', mode:'no-cors', body:data})
-      .then(function(){ location.href = '/thank-you.html'; })
+      .then(function(){ location.href = '/thank-you.html' + (window.NH_LANG === 'ur' ? '?lang=ur' : ''); })
       .catch(function(){
-        btn.disabled = false; btn.textContent = 'Submit';
-        msg.textContent = 'We couldn\'t send your answers. Check your connection and try again.'; msg.hidden = false;
+        btn.disabled = false; btn.textContent = NH_MSG('submit');
+        msg.textContent = NH_MSG('failed'); msg.hidden = false;
       });
   });
   

@@ -3,8 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NuraniHomes | نورانی ہومز | Homes in Karachi for Pakistanis Abroad</title>
-<meta name="description" content="NuraniHomes develops quality, affordable apartments in Karachi for overseas Pakistanis, with structured instalment plans payable in USD or AED.">
+<title>NuraniHomes | نورانی | Homes in Karachi for Pakistanis Abroad</title>
+<meta name="description" content="NuraniHomes develops quality, affordable apartments in Karachi exclusively for overseas Pakistanis, with structured instalment plans payable in USD or AED.">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#123c32">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NuraniHomes">
+<meta property="og:title" content="NuraniHomes · Homes in Karachi for Pakistanis abroad">
+<meta property="og:description" content="Affordable apartments in Karachi, exclusively for overseas Pakistanis, paid in monthly instalments. Register your interest.">
+<meta property="og:url" content="https://nuranihomes.com/">
+<meta property="og:image" content="https://nuranihomes.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Lato:wght@300;400;700&family=Noto+Nastaliq+Urdu:wght@500&display=swap" rel="stylesheet">
@@ -80,6 +93,67 @@
   .pillar h3{font-family:var(--serif);font-weight:600;font-size:1.6rem;line-height:1.2;color:var(--green);margin:14px 0}
   .pillar p{color:var(--muted);font-size:1rem}
 
+
+  /* Residences: indicative layouts */
+  .residences{padding:0 0 110px}
+  .residences .head{max-width:640px;margin-bottom:48px}
+  .residences h2{font-family:var(--serif);font-weight:500;font-size:clamp(2rem,3.6vw,2.8rem);line-height:1.15;color:var(--green);margin:18px 0 14px}
+  .residences .head p{color:var(--muted);font-size:1.05rem}
+  .units{display:flex;flex-direction:column}
+  .unit{border-top:1px solid var(--line);padding:34px 0;display:grid;grid-template-columns:1fr minmax(0,436px);gap:40px;align-items:center}
+  .unit:first-child{border-top-color:var(--gold)}
+  .unit h3{font-family:var(--serif);font-weight:600;font-size:1.6rem;line-height:1.2;color:var(--green)}
+  .unit .meta{font-size:.95rem;color:var(--gold);font-weight:700;letter-spacing:.04em;margin-top:6px}
+  .unit .rooms{font-size:.98rem;color:var(--muted);margin-top:8px;max-width:34ch}
+  .plan-box{background:var(--stone);padding:18px;width:100%}
+  .plan{display:block;height:auto}
+  .plan .floor{fill:#fffdf8}
+  .plan .room{fill:none;stroke:var(--green);stroke-width:1.2}
+  .plan .wall{fill:none;stroke:var(--green);stroke-width:4}
+  .plan .gap{stroke:#fffdf8;stroke-width:5}
+  .plan .arrow{fill:none;stroke:var(--gold);stroke-width:1.5}
+  .plan text{font-family:Lato,"Helvetica Neue",Arial,sans-serif}
+  .plan .rn{fill:var(--ink);text-anchor:middle;font-weight:700}
+  .plan .rd{fill:var(--muted);text-anchor:middle}
+  .plan .entry{fill:var(--gold);font-size:10px;font-weight:700;letter-spacing:.08em}
+  .plan .scale{fill:none;stroke:var(--muted);stroke-width:1}
+  .plan .sl{fill:var(--muted);font-size:10px}
+  .plan .furn *{fill:none;stroke:var(--gold);stroke-width:1;opacity:.9}
+  .plan .tag{fill:#fffdf8;opacity:.82}
+  .sketch-fig{background:var(--stone);padding:28px 28px 16px;margin:0 0 48px}
+  .sketch{display:block;width:100%;height:auto}
+  .sketch path,.sketch rect{stroke:var(--green);stroke-width:1.1;opacity:.75;fill:none}
+  .sketch .s-strong{stroke-width:1.6;opacity:.9}
+  .sketch .s-thin{stroke-width:.7;opacity:.5}
+  .sketch .s-accent{stroke:var(--gold);opacity:.95}
+  .sketch-fig figcaption{margin-top:10px;font-size:.82rem;color:var(--muted);letter-spacing:.04em}
+  .residences .caveat{margin-top:34px;font-size:.88rem;color:var(--muted);max-width:70ch}
+
+
+  /* How it works */
+  .steps{padding:0 0 110px}
+  .steps .head{max-width:640px;margin-bottom:44px}
+  .steps h2,.faq h2{font-family:var(--serif);font-weight:500;font-size:clamp(2rem,3.6vw,2.8rem);line-height:1.15;color:var(--green);margin:18px 0 0}
+  .steps ol{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:28px;counter-reset:step}
+  .steps li{border-top:1px solid var(--gold);padding-top:24px;counter-increment:step}
+  .steps li::before{content:"0" counter(step);font-family:var(--serif);font-size:1.1rem;color:var(--gold);letter-spacing:.1em}
+  .steps h3{font-family:var(--serif);font-weight:600;font-size:1.45rem;line-height:1.2;color:var(--green);margin:12px 0 10px}
+  .steps li p{color:var(--muted);font-size:.98rem}
+  .steps li a{color:var(--green);border-bottom:1px solid var(--gold-soft)}
+  .steps .caveat{margin-top:30px;font-size:.88rem;color:var(--muted)}
+
+  /* FAQ */
+  .faq{padding:110px 0 0}
+  .faq .wrap{display:grid;grid-template-columns:5fr 7fr;gap:80px;align-items:start}
+  .faq details{border-top:1px solid var(--line)}
+  .faq details:last-child{border-bottom:1px solid var(--line)}
+  .faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;font-family:var(--serif);font-weight:600;font-size:1.3rem;color:var(--green)}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";font-family:Lato,sans-serif;font-weight:300;font-size:1.6rem;color:var(--gold);flex:none}
+  .faq details[open] summary::after{content:"\2212"}
+  .faq summary:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+  .faq details p{color:var(--muted);padding:0 0 24px;max-width:60ch}
+
   /* Architectural band */
   .band{background:var(--stone);padding:96px 0 0;text-align:center;overflow:hidden}
   .band blockquote{font-family:var(--serif);font-weight:500;font-size:clamp(1.8rem,3.6vw,2.6rem);line-height:1.25;color:var(--green);max-width:24ch;margin:18px auto 64px}
@@ -122,6 +196,14 @@
     .intro .wrap{grid-template-columns:1fr;gap:28px}
     .pillars{padding-bottom:84px}
     .pillars .grid,.voices .grid{grid-template-columns:1fr}
+    .residences{padding-bottom:84px}
+    .steps{padding-bottom:84px}
+    .steps ol{grid-template-columns:1fr 1fr}
+    .faq{padding-top:84px}
+    .faq .wrap{grid-template-columns:1fr;gap:28px}
+    .unit{grid-template-columns:1fr;gap:18px;padding:28px 0}
+    .plan-box{padding:12px}
+    .sketch-fig{padding:16px 14px 12px;margin-bottom:28px}
     .pillar,.pillar + .pillar{padding:34px 0 30px;border-left:none}
     .pillar + .pillar{border-top:1px solid var(--line)}
     .band{padding-top:72px}
@@ -129,6 +211,7 @@
     .contact,.voices{padding:84px 0}
   }
   @media (max-width:480px){
+    .steps ol{grid-template-columns:1fr}
     .logo{gap:10px}
     .logo b{font-size:1.15rem;letter-spacing:.1em}
     .logo small{display:none}
@@ -146,7 +229,7 @@
     <a class="logo" href="#" aria-label="NuraniHomes">
       <span class="en"><b>NuraniHomes</b><small>Karachi &middot; Dubai</small></span>
       <span class="sep"></span>
-      <span class="ur" lang="ur" dir="rtl">نورانی ہومز</span>
+      <span class="ur" lang="ur" dir="rtl">نورانی</span>
     </a>
     <a class="nav-link" href="#register">Register interest</a>
   </div>
@@ -155,9 +238,9 @@
 <section class="hero">
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <span class="label">Residences in Karachi</span>
+      <span class="label">For Overseas Pakistanis Only</span>
       <h1>A home in Karachi, for those who work abroad.</h1>
-      <p>NuraniHomes develops quality, affordable apartments for overseas Pakistanis, with structured payment plans that fit the life you have built away from home.</p>
+      <p>NuraniHomes develops quality, affordable apartments in Karachi exclusively for overseas Pakistanis, with structured payment plans that fit the life you have built away from home.</p>
       <div class="btn-row">
         <a class="btn btn-gold" href="/buyers.html">I&rsquo;m looking for a home</a>
         <a class="btn btn-light" href="/partners.html">Partner with us</a>
@@ -176,7 +259,7 @@
     </div>
     <div>
       <p>For many Pakistanis working overseas, owning a home back in Karachi has felt out of reach, with developments priced for a few and payment terms that assume you live next door.</p>
-      <p>NuraniHomes was founded to change that. We partner with established local developers to deliver well-built apartments at an accessible price, offered directly to overseas families under a clear and transparent process.</p>
+      <p>NuraniHomes was founded to change that. We partner with established local developers to deliver well-built apartments at an accessible price, offered only to overseas Pakistani families under a clear and transparent process.</p>
     </div>
   </div>
 </section>
@@ -200,6 +283,94 @@
         <p>Make your payments in US dollars or UAE dirhams, with freehold ownership transferred to you in Pakistan.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="residences" id="residences">
+  <div class="wrap">
+    <div class="head">
+      <span class="label">The Residences</span>
+      <h2>Practical homes, made for family life.</h2>
+      <p>One, two and three-bedroom apartments, each available furnished or unfurnished. All three plans are drawn to the same scale.</p>
+    </div>
+    <figure class="sketch-fig">
+      <svg class="sketch" viewBox="0 0 640 300" fill="none" role="img" aria-label="Illustrative sketch of a family living and dining room">
+  <!-- room shell -->
+  <path class="s-strong" d="M10 270 H630"/>
+  <path class="s-thin" d="M10 30 H630 M10 36 H630"/>
+  <!-- arched window with jali pattern -->
+  <path class="s-strong" d="M255 205 V112 A50 50 0 0 1 355 112 V205 Z"/>
+  <path d="M263 205 V114 A42 42 0 0 1 347 114 V205"/>
+  <path class="s-thin" d="M305 72 V205 M263 150 H347"/>
+  <path class="s-thin" d="M284 128 l21 -14 l21 14 l-21 14 z M284 176 l21 -14 l21 14 l-21 14 z"/>
+  <path d="M245 205 H365 M248 211 H362"/>
+  <!-- curtains -->
+  <path class="s-thin" d="M240 48 V230 M234 48 C236 110 230 170 236 232 M370 48 V230 M376 48 C374 110 380 170 374 232"/>
+  <path d="M228 48 H382"/>
+  <!-- framed art above sofa -->
+  <rect x="78" y="82" width="104" height="66"/>
+  <rect class="s-thin" x="86" y="90" width="88" height="50"/>
+  <path class="s-thin" d="M94 132 L118 108 L134 122 L148 104 L166 132"/>
+  <!-- sofa -->
+  <path class="s-strong" d="M40 250 V196 Q40 186 50 186 H210 Q220 186 220 196 V250"/>
+  <path d="M40 222 H220 M52 222 V200 Q52 194 58 194 H126 V222 M134 222 V194 H202 Q208 194 208 200 V222"/>
+  <path d="M32 250 H228 V214 Q228 206 220 206 M32 250 V214 Q32 206 40 206"/>
+  <path d="M44 250 V262 M216 250 V262"/>
+  <!-- cushions -->
+  <path class="s-accent" d="M60 204 q14 -10 28 0 q-2 10 -14 12 q-12 -2 -14 -12 z M170 204 q14 -10 28 0 q-2 10 -14 12 q-12 -2 -14 -12 z"/>
+  <!-- rug and coffee table -->
+  <path class="s-thin" d="M24 268 Q130 258 236 268"/>
+  <path d="M80 244 H180 M86 244 V262 M174 244 V262"/>
+  <path class="s-accent" d="M118 244 v-10 h12 v10 M124 234 c-6 -10 -2 -16 0 -20 c2 4 6 10 0 20"/>
+  <!-- plant -->
+  <path d="M388 270 L382 238 H414 L408 270 Z"/>
+  <path class="s-accent" d="M398 238 C392 214 378 206 370 200 M398 238 C400 210 404 196 412 184 M398 238 C406 222 420 214 428 212 M398 238 C390 226 386 214 388 202"/>
+  <!-- pendant lamp -->
+  <path class="s-thin" d="M530 36 V112"/>
+  <path class="s-accent" d="M510 132 L518 112 H542 L550 132 Z"/>
+  <path class="s-thin" d="M522 140 l-6 10 M530 142 v12 M538 140 l6 10"/>
+  <!-- dining table and chairs -->
+  <path class="s-strong" d="M448 206 H612"/>
+  <path d="M456 206 V270 M604 206 V270 M456 214 H604"/>
+  <path d="M474 206 V176 Q474 170 480 170 H496 Q502 170 502 176 V206 M516 206 V176 Q516 170 522 170 H538 Q544 170 544 176 V206 M558 206 V176 Q558 170 564 170 H580 Q586 170 586 176 V206"/>
+  <path d="M430 270 V168 M430 226 H452 V270 M452 226 V232"/>
+  <path d="M630 270 V168 M630 226 H608 V270"/>
+  <!-- table setting -->
+  <path class="s-accent" d="M488 206 q8 -8 16 0 M524 206 q8 -8 16 0 M560 206 q8 -8 16 0 M526 190 h12 v16 h-12 z"/>
+</svg>
+      <figcaption>Illustrative sketch of a furnished living and dining room</figcaption>
+    </figure>
+    <div class="units">
+      <div class="unit">
+        <div><h3>One Bedroom</h3><p class="meta">About 380 sq ft</p><p class="rooms">1 bedroom · 1 bathroom · living and dining · kitchen</p></div>
+        <div class="plan-box"><svg class="plan" viewBox="0 0 256 229" style="width:64.00%" role="img" aria-label="Indicative layout"><g transform="translate(14,14)"><rect x="0" y="0" width="180" height="171" class="floor"/><rect x="0" y="0" width="108" height="90" class="room"/><g class="furn"><rect x="2.7" y="22.5" width="58.5" height="45.0" rx="1.3"/><rect x="4.5" y="26.1" width="11.7" height="17.1" rx="1.3"/><rect x="4.5" y="46.8" width="11.7" height="17.1" rx="1.3"/><rect x="2.7" y="8.1" width="11.7" height="11.7" rx="1.3"/><rect x="2.7" y="70.2" width="11.7" height="11.7" rx="1.3"/><rect x="88.2" y="3.6" width="17.1" height="45.0" rx="0.0"/></g><rect x="108" y="0" width="45" height="63" class="room"/><g class="furn"><ellipse cx="117.89999999999999" cy="13.5" rx="5.8500000000000005" ry="8.1"/><path d="M110.7 33.300000000000004 l27 27 M137.70000000000002 33.300000000000004 l-27 27"/><rect x="111.6" y="1.8" width="12.6" height="4.5" rx="0.9"/><rect x="135.9" y="2.7" width="14.4" height="10.8" rx="2.7"/><rect x="110.7" y="33.3" width="27.0" height="27.0" rx="0.0"/></g><rect x="0" y="90" width="126" height="81" class="room"/><g class="furn"><rect x="2.7" y="99.0" width="25.2" height="63.0" rx="2.7"/><rect x="2.7" y="99.0" width="7.2" height="63.0" rx="1.8"/><rect x="36.0" y="112.5" width="18.0" height="36.0" rx="1.8"/><rect x="84.6" y="110.2" width="27.0" height="40.5" rx="1.8"/><rect x="71.1" y="114.8" width="10.8" height="11.7" rx="1.8"/><rect x="114.3" y="114.8" width="10.8" height="11.7" rx="1.8"/><rect x="71.1" y="133.7" width="10.8" height="11.7" rx="1.8"/><rect x="114.3" y="133.7" width="10.8" height="11.7" rx="1.8"/></g><rect x="126" y="90" width="54" height="81" class="room"/><g class="furn"><circle cx="165.60000000000002" cy="118.80000000000001" r="2.6999999999999997"/><circle cx="172.79999999999998" cy="118.80000000000001" r="2.6999999999999997"/><circle cx="165.60000000000002" cy="127.80000000000001" r="2.6999999999999997"/><circle cx="172.79999999999998" cy="127.80000000000001" r="2.6999999999999997"/><rect x="127.8" y="91.8" width="50.4" height="18.0" rx="0.0"/><rect x="160.2" y="109.8" width="18.0" height="36.0" rx="0.0"/><rect x="136.8" y="94.5" width="16.2" height="12.6" rx="2.7"/></g><rect x="31.0" y="30.0" width="46.0" height="33" rx="2" class="tag"/><text x="54.0" y="43.0" class="rn" font-size="12">Bedroom</text><text x="54.0" y="58.0" class="rd" font-size="11">12&#8242; &#215; 10&#8242;</text><rect x="111.0" y="18.5" width="39.0" height="29" rx="2" class="tag"/><text x="130.5" y="29.5" class="rn" font-size="10">Bath</text><text x="130.5" y="44.5" class="rd" font-size="9">5&#8242; &#215; 7&#8242;</text><rect x="16.0" y="115.5" width="94.0" height="33" rx="2" class="tag"/><text x="63.0" y="128.5" class="rn" font-size="12">Living & dining</text><text x="63.0" y="143.5" class="rd" font-size="11">14&#8242; &#215; 9&#8242;</text><rect x="133.5" y="117.5" width="39.0" height="29" rx="2" class="tag"/><text x="153.0" y="128.5" class="rn" font-size="10">Kitchen</text><text x="153.0" y="143.5" class="rd" font-size="9">6&#8242; &#215; 9&#8242;</text><rect x="0" y="0" width="180" height="171" class="wall"/><line x1="180" y1="62.5" x2="180" y2="90.5" class="gap"/><path d="M206 76.5 H186 M191 71.5 L186 76.5 L191 81.5" class="arrow"/><text x="188" y="67.5" class="entry">Entry</text><path d="M0 191 H90 M0 187 V195 M45 188 V194 M90 187 V195" class="scale"/><text x="98" y="195" class="sl">10 ft</text></g></svg></div>
+      </div>
+      <div class="unit">
+        <div><h3>Two Bedroom</h3><p class="meta">About 650 sq ft</p><p class="rooms">2 bedrooms · 2 bathrooms · living and dining · kitchen</p></div>
+        <div class="plan-box"><svg class="plan" viewBox="0 0 310 283" style="width:77.50%" role="img" aria-label="Indicative layout"><g transform="translate(14,14)"><rect x="0" y="0" width="234" height="225" class="floor"/><rect x="0" y="0" width="108" height="99" class="room"/><g class="furn"><rect x="2.7" y="27.0" width="58.5" height="45.0" rx="1.3"/><rect x="4.5" y="30.6" width="11.7" height="17.1" rx="1.3"/><rect x="4.5" y="51.3" width="11.7" height="17.1" rx="1.3"/><rect x="2.7" y="12.6" width="11.7" height="11.7" rx="1.3"/><rect x="2.7" y="74.7" width="11.7" height="11.7" rx="1.3"/><rect x="88.2" y="3.6" width="17.1" height="45.0" rx="0.0"/></g><rect x="108" y="0" width="45" height="63" class="room"/><g class="furn"><ellipse cx="117.89999999999999" cy="13.5" rx="5.8500000000000005" ry="8.1"/><path d="M110.7 33.300000000000004 l27 27 M137.70000000000002 33.300000000000004 l-27 27"/><rect x="111.6" y="1.8" width="12.6" height="4.5" rx="0.9"/><rect x="135.9" y="2.7" width="14.4" height="10.8" rx="2.7"/><rect x="110.7" y="33.3" width="27.0" height="27.0" rx="0.0"/></g><rect x="153" y="0" width="81" height="99" class="room"/><g class="furn"><rect x="155.7" y="5.4" width="58.5" height="27.0" rx="1.3"/><rect x="157.5" y="9.0" width="10.8" height="19.8" rx="1.3"/><rect x="155.7" y="41.4" width="58.5" height="27.0" rx="1.3"/><rect x="157.5" y="45.0" width="10.8" height="19.8" rx="1.3"/><rect x="214.2" y="3.6" width="17.1" height="45.0" rx="0.0"/></g><rect x="0" y="99" width="144" height="126" class="room"/><g class="furn"><rect x="2.7" y="130.5" width="25.2" height="63.0" rx="2.7"/><rect x="2.7" y="130.5" width="7.2" height="63.0" rx="1.8"/><rect x="36.0" y="144.0" width="18.0" height="36.0" rx="1.8"/><rect x="102.6" y="141.8" width="27.0" height="40.5" rx="1.8"/><rect x="89.1" y="146.2" width="10.8" height="11.7" rx="1.8"/><rect x="132.3" y="146.2" width="10.8" height="11.7" rx="1.8"/><rect x="89.1" y="165.2" width="10.8" height="11.7" rx="1.8"/><rect x="132.3" y="165.2" width="10.8" height="11.7" rx="1.8"/></g><rect x="144" y="99" width="90" height="63" class="room"/><g class="furn"><circle cx="219.60000000000002" cy="127.80000000000001" r="2.6999999999999997"/><circle cx="226.79999999999998" cy="127.80000000000001" r="2.6999999999999997"/><circle cx="219.60000000000002" cy="136.8" r="2.6999999999999997"/><circle cx="226.79999999999998" cy="136.8" r="2.6999999999999997"/><rect x="145.8" y="100.8" width="86.4" height="18.0" rx="0.0"/><rect x="214.2" y="118.8" width="18.0" height="36.0" rx="0.0"/><rect x="154.8" y="103.5" width="16.2" height="12.6" rx="2.7"/></g><rect x="144" y="162" width="45" height="63" class="room"/><g class="furn"><ellipse cx="153.9" cy="175.5" rx="5.8500000000000005" ry="8.1"/><path d="M146.70000000000002 195.29999999999998 l27 27 M173.70000000000002 195.29999999999998 l-27 27"/><rect x="147.6" y="163.8" width="12.6" height="4.5" rx="0.9"/><rect x="171.9" y="164.7" width="14.4" height="10.8" rx="2.7"/><rect x="146.7" y="195.3" width="27.0" height="27.0" rx="0.0"/></g><rect x="25.0" y="34.5" width="58.0" height="33" rx="2" class="tag"/><text x="54.0" y="47.5" class="rn" font-size="12">Bedroom 1</text><text x="54.0" y="62.5" class="rd" font-size="11">12&#8242; &#215; 11&#8242;</text><rect x="111.0" y="18.5" width="39.0" height="29" rx="2" class="tag"/><text x="130.5" y="29.5" class="rn" font-size="10">Bath</text><text x="130.5" y="44.5" class="rd" font-size="9">5&#8242; &#215; 7&#8242;</text><rect x="164.5" y="34.5" width="58.0" height="33" rx="2" class="tag"/><text x="193.5" y="47.5" class="rn" font-size="12">Bedroom 2</text><text x="193.5" y="62.5" class="rd" font-size="11">9&#8242; &#215; 11&#8242;</text><rect x="25.0" y="147.0" width="94.0" height="33" rx="2" class="tag"/><text x="72.0" y="160.0" class="rn" font-size="12">Living & dining</text><text x="72.0" y="175.0" class="rd" font-size="11">16&#8242; &#215; 14&#8242;</text><rect x="166.0" y="115.5" width="46.0" height="33" rx="2" class="tag"/><text x="189.0" y="128.5" class="rn" font-size="12">Kitchen</text><text x="189.0" y="143.5" class="rd" font-size="11">10&#8242; &#215; 7&#8242;</text><rect x="147.0" y="180.5" width="39.0" height="29" rx="2" class="tag"/><text x="166.5" y="191.5" class="rn" font-size="10">Bath</text><text x="166.5" y="206.5" class="rd" font-size="9">5&#8242; &#215; 7&#8242;</text><rect x="0" y="0" width="234" height="225" class="wall"/><line x1="234" y1="179.5" x2="234" y2="207.5" class="gap"/><path d="M260 193.5 H240 M245 188.5 L240 193.5 L245 198.5" class="arrow"/><text x="242" y="184.5" class="entry">Entry</text><path d="M0 245 H90 M0 241 V249 M45 242 V248 M90 241 V249" class="scale"/><text x="98" y="249" class="sl">10 ft</text></g></svg></div>
+      </div>
+      <div class="unit">
+        <div><h3>Three Bedroom</h3><p class="meta">About 900 sq ft</p><p class="rooms">3 bedrooms · 2 bathrooms · living and dining · kitchen</p></div>
+        <div class="plan-box"><svg class="plan" viewBox="0 0 400 283" style="width:100.00%" role="img" aria-label="Indicative layout"><g transform="translate(14,14)"><rect x="0" y="0" width="324" height="225" class="floor"/><rect x="0" y="0" width="108" height="99" class="room"/><g class="furn"><rect x="2.7" y="27.0" width="58.5" height="45.0" rx="1.3"/><rect x="4.5" y="30.6" width="11.7" height="17.1" rx="1.3"/><rect x="4.5" y="51.3" width="11.7" height="17.1" rx="1.3"/><rect x="2.7" y="12.6" width="11.7" height="11.7" rx="1.3"/><rect x="2.7" y="74.7" width="11.7" height="11.7" rx="1.3"/><rect x="88.2" y="3.6" width="17.1" height="45.0" rx="0.0"/></g><rect x="108" y="0" width="45" height="63" class="room"/><g class="furn"><ellipse cx="117.89999999999999" cy="13.5" rx="5.8500000000000005" ry="8.1"/><path d="M110.7 33.300000000000004 l27 27 M137.70000000000002 33.300000000000004 l-27 27"/><rect x="111.6" y="1.8" width="12.6" height="4.5" rx="0.9"/><rect x="135.9" y="2.7" width="14.4" height="10.8" rx="2.7"/><rect x="110.7" y="33.3" width="27.0" height="27.0" rx="0.0"/></g><rect x="153" y="0" width="90" height="99" class="room"/><g class="furn"><rect x="155.7" y="5.4" width="58.5" height="27.0" rx="1.3"/><rect x="157.5" y="9.0" width="10.8" height="19.8" rx="1.3"/><rect x="155.7" y="41.4" width="58.5" height="27.0" rx="1.3"/><rect x="157.5" y="45.0" width="10.8" height="19.8" rx="1.3"/><rect x="223.2" y="3.6" width="17.1" height="45.0" rx="0.0"/></g><rect x="243" y="0" width="81" height="99" class="room"/><g class="furn"><rect x="245.7" y="5.4" width="58.5" height="27.0" rx="1.3"/><rect x="247.5" y="9.0" width="10.8" height="19.8" rx="1.3"/><rect x="245.7" y="41.4" width="58.5" height="27.0" rx="1.3"/><rect x="247.5" y="45.0" width="10.8" height="19.8" rx="1.3"/><rect x="304.2" y="3.6" width="17.1" height="45.0" rx="0.0"/></g><rect x="0" y="99" width="162" height="126" class="room"/><g class="furn"><rect x="2.7" y="130.5" width="25.2" height="63.0" rx="2.7"/><rect x="2.7" y="130.5" width="7.2" height="63.0" rx="1.8"/><rect x="36.0" y="144.0" width="18.0" height="36.0" rx="1.8"/><rect x="120.6" y="141.8" width="27.0" height="40.5" rx="1.8"/><rect x="107.1" y="146.2" width="10.8" height="11.7" rx="1.8"/><rect x="150.3" y="146.2" width="10.8" height="11.7" rx="1.8"/><rect x="107.1" y="165.2" width="10.8" height="11.7" rx="1.8"/><rect x="150.3" y="165.2" width="10.8" height="11.7" rx="1.8"/></g><rect x="162" y="126" width="90" height="99" class="room"/><g class="furn"><circle cx="237.60000000000002" cy="154.79999999999998" r="2.6999999999999997"/><circle cx="244.79999999999998" cy="154.79999999999998" r="2.6999999999999997"/><circle cx="237.60000000000002" cy="163.79999999999998" r="2.6999999999999997"/><circle cx="244.79999999999998" cy="163.79999999999998" r="2.6999999999999997"/><rect x="163.8" y="127.8" width="86.4" height="18.0" rx="0.0"/><rect x="232.2" y="145.8" width="18.0" height="36.0" rx="0.0"/><rect x="172.8" y="130.5" width="16.2" height="12.6" rx="2.7"/></g><rect x="252" y="126" width="45" height="63" class="room"/><g class="furn"><ellipse cx="261.90000000000003" cy="139.5" rx="5.8500000000000005" ry="8.1"/><path d="M254.70000000000002 159.29999999999998 l27 27 M281.7 159.29999999999998 l-27 27"/><rect x="255.6" y="127.8" width="12.6" height="4.5" rx="0.9"/><rect x="279.9" y="128.7" width="14.4" height="10.8" rx="2.7"/><rect x="254.7" y="159.3" width="27.0" height="27.0" rx="0.0"/></g><rect x="25.0" y="34.5" width="58.0" height="33" rx="2" class="tag"/><text x="54.0" y="47.5" class="rn" font-size="12">Bedroom 1</text><text x="54.0" y="62.5" class="rd" font-size="11">12&#8242; &#215; 11&#8242;</text><rect x="111.0" y="18.5" width="39.0" height="29" rx="2" class="tag"/><text x="130.5" y="29.5" class="rn" font-size="10">Bath</text><text x="130.5" y="44.5" class="rd" font-size="9">5&#8242; &#215; 7&#8242;</text><rect x="169.0" y="34.5" width="58.0" height="33" rx="2" class="tag"/><text x="198.0" y="47.5" class="rn" font-size="12">Bedroom 2</text><text x="198.0" y="62.5" class="rd" font-size="11">10&#8242; &#215; 11&#8242;</text><rect x="254.5" y="34.5" width="58.0" height="33" rx="2" class="tag"/><text x="283.5" y="47.5" class="rn" font-size="12">Bedroom 3</text><text x="283.5" y="62.5" class="rd" font-size="11">9&#8242; &#215; 11&#8242;</text><rect x="34.0" y="147.0" width="94.0" height="33" rx="2" class="tag"/><text x="81.0" y="160.0" class="rn" font-size="12">Living & dining</text><text x="81.0" y="175.0" class="rd" font-size="11">18&#8242; &#215; 14&#8242;</text><rect x="184.0" y="160.5" width="46.0" height="33" rx="2" class="tag"/><text x="207.0" y="173.5" class="rn" font-size="12">Kitchen</text><text x="207.0" y="188.5" class="rd" font-size="11">10&#8242; &#215; 11&#8242;</text><rect x="255.0" y="144.5" width="39.0" height="29" rx="2" class="tag"/><text x="274.5" y="155.5" class="rn" font-size="10">Bath</text><text x="274.5" y="170.5" class="rd" font-size="9">5&#8242; &#215; 7&#8242;</text><rect x="0" y="0" width="324" height="225" class="wall"/><line x1="324" y1="161.5" x2="324" y2="189.5" class="gap"/><path d="M350 175.5 H330 M335 170.5 L330 175.5 L335 180.5" class="arrow"/><text x="332" y="166.5" class="entry">Entry</text><path d="M0 245 H90 M0 241 V249 M45 242 V248 M90 241 V249" class="scale"/><text x="98" y="249" class="sl">10 ft</text></g></svg></div>
+      </div>
+    </div>
+    <p class="caveat">Indicative layouts for illustration only. Final layouts, room sizes and specifications will depend on the site and building approvals.</p>
+  </div>
+</section>
+
+<section class="steps" id="how-it-works">
+  <div class="wrap">
+    <div class="head">
+      <span class="label">How It Works</span>
+      <h2>A clear path to your own home.</h2>
+    </div>
+    <ol>
+      <li><h3>Register your interest</h3><p>Tell us the size of home and budget you have in mind. It takes two minutes, is free and needs no payment. <a href="/buyers.html">Register now</a></p></li>
+      <li><h3>Choose your home</h3><p>When a project is ready to launch, we share the location, layouts and payment plan with registered families.</p></li>
+      <li><h3>Pay from the Gulf</h3><p>Pay a deposit, then fixed monthly instalments during construction, in dirhams or US dollars. No bank loan needed.</p></li>
+      <li><h3>Receive your home</h3><p>On completion, your apartment is handed over and ownership is registered in your name in Pakistan.</p></li>
+    </ol>
+    <p class="caveat">This is our planned process. Full terms will be confirmed for each project before any booking is taken.</p>
   </div>
 </section>
 
@@ -232,11 +403,29 @@
      END
 ============================================================= -->
 
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div>
+      <span class="label">Questions</span>
+      <h2>Common questions</h2>
+      <div class="rule"></div>
+    </div>
+    <div>
+      <details><summary>Is registering my interest a booking?</summary><p>No. Registering is free and does not commit you to anything. We never ask for payment on this website.</p></details>
+      <details><summary>Who can buy?</summary><p>Overseas Pakistanis only: Pakistanis living and working outside Pakistan, including NICOP holders. We are starting with families in the UAE, Saudi Arabia, Qatar, Oman, Kuwait and Bahrain. We do not sell to buyers living in Pakistan.</p></details>
+      <details><summary>How will payments work?</summary><p>We plan a deposit followed by fixed monthly instalments over about three years, paid from abroad in dirhams or US dollars. Exact terms will be confirmed for each project before any booking.</p></details>
+      <details><summary>What happens to my money?</summary><p>We plan to hold buyer payments in Dubai and release them to the builder in stages as construction progresses, so money follows real progress on site. Full details will be shared before any booking.</p></details>
+      <details><summary>Where in Karachi will the homes be?</summary><p>We are assessing sites across Karachi. The exact location will be shared with registered families when a project is ready to launch.</p></details>
+      <details><summary>When will homes be ready?</summary><p>Construction typically takes around three years from launch. Each project will come with its own timeline.</p></details>
+    </div>
+  </div>
+</section>
+
 <section class="contact" id="register">
   <div class="wrap">
     <span class="label">Register Your Interest</span>
     <h2>Begin your journey home.</h2>
-    <p>Tell us what you&rsquo;re looking for and our team will be in touch. It takes two minutes.</p>
+    <p>For overseas Pakistanis only. Tell us what you&rsquo;re looking for and our team will be in touch. It takes two minutes.</p>
     <div class="btn-row">
       <a class="btn btn-dark" href="/buyers.html">I&rsquo;m looking for a home</a>
       <a class="btn btn-outline" href="/partners.html">Partner with us</a>
@@ -250,7 +439,7 @@
     <span class="logo">
       <span class="en"><b>NuraniHomes</b></span>
       <span class="sep"></span>
-      <span class="ur" lang="ur" dir="rtl">نورانی ہومز</span>
+      <span class="ur" lang="ur" dir="rtl">نورانی</span>
     </span>
     <div class="meta">
       <a href="mailto:anurani@nuranihomes.com">anurani@nuranihomes.com</a>
