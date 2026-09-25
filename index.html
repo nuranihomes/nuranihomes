@@ -249,6 +249,37 @@
     .btn{display:block;text-align:center;padding:18px 20px}
     .btn-row{flex-direction:column;align-items:stretch}
   }
+
+  /* ===== Softer design ===== */
+  :root{--sand:#f3ead9;--blush:#f6efe4;--sage:#e4ebe3;--r:18px}
+  body{background:var(--ivory) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cpath d='M28 4 52 28 28 52 4 28Z M28 16 40 28 28 40 16 28Z' fill='none' stroke='%23b58a4c' stroke-opacity='.07' stroke-width='1'/%3E%3C/svg%3E")}
+  .btn{border-radius:999px;padding:16px 30px}
+  .hero{border-radius:0 0 48px 48px;background:radial-gradient(ellipse at 80% 10%,rgba(216,191,148,.28),transparent 55%),radial-gradient(ellipse at 0% 100%,rgba(120,170,150,.18),transparent 50%),linear-gradient(180deg,#1a4a3e 0%,#123c32 100%)}
+  .hero-art{max-width:470px}
+  .intro{padding:100px 0 60px}
+  .route{margin-top:34px;background:var(--sage);border-radius:var(--r);padding:18px 22px}
+  .route svg{display:block;width:100%;height:auto}
+  .route text{font-family:Lato,Arial,sans-serif;font-size:12px;fill:var(--green);font-weight:700}
+  .pillars{padding:30px 0 100px}
+  .pillars .grid{border-top:0;gap:22px}
+  .pillar,.pillar + .pillar{background:#fffdf8;border:1px solid #eee5d5;border-left:1px solid #eee5d5;border-radius:var(--r);padding:32px 30px 30px;box-shadow:0 10px 30px -18px rgba(18,60,50,.25)}
+  .pillar .ico{width:64px;height:64px;border-radius:50%;background:var(--sand);display:grid;place-items:center;margin-bottom:18px}
+  .pillar .ico svg{width:38px;height:38px}
+  .pillar .num{display:none}
+  .ico path,.ico rect,.ico circle,.ill path,.ill rect,.ill circle{fill:none;stroke:var(--green);stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+  .ico .g,.ill .g{stroke:var(--gold)}
+  .plan-box,.sketch-fig{border-radius:var(--r)}
+  .unit{border-top:0;background:#fffdf8;border-radius:var(--r);padding:30px;margin-bottom:18px;border:1px solid #eee5d5}
+  .unit:first-child{border-top-color:#eee5d5}
+  .steps{background:var(--blush);border-radius:48px;padding:90px 0;margin:0 16px 100px}
+  .steps li{border-top:0;background:#fffdf8;border-radius:var(--r);padding:24px 22px;box-shadow:0 10px 30px -20px rgba(18,60,50,.3)}
+  .steps li::before{display:none}
+  .steps .ill{display:block;width:100%;height:92px;margin-bottom:14px;background:var(--sand);border-radius:12px}
+  .faq details{background:#fffdf8;border:1px solid #eee5d5;border-radius:14px;padding:4px 20px;margin-bottom:10px}
+  .contact{background:var(--sage);border-radius:48px;margin:0 16px 60px;padding-top:80px!important;padding-bottom:80px!important}
+  .contact .ill{display:block;width:220px;margin:0 auto 18px}
+  .route{direction:ltr}
+  .x-unused{position:fixed;bottom:14px;right:14px;z-index:9;background:#b58a4c;color:#fff;font:700 12px Lato,Arial;padding:8px 14px;border-radius:999px;letter-spacing:.08em}
 </style>
 </head>
 <body>
@@ -285,6 +316,15 @@
       <span class="label">Our Approach</span>
       <h2>Home ownership, made attainable.</h2>
       <div class="rule"></div>
+<div class="route"><svg viewBox="0 0 520 110" aria-hidden="true">
+<path class="g" d="M70 70 C170 10 330 10 440 62" style="fill:none;stroke:#b58a4c;stroke-width:1.6;stroke-dasharray:5 6"/>
+<path d="M430 50l12 12-16 4" style="fill:none;stroke:#b58a4c;stroke-width:1.6"/>
+<path d="M232 30l16 6-16 6 3-6z" style="fill:#b58a4c;stroke:none"/>
+<path d="M40 88h60M50 88V62h10v26M64 88V50l6-6 6 6v38M80 88V58h12v30" style="fill:none;stroke:#123c32;stroke-width:1.4"/>
+<path d="M410 88h80M416 88V66h14v22M434 88V56h16v32M436 56a8 8 0 0 1 12 0M454 88V70h8v18M466 88V60l8-6 8 6v28" style="fill:none;stroke:#123c32;stroke-width:1.4"/>
+<text x="70" y="106" text-anchor="middle">Dubai · Riyadh · Doha</text>
+<text x="450" y="106" text-anchor="middle">Karachi</text>
+</svg></div>
     </div>
     <div>
       <p>For many Pakistanis working overseas, owning a home back in Karachi has felt out of reach, with developments priced for a few and payment terms that assume you live next door.</p>
@@ -297,17 +337,17 @@
   <div class="wrap">
     <div class="grid">
       <div class="pillar">
-        <span class="num">01</span>
+        <span class="ico"><svg viewBox="0 0 40 40"><path d="M6 19 20 7l14 12"/><path d="M10 16v17h20V16"/><path class="g" d="M20 29s-5-3-5-6.5a2.6 2.6 0 0 1 5-1 2.6 2.6 0 0 1 5 1C25 26 20 29 20 29z"/></svg></span><span class="num">01</span>
         <h3>Thoughtfully designed homes</h3>
         <p>Well-planned apartments designed for families, with a choice of sizes and furnishing options, priced within reach.</p>
       </div>
       <div class="pillar">
-        <span class="num">02</span>
+        <span class="ico"><svg viewBox="0 0 40 40"><rect x="7" y="9" width="26" height="24" rx="4"/><path d="M7 16h26M14 5v7M26 5v7"/><path class="g" d="M13 22h3M19 22h3M25 22h3M13 27h3M19 27h3"/></svg></span><span class="num">02</span>
         <h3>Structured instalment plans</h3>
         <p>Pay over several years through a direct plan with the developer. No bank loan or mortgage required.</p>
       </div>
       <div class="pillar">
-        <span class="num">03</span>
+        <span class="ico"><svg viewBox="0 0 40 40"><circle cx="18" cy="20" r="12"/><path d="M6 20h24M18 8c-5 6-5 18 0 24M18 8c5 6 5 18 0 24"/><path class="g" d="M27 9h7v7M34 9l-8 8"/></svg></span><span class="num">03</span>
         <h3>Pay from abroad in USD or AED</h3>
         <p>Make your payments in US dollars or UAE dirhams, with freehold ownership transferred to you in Pakistan.</p>
       </div>
@@ -394,10 +434,10 @@
       <h2>A clear path to your own home.</h2>
     </div>
     <ol>
-      <li><h3>Register your interest</h3><p>Tell us the size of home and budget you have in mind. It takes two minutes, is free and needs no payment. <a href="/buyers.html">Register now</a></p></li>
-      <li><h3>Choose your home</h3><p>When a project is ready to launch, we share the location, layouts and payment plan with registered families.</p></li>
-      <li><h3>Pay from the Gulf</h3><p>Pay a deposit, then fixed monthly instalments during construction, in dirhams or US dollars. No bank loan needed.</p></li>
-      <li><h3>Receive your home</h3><p>On completion, your apartment is handed over and ownership is registered in your name in Pakistan.</p></li>
+      <li><svg class="ill" viewBox="0 0 200 92"><rect x="82" y="10" width="36" height="72" rx="7"/><path d="M90 26h20M90 36h20M90 46h14"/><path class="g" d="M92 60l5 5 10-10"/></svg><h3>Register your interest</h3><p>Tell us the size of home and budget you have in mind. It takes two minutes, is free and needs no payment. <a href="/buyers.html">Register now</a></p></li>
+      <li><svg class="ill" viewBox="0 0 200 92"><rect x="60" y="18" width="80" height="60" rx="3"/><path d="M60 46h40V18M100 60h40M120 60v18"/><path class="g" d="M150 22a8 8 0 0 1 16 0c0 7-8 14-8 14s-8-7-8-14z"/></svg><h3>Choose your home</h3><p>When a project is ready to launch, we share the location, layouts and payment plan with registered families.</p></li>
+      <li><svg class="ill" viewBox="0 0 200 92"><circle cx="78" cy="56" r="16"/><circle cx="100" cy="46" r="16"/><path class="g" d="M100 38v16M95 42h7a3 3 0 0 1 0 6h-5a3 3 0 0 0 0 6h7"/><path class="g" d="M128 30l30-10-6 8 10 6-10-2-8 10z"/></svg><h3>Pay from the Gulf</h3><p>Pay a deposit, then fixed monthly instalments during construction, in dirhams or US dollars. No bank loan needed.</p></li>
+      <li><svg class="ill" viewBox="0 0 200 92"><rect x="70" y="14" width="44" height="66" rx="3"/><path d="M70 14l30 8v58"/><circle cx="94" cy="50" r="2"/><circle class="g" cx="140" cy="44" r="9"/><path class="g" d="M140 53v20M140 64h6M140 70h5"/></svg><h3>Receive your home</h3><p>On completion, your apartment is handed over and ownership is registered in your name in Pakistan.</p></li>
     </ol>
     <p class="caveat">This is our planned process. Full terms will be confirmed for each project before any booking is taken.</p>
   </div>
@@ -452,6 +492,7 @@
 
 <section class="contact" id="register">
   <div class="wrap">
+    <svg class="ill" viewBox="0 0 220 110" aria-hidden="true"><path d="M20 104h180"/><path d="M80 104V52a30 30 0 0 1 60 0v52"/><path d="M88 104V54a22 22 0 0 1 44 0v50"/><path d="M110 32v72"/><circle class="g" cx="104" cy="72" r="1.5"/><circle class="g" cx="116" cy="72" r="1.5"/><path class="g" d="M152 44v8M146 52h12l-2 12h-8z"/><path class="g" d="M58 104l-4-18h20l-4 18M64 86c-6-10-2-18 0-22 2 4 6 12 0 22M64 86c2-8 8-12 12-12M64 86c-2-8-8-10-12-10"/><path d="M84 104h52" style="stroke:#b58a4c;stroke-width:3;opacity:.5"/></svg>
     <span class="label">Register Your Interest</span>
     <h2>Begin your journey home.</h2>
     <p>For overseas Pakistanis only. Tell us what you&rsquo;re looking for and our team will be in touch. It takes two minutes.</p>

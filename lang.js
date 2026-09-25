@@ -47,6 +47,7 @@
     "If other, what do you do?": "اگر دیگر، تو آپ کیا کام کرتے ہیں؟",
     "Where does your family live in Pakistan?": "پاکستان میں آپ کی فیملی کہاں رہتی ہے؟",
     "Karachi": "کراچی",
+    "Dubai · Riyadh · Doha": "دبئی · ریاض · دوحہ",
     "Other Sindh": "سندھ (دیگر)",
     "Punjab": "پنجاب",
     "KP": "خیبر پختونخوا",
