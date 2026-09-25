@@ -215,6 +215,38 @@
     "For overseas Pakistanis only. Tell us what you’re looking for and our team will be in touch. It takes two minutes.": "صرف بیرونِ ملک مقیم پاکستانیوں کے لیے۔ ہمیں بتائیں آپ کیا تلاش کر رہے ہیں، ہماری ٹیم آپ سے رابطہ کرے گی۔ اس میں دو منٹ لگتے ہیں۔",
     "or email": "یا ای میل کریں",
 
+    // Privacy page
+    "Privacy": "پرائیویسی",
+    "Privacy notice": "پرائیویسی نوٹس",
+    "Read our privacy notice": "ہمارا پرائیویسی نوٹس پڑھیں",
+    "Last updated: 25 September 2026": "آخری تازہ کاری: 25 ستمبر 2026",
+    "Who we are": "ہم کون ہیں",
+    "NuraniHomes is based in Dubai and is currently gauging interest in affordable homes in Karachi for overseas Pakistanis. You can contact us at":
+      "نورانی ہومز دبئی میں قائم ہے اور فی الحال بیرونِ ملک مقیم پاکستانیوں کے لیے کراچی میں کم قیمت گھروں میں دلچسپی کا اندازہ لگا رہا ہے۔ آپ ہم سے اس ای میل پر رابطہ کر سکتے ہیں:",
+    "What we collect": "ہم کون سی معلومات جمع کرتے ہیں",
+    "The details you enter in our interest forms, such as your name, WhatsApp number, country, work, the home you are looking for, budget ranges and any message.":
+      "وہ معلومات جو آپ ہمارے فارم میں درج کرتے ہیں، جیسے آپ کا نام، واٹس ایپ نمبر، ملک، کام، آپ کو کیسا گھر چاہیے، بجٹ کی حد اور کوئی پیغام۔",
+    "For partners: your company and contact details.": "شراکت داروں کے لیے: آپ کی کمپنی اور رابطے کی تفصیلات۔",
+    "Anonymous visit statistics (for example, pages viewed and country), measured without cookies. These do not identify you.":
+      "ویب سائٹ وزٹ کے گمنام اعداد و شمار (مثلاً کون سے صفحات دیکھے گئے اور کس ملک سے)، جو کوکیز کے بغیر ناپے جاتے ہیں۔ ان سے آپ کی شناخت نہیں ہوتی۔",
+    "How we use it": "ہم یہ معلومات کیسے استعمال کرتے ہیں",
+    "To contact you about NuraniHomes, by WhatsApp or email.": "نورانی ہومز کے بارے میں واٹس ایپ یا ای میل پر آپ سے رابطہ کرنے کے لیے۔",
+    "To understand demand and plan our projects.": "طلب کو سمجھنے اور اپنے منصوبوں کی تیاری کے لیے۔",
+    "To share overall totals (for example, the number of families registered) with potential partners and investors. These totals never include your name or contact details.":
+      "ممکنہ شراکت داروں اور سرمایہ کاروں کو مجموعی تعداد بتانے کے لیے (مثلاً کتنی فیملیز نے رجسٹر کیا)۔ ان میں آپ کا نام یا رابطہ نمبر کبھی شامل نہیں ہوتا۔",
+    "We never sell your details, and we never ask for payment through this website.":
+      "ہم آپ کی معلومات کبھی فروخت نہیں کرتے، اور اس ویب سائٹ کے ذریعے کبھی ادائیگی نہیں مانگتے۔",
+    "Where it is kept": "معلومات کہاں رکھی جاتی ہیں",
+    "Your answers are stored securely in our Google Workspace account, and only the NuraniHomes team can access them.":
+      "آپ کے جوابات ہمارے گوگل ورک اسپیس اکاؤنٹ میں محفوظ رکھے جاتے ہیں، اور صرف نورانی ہومز کی ٹیم ان تک رسائی رکھتی ہے۔",
+    "How long we keep it": "ہم معلومات کب تک رکھتے ہیں",
+    "We keep your details while they are needed for the purposes above, or until you ask us to delete them.":
+      "ہم آپ کی معلومات اس وقت تک رکھتے ہیں جب تک اوپر بیان کردہ مقاصد کے لیے ضرورت ہو، یا جب تک آپ انہیں حذف کرنے کا نہ کہیں۔",
+    "Your choices": "آپ کے اختیارات",
+    "You can ask to see, correct or delete your details, or to stop being contacted, at any time. Email":
+      "آپ کسی بھی وقت اپنی معلومات دیکھنے، درست کرنے یا حذف کرنے، یا رابطہ بند کرنے کا کہہ سکتے ہیں۔ ای میل کریں:",
+    "or reply STOP on WhatsApp.": "یا واٹس ایپ پر STOP لکھ کر جواب دیں۔",
+
     // Thank-you page
     "Received": "موصول ہو گیا",
     "Thank you. We'll be in touch.": "شکریہ۔ ہم جلد رابطہ کریں گے۔",
