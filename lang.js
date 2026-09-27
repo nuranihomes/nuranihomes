@@ -21,8 +21,8 @@
     // Buyer form
     "For Homebuyers": "خریداروں کے لیے",
     "Tell us about the home you need.": "ہمیں بتائیں آپ کو کیسا گھر چاہیے۔",
-    "We're planning affordable apartments in Karachi, exclusively for overseas Pakistanis. Your answers shape what we build. It takes about two minutes. This is not a booking and no payment is required.":
-      "ہم صرف بیرونِ ملک مقیم پاکستانیوں کے لیے کراچی میں کم قیمت اپارٹمنٹس کا منصوبہ بنا رہے ہیں۔ آپ کے جوابات سے طے ہوگا کہ ہم کیا بنائیں۔ اس میں تقریباً دو منٹ لگیں گے۔ یہ بکنگ نہیں ہے اور کوئی ادائیگی درکار نہیں۔",
+    "We're planning Class A apartments in Karachi at an affordable price, for overseas Pakistanis and international buyers living abroad. Your answers shape what we build. It takes about two minutes. This is not a booking and no payment is required.":
+      "ہم کراچی میں مناسب قیمت پر کلاس اے اپارٹمنٹس کی منصوبہ بندی کر رہے ہیں، بیرونِ ملک مقیم پاکستانیوں اور بین الاقوامی خریداروں کے لیے۔ آپ کے جوابات طے کریں گے کہ ہم کیا تعمیر کریں۔ اس میں تقریباً دو منٹ لگتے ہیں۔ یہ بکنگ نہیں ہے اور کوئی ادائیگی درکار نہیں۔",
     "First name": "پہلا نام",
     "WhatsApp number": "واٹس ایپ نمبر",
     "Country you work in": "آپ کس ملک میں کام کرتے ہیں؟",
@@ -79,14 +79,14 @@
     "Construction delays": "تعمیر میں تاخیر",
     "Legal ownership": "قانونی ملکیت",
     "Paying from abroad": "بیرونِ ملک سے ادائیگی",
-    "I confirm I am a Pakistani living and working outside Pakistan, and I agree to be contacted on WhatsApp about NuraniHomes. I understand this is not a booking and no payment is required.":
-      "میں تصدیق کرتا/کرتی ہوں کہ میں پاکستان سے باہر مقیم اور برسرِ روزگار پاکستانی ہوں، اور نورانی ہومز کی جانب سے واٹس ایپ پر رابطے سے متفق ہوں۔ میں سمجھتا/سمجھتی ہوں کہ یہ بکنگ نہیں ہے اور کوئی ادائیگی درکار نہیں۔",
+    "I confirm I live and work outside Pakistan, and I agree to be contacted on WhatsApp about NuraniHomes. I understand this is not a booking and no payment is required.":
+      "میں تصدیق کرتا/کرتی ہوں کہ میں پاکستان سے باہر رہتا/رہتی اور کام کرتا/کرتی ہوں، اور نورانی ہومز کے بارے میں واٹس ایپ پر رابطے کے لیے رضامند ہوں۔ میں سمجھتا/سمجھتی ہوں کہ یہ بکنگ نہیں ہے اور کوئی ادائیگی درکار نہیں۔",
 
     // Partner form
     "For Partners": "شراکت داروں کے لیے",
     "Build with us.": "ہمارے ساتھ تعمیر کریں۔",
-    "We're bringing Gulf capital and overseas buyers to affordable housing in Karachi. If you're a developer, landowner, investor, broker or community organisation, tell us how you'd like to work together.":
-      "ہم خلیجی سرمایہ اور بیرونِ ملک خریداروں کو کراچی میں کم قیمت رہائش تک لا رہے ہیں۔ اگر آپ ڈویلپر، زمین کے مالک، سرمایہ کار، بروکر یا کمیونٹی تنظیم ہیں تو ہمیں بتائیں کہ آپ ہمارے ساتھ کیسے کام کرنا چاہیں گے۔",
+    "We're bringing Gulf capital and overseas buyers to Class A housing at an affordable price in Karachi. If you're a developer, landowner, investor, broker or community organisation, tell us how you'd like to work together.":
+      "ہم خلیجی سرمایہ اور بیرونِ ملک خریداروں کو کراچی میں مناسب قیمت پر کلاس اے رہائش تک لا رہے ہیں۔ اگر آپ ڈویلپر، زمین کے مالک، سرمایہ کار، بروکر یا کمیونٹی تنظیم ہیں تو ہمیں بتائیں آپ کس طرح ہمارے ساتھ کام کرنا چاہیں گے۔",
     "Full name": "پورا نام",
     "Company or organisation": "کمپنی یا تنظیم",
     "Email": "ای میل",
@@ -142,15 +142,15 @@
 
     // Homepage
     "Register interest": "دلچسپی درج کریں",
-    "For Overseas Pakistanis Only": "صرف بیرونِ ملک مقیم پاکستانیوں کے لیے",
+    "Class A Homes · Affordable Price": "کلاس اے گھر · مناسب قیمت",
     "A home in Karachi, for those who work abroad.": "کراچی میں اپنا گھر، اُن کے لیے جو بیرونِ ملک کام کرتے ہیں۔",
-    "NuraniHomes develops quality, affordable apartments in Karachi exclusively for overseas Pakistanis, with structured payment plans that fit the life you have built away from home.": "نورانی ہومز صرف بیرونِ ملک مقیم پاکستانیوں کے لیے کراچی میں معیاری اور کم قیمت اپارٹمنٹس تیار کرتا ہے، ایسے ادائیگی منصوبوں کے ساتھ جو پردیس میں آپ کی زندگی کے مطابق ہوں۔",
+    "NuraniHomes develops Class A apartments in Karachi at an affordable price, for overseas Pakistanis and international buyers, with structured payment plans that fit the life you have built away from home. We organise all the paperwork for your purchase.": "نورانی ہومز بیرونِ ملک مقیم پاکستانیوں اور بین الاقوامی خریداروں کے لیے کراچی میں مناسب قیمت پر اعلیٰ معیار (کلاس اے) کے اپارٹمنٹس تیار کرتا ہے، ایسے منظم ادائیگی پلانز کے ساتھ جو بیرونِ ملک آپ کی زندگی کے مطابق ہوں۔ آپ کی خریداری کی تمام کاغذی کارروائی ہم خود سنبھالتے ہیں۔",
     "I’m looking for a home": "مجھے گھر چاہیے",
     "Partner with us": "ہمارے شراکت دار بنیں",
     "Our Approach": "ہمارا طریقہ",
     "Home ownership, made attainable.": "اپنا گھر، اب پہنچ میں۔",
     "For many Pakistanis working overseas, owning a home back in Karachi has felt out of reach, with developments priced for a few and payment terms that assume you live next door.": "بیرونِ ملک کام کرنے والے بہت سے پاکستانیوں کے لیے کراچی میں اپنا گھر خریدنا مشکل رہا ہے، کیونکہ زیادہ تر منصوبے چند لوگوں کی پہنچ میں ہوتے ہیں اور ادائیگی کی شرائط یہ فرض کرتی ہیں کہ آپ قریب ہی رہتے ہیں۔",
-    "NuraniHomes was founded to change that. We partner with established local developers to deliver well-built apartments at an accessible price, offered only to overseas Pakistani families under a clear and transparent process.": "نورانی ہومز اسی کو بدلنے کے لیے قائم کیا گیا۔ ہم معروف مقامی ڈویلپرز کے ساتھ مل کر مناسب قیمت پر مضبوط اپارٹمنٹس تیار کرتے ہیں، جو ایک واضح اور شفاف طریقے سے صرف بیرونِ ملک مقیم پاکستانی خاندانوں کو پیش کیے جاتے ہیں۔",
+    "NuraniHomes was founded to change that. We partner with established local developers to deliver Class A apartments at an affordable price, offered to overseas Pakistanis and international buyers under a clear and transparent process, with all the purchase paperwork organised for you.": "نورانی ہومز اسی کو بدلنے کے لیے قائم کیا گیا۔ ہم معروف مقامی ڈویلپرز کے ساتھ مل کر مناسب قیمت پر کلاس اے اپارٹمنٹس فراہم کرتے ہیں، جو بیرونِ ملک مقیم پاکستانیوں اور بین الاقوامی خریداروں کو ایک واضح اور شفاف طریقۂ کار کے تحت پیش کیے جاتے ہیں، اور خریداری کی تمام کاغذی کارروائی ہم آپ کے لیے کرتے ہیں۔",
     "Thoughtfully designed homes": "سوچ سمجھ کر بنائے گئے گھر",
     "Well-planned apartments designed for families, with a choice of sizes and furnishing options, priced within reach.": "خاندانوں کے لیے اچھی منصوبہ بندی سے بنے اپارٹمنٹس، مختلف سائز اور فرنیچر کے اختیارات کے ساتھ، مناسب قیمت پر۔",
     "Structured instalment plans": "آسان قسطوں کے منصوبے",
@@ -192,7 +192,7 @@
     "Pay from the Gulf": "خلیج سے ادائیگی",
     "Pay a deposit, then fixed monthly instalments during construction, in dirhams or US dollars. No bank loan needed.": "ڈاؤن پیمنٹ ادا کریں، پھر تعمیر کے دوران درہم یا امریکی ڈالر میں مقررہ ماہانہ اقساط۔ بینک قرض کی ضرورت نہیں۔",
     "Receive your home": "اپنا گھر حاصل کریں",
-    "On completion, your apartment is handed over and ownership is registered in your name in Pakistan.": "تعمیر مکمل ہونے پر اپارٹمنٹ آپ کے حوالے کیا جائے گا اور ملکیت پاکستان میں آپ کے نام رجسٹر ہوگی۔",
+    "On completion, your apartment is handed over and ownership is registered in your name. We organise all the paperwork, so you never need to deal with offices yourself.": "تعمیر مکمل ہونے پر اپارٹمنٹ آپ کے حوالے کیا جائے گا اور ملکیت آپ کے نام رجسٹر ہوگی۔ تمام کاغذی کارروائی ہم کرتے ہیں، آپ کو خود کسی دفتر کے چکر نہیں لگانے پڑیں گے۔",
     "This is our planned process. Full terms will be confirmed for each project before any booking is taken.": "یہ ہمارا منصوبہ بند طریقۂ کار ہے۔ ہر منصوبے کی مکمل شرائط کسی بھی بکنگ سے پہلے طے کی جائیں گی۔",
     "Our Promise": "ہمارا وعدہ",
     "Built on trust, designed for the families who build Pakistan from abroad.": "اعتماد پر قائم، اُن خاندانوں کے لیے جو بیرونِ ملک رہ کر پاکستان کو سنوارتے ہیں۔",
@@ -201,7 +201,9 @@
     "Is registering my interest a booking?": "کیا دلچسپی درج کرنا بکنگ ہے؟",
     "No. Registering is free and does not commit you to anything. We never ask for payment on this website.": "نہیں۔ دلچسپی درج کرنا مفت ہے اور آپ پر کوئی پابندی نہیں ڈالتا۔ ہم اس ویب سائٹ پر کبھی ادائیگی نہیں مانگتے۔",
     "Who can buy?": "کون خرید سکتا ہے؟",
-    "Overseas Pakistanis only: Pakistanis living and working outside Pakistan, including NICOP holders. We are starting with families in the UAE, Saudi Arabia, Qatar, Oman, Kuwait and Bahrain. We do not sell to buyers living in Pakistan.": "صرف بیرونِ ملک مقیم پاکستانی: وہ پاکستانی جو پاکستان سے باہر رہتے اور کام کرتے ہیں، بشمول نائیکوپ (NICOP) ہولڈرز۔ ہم متحدہ عرب امارات، سعودی عرب، قطر، عمان، کویت اور بحرین میں مقیم خاندانوں سے آغاز کر رہے ہیں۔ ہم پاکستان میں مقیم خریداروں کو فروخت نہیں کرتے۔",
+    "Anyone living and working outside Pakistan: overseas Pakistanis (including NICOP holders), Pakistan Origin Card holders and other foreign nationals. We will guide you through the right ownership route for your situation. We are starting with families in the UAE, Saudi Arabia, Qatar, Oman, Kuwait and Bahrain. We do not sell to buyers living in Pakistan.": "ہر وہ شخص جو پاکستان سے باہر رہتا اور کام کرتا ہے: بیرونِ ملک مقیم پاکستانی (بشمول نائیکوپ ہولڈرز)، پاکستان اوریجن کارڈ ہولڈرز اور دیگر غیر ملکی شہری۔ ہم آپ کی صورتحال کے مطابق ملکیت کے درست طریقے میں آپ کی رہنمائی کریں گے۔ ہم متحدہ عرب امارات، سعودی عرب، قطر، عمان، کویت اور بحرین میں مقیم خاندانوں سے آغاز کر رہے ہیں۔ ہم پاکستان میں مقیم خریداروں کو فروخت نہیں کرتے۔",
+    "Who handles the paperwork?": "کاغذی کارروائی کون کرے گا؟",
+    "We do. From your booking agreement through to registering ownership in your name, our team organises all the documentation for your purchase, so you don’t need to be in Pakistan or visit any offices yourself.": "ہم کریں گے۔ بکنگ کے معاہدے سے لے کر آپ کے نام ملکیت کی رجسٹریشن تک، ہماری ٹیم آپ کی خریداری کی تمام دستاویزات کا انتظام کرتی ہے، تاکہ آپ کو پاکستان آنے یا خود کسی دفتر جانے کی ضرورت نہ پڑے۔",
     "How will payments work?": "ادائیگی کیسے ہوگی؟",
     "We plan a deposit followed by fixed monthly instalments over about three years, paid from abroad in dirhams or US dollars. Exact terms will be confirmed for each project before any booking.": "ہمارا منصوبہ ہے کہ ڈاؤن پیمنٹ کے بعد تقریباً تین سال تک مقررہ ماہانہ اقساط ہوں، جو بیرونِ ملک سے درہم یا امریکی ڈالر میں ادا کی جائیں۔ ہر منصوبے کی حتمی شرائط کسی بھی بکنگ سے پہلے طے کی جائیں گی۔",
     "What happens to my money?": "میری رقم کا کیا ہوگا؟",
@@ -212,7 +214,7 @@
     "Construction typically takes around three years from launch. Each project will come with its own timeline.": "تعمیر میں عام طور پر آغاز سے تقریباً تین سال لگتے ہیں۔ ہر منصوبے کا اپنا ٹائم لائن ہوگا۔",
     "Register Your Interest": "اپنی دلچسپی درج کریں",
     "Begin your journey home.": "گھر کی طرف اپنا سفر شروع کریں۔",
-    "For overseas Pakistanis only. Tell us what you’re looking for and our team will be in touch. It takes two minutes.": "صرف بیرونِ ملک مقیم پاکستانیوں کے لیے۔ ہمیں بتائیں آپ کیا تلاش کر رہے ہیں، ہماری ٹیم آپ سے رابطہ کرے گی۔ اس میں دو منٹ لگتے ہیں۔",
+    "For buyers living outside Pakistan. Tell us what you’re looking for and our team will be in touch. It takes two minutes.": "پاکستان سے باہر مقیم خریداروں کے لیے۔ ہمیں بتائیں آپ کیا تلاش کر رہے ہیں، ہماری ٹیم آپ سے رابطہ کرے گی۔ اس میں صرف دو منٹ لگتے ہیں۔",
     "or email": "یا ای میل کریں",
 
     // Privacy page
@@ -221,8 +223,8 @@
     "Read our privacy notice": "ہمارا پرائیویسی نوٹس پڑھیں",
     "Last updated: 25 September 2026": "آخری تازہ کاری: 25 ستمبر 2026",
     "Who we are": "ہم کون ہیں",
-    "NuraniHomes is based in Dubai and is currently gauging interest in affordable homes in Karachi for overseas Pakistanis. You can contact us at":
-      "نورانی ہومز دبئی میں قائم ہے اور فی الحال بیرونِ ملک مقیم پاکستانیوں کے لیے کراچی میں کم قیمت گھروں میں دلچسپی کا اندازہ لگا رہا ہے۔ آپ ہم سے اس ای میل پر رابطہ کر سکتے ہیں:",
+    "NuraniHomes is based in Dubai and is currently gauging interest in Class A homes at an affordable price in Karachi, for overseas Pakistanis and international buyers. You can contact us at":
+      "نورانی ہومز دبئی میں قائم ہے اور فی الحال کراچی میں مناسب قیمت پر کلاس اے گھروں کے لیے بیرونِ ملک مقیم پاکستانیوں اور بین الاقوامی خریداروں کی دلچسپی کا اندازہ لگا رہا ہے۔ آپ ہم سے اس ای میل پر رابطہ کر سکتے ہیں:",
     "What we collect": "ہم کون سی معلومات جمع کرتے ہیں",
     "The details you enter in our interest forms, such as your name, WhatsApp number, country, work, the home you are looking for, budget ranges and any message.":
       "وہ معلومات جو آپ ہمارے فارم میں درج کرتے ہیں، جیسے آپ کا نام، واٹس ایپ نمبر، ملک، کام، آپ کو کیسا گھر چاہیے، بجٹ کی حد اور کوئی پیغام۔",
