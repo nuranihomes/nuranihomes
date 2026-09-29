@@ -2,6 +2,18 @@
    Visible text is swapped; the answers sent to the Sheet stay in English. */
 (function () {
   var UR = {
+    // ---- Sep-2026 deck alignment ----
+    "Meet us face to face in Dubai and pay in US dollars or dirhams on a monthly plan, with no bank loan needed. Our Pakistan company will handle approvals, your sale agreement and the transfer into your name.": "دبئی میں ہم سے براہِ راست ملیں اور ماہانہ پلان پر امریکی ڈالر یا درہم میں ادائیگی کریں، کسی بینک قرض کی ضرورت نہیں۔ ہماری پاکستانی کمپنی منظوریاں، آپ کا سیل ایگریمنٹ اور ملکیت کی آپ کے نام منتقلی سنبھالے گی۔",
+    "Well-built low-rise apartments handed over ready to move in, with fitted kitchens and wardrobes, air conditioning, solar backup, secure access and parking, in one, two and three-bedroom layouts.": "مضبوطی سے بنے کم منزلہ اپارٹمنٹس جو رہائش کے لیے مکمل تیار حالت میں حوالے کیے جائیں گے: فٹڈ کچن اور وارڈروب، ایئر کنڈیشننگ، سولر بیک اپ، محفوظ داخلہ اور پارکنگ، ایک، دو اور تین بیڈروم کے نقشوں میں۔",
+    "One, two and three-bedroom apartments in a low-rise building, handed over fitted and ready to move in, with an optional furniture pack. All three plans are drawn to the same scale.": "ایک کم منزلہ عمارت میں ایک، دو اور تین بیڈروم کے اپارٹمنٹس، جو فٹنگز کے ساتھ رہائش کے لیے تیار حوالے کیے جائیں گے، اور اختیاری فرنیچر پیکج کے ساتھ۔ تینوں نقشے ایک ہی پیمانے پر بنائے گئے ہیں۔",
+    "A first home · about 550 sq ft": "پہلا گھر · تقریباً 550 مربع فٹ",
+    "Our core family home · about 800 sq ft": "ہمارا بنیادی فیملی گھر · تقریباً 800 مربع فٹ",
+    "For larger families · about 1,050 sq ft": "بڑے خاندانوں کے لیے · تقریباً 1,050 مربع فٹ",
+    "We do. NuraniHomes will look after you in Dubai, and our Pakistan company will handle approvals, your sale agreement and registering ownership in your name, so you don’t need to be in Pakistan or visit any offices yourself.": "ہم کریں گے۔ نورانی ہومز دبئی میں آپ کی رہنمائی کرے گا، اور ہماری پاکستانی کمپنی منظوریاں، آپ کا سیل ایگریمنٹ اور ملکیت کی آپ کے نام رجسٹریشن سنبھالے گی، تاکہ آپ کو پاکستان میں موجود ہونے یا کسی دفتر جانے کی ضرورت نہ پڑے۔",
+    "Will the home be furnished?": "کیا گھر فرنشڈ ہوگا؟",
+    "Every home is handed over ready to move in, with a fitted kitchen and wardrobes, air conditioning and lighting. An optional furniture pack will also be offered when a project launches.": "ہر گھر رہائش کے لیے تیار حالت میں حوالے کیا جائے گا، فٹڈ کچن اور وارڈروب، ایئر کنڈیشننگ اور لائٹنگ کے ساتھ۔ منصوبے کے آغاز پر ایک اختیاری فرنیچر پیکج بھی پیش کیا جائے گا۔",
+    "We plan to open sales once the building plans are approved. Construction of a low-rise building then takes around two and a half years. Each project will come with its own timeline.": "ہم عمارت کے نقشوں کی منظوری کے بعد فروخت شروع کرنے کا ارادہ رکھتے ہیں۔ اس کے بعد ایک کم منزلہ عمارت کی تعمیر میں تقریباً ڈھائی سال لگتے ہیں۔ ہر منصوبے کا اپنا ٹائم لائن ہوگا۔",
+    "Interested in the optional furniture pack?": "کیا آپ اختیاری فرنیچر پیکج میں دلچسپی رکھتے ہیں؟",
     // ---- Sep-2026 DHA City update ----
     "Class A Homes · DHA City Karachi": "کلاس اے گھر · ڈی ایچ اے سٹی کراچی",
     "A Class A home in Karachi, for professionals in the Gulf.": "کراچی میں کلاس اے گھر، خلیج میں کام کرنے والے پروفیشنلز کے لیے۔",
