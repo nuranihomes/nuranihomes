@@ -29,8 +29,8 @@
     status.textContent = text[state] || '';
     if (state === 'unavailable' || state === 'unconfirmed') {
       var link = document.createElement('a');
-      link.href = 'mailto:anurani@nuranihomes.com';
-      link.textContent = 'anurani@nuranihomes.com';
+      link.href = 'mailto:info@nuranihomes.com';
+      link.textContent = 'info@nuranihomes.com';
       status.appendChild(link);
     }
   }

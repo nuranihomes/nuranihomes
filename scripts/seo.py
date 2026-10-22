@@ -26,7 +26,7 @@ def generate():
         description = html.unescape(description.group(1))
         text = re.sub(r'<meta property="og:url" content="[^"]*">', '<meta property="og:url" content="' + url + '">', text)
         graph = [
-            {'@type': 'Organization', '@id': ORIGIN + '/#org', 'name': 'NuraniHomes', 'alternateName': 'نورانی', 'url': ORIGIN + '/', 'logo': ORIGIN + '/icon-512.png', 'email': 'anurani@nuranihomes.com'},
+            {'@type': 'Organization', '@id': ORIGIN + '/#org', 'name': 'NuraniHomes', 'alternateName': 'نورانی', 'url': ORIGIN + '/', 'logo': ORIGIN + '/icon-512.png', 'email': 'info@nuranihomes.com'},
             {'@type': 'WebSite', '@id': ORIGIN + '/#website', 'name': 'NuraniHomes', 'url': ORIGIN + '/', 'publisher': {'@id': ORIGIN + '/#org'}},
             {'@type': 'WebPage', '@id': url + '#webpage', 'url': url, 'name': title, 'isPartOf': {'@id': ORIGIN + '/#website'}, 'inLanguage': 'en'}
         ]

@@ -81,7 +81,7 @@ const liveFonts = process.env.NH_BROWSER_LIVE_FONTS === '1';
         await page.setContent(fs.readFileSync(path.join(root,'index.html'),'utf8'));
         assert.equal(await page.locator('h1').count(),1);
         assert.equal(await page.locator('#interest').isVisible(),false);
-        assert.equal(await page.locator('a[href="mailto:anurani@nuranihomes.com"]').count() > 0,true);
+        assert.equal(await page.locator('a[href="mailto:info@nuranihomes.com"]').count() > 0,true);
         await noJS.close();
       }
       await context.close();

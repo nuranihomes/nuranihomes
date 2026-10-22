@@ -41,7 +41,7 @@ test('opaque response never confirms receipt; duplicate submits blocked; attribu
     c.w.document.querySelector('[data-lang=ur]').click();
     assert.match(c.status.textContent, /تصدیق/);
     assert.equal(c.button.disabled, true);
-    assert.equal(c.status.querySelector('a').href, 'mailto:anurani@nuranihomes.com');
+    assert.equal(c.status.querySelector('a').href, 'mailto:info@nuranihomes.com');
   } finally { c.dom.window.close(); }
 });
 test('network failure does not invite a duplicate submission', async () => {
