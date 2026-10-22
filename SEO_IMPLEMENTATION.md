@@ -28,4 +28,4 @@ Crawlability, accurate text and consistent structured data support discovery, bu
 - Existing SVG artwork/icons/social image are retained. No unmeasured image compression or font change is claimed.
 - Before publication: approve existing claims, inspect mobile/desktop with real fonts, confirm host redirects, HTTP 404 behavior, TLS/cache headers, then check live HTML against branch assets.
 - After approved release: Search Console > URL inspection > Test live URL for all indexable routes; validate structured data with Schema.org Validator, submit `https://nuranihomes.com/sitemap.xml`, inspect Pages indexing and Core Web Vitals.
-- DNS, canonical host redirects and Search Console property status were not verified in this session. No sitemap was submitted.
+- The live www host redirects to apex, and Squarespace nameservers were identified. DNS ownership and Search Console property status remain unverified. No sitemap was submitted.

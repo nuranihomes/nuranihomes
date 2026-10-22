@@ -13,13 +13,15 @@ Evidence date: 2026-10-22. Repository: `nuranihomes/nuranihomes`. Branch: `codex
 
 ## Discovery and evidence limits
 
-macOS Darwin arm64; Git 2.51.2; Node 25.9.0; npm 11.12.1; `gh` available. `gh auth status` reported invalid authentication, but outbound DNS is also blocked, so credential validity cannot be independently diagnosed here. Both connected GitHub accounts report `pull:true`, `push:false` for this repository. No matching local project/context or Nurani credential-map entry was found.
+macOS Darwin arm64; Git 2.51.2; Node 25.9.0; npm 11.12.1. Initial sandbox networking prevented normal clone/authentication and Chromium launch. Those environment restrictions were lifted later on 2026-10-22. GitHub invitation accepted and repository `push:true` verified through the API. No account password was used by the agent.
 
-Normal clone failed because the terminal could not resolve github.com. The exact signed upstream commit, tree and all 18 blobs were recovered through the GitHub integration and verified against Git SHA-1 object IDs. This is a genuine shallow checkout, not a recreated baseline commit. Earlier history is not locally available.
+The exact signed upstream commit, tree and all 18 blobs were initially recovered through the GitHub integration and verified against Git SHA-1 object IDs. This is a genuine shallow checkout. Remote main still matches the upstream base; earlier history is not locally available.
 
-Independent live inspection was attempted at www/apex HTTPS, robots.txt and the GitHub Pages URL. Web fetch failed; terminal DNS failed; `dig` was denied socket access. Therefore live HTTP codes, TLS, redirects, DNS provider/records, current HTML, broken external links, cache headers and performance scores remain **unverified**. Repository/domain correspondence is strongly supported by CNAME and the Pages run, but byte-level production parity is **not established**. Do not interpret the tooling failures as a website outage.
+Live recheck: all five HTML pages plus robots.txt, sitemap.xml, lang.js and form-endpoint.js return HTTP 200 and match the upstream base byte-for-byte. HTTPS www redirects 301 to apex. A nonexistent route returns 404; `/index.html` and extensionless `/buyers` also resolve, making canonical tags relevant. GitHub Pages responses carry `Cache-Control: max-age=600`. TLS requests passed normal certificate validation.
 
-Chromium launch failed with macOS sandbox `bootstrap_check_in ... Permission denied`. Desktop/mobile screenshots, real font layout, contrast and browser interaction checks are pending. DOM tests do not prove rendered mobile quality.
+Nameservers identify Squarespace DNS. Public NS/A/AAAA/MX/TXT/CAA records and www records were saved locally; this is not a complete provider-zone export. No Google or Meta verification TXT marker was returned in the queried apex records. That does not establish whether a Search Console property or another verification method exists. DNS was not changed.
+
+Browser recheck found existing horizontal overflow at 320px in the language/header controls. The branch wraps those controls below the logo on screens up to 400px. All 40 page/viewport/language checks now pass with live Google Fonts, plus two mocked form flows; mobile and desktop screenshots were visually inspected. Real lead persistence and Search Console/account ownership remain unverified. No real form was submitted.
 
 ## Findings by business impact
 
@@ -31,19 +33,19 @@ Chromium launch failed with macOS sandbox `bootstrap_check_in ... Permission den
 | P1 | No form email validity check; hidden partner fieldsets still submitted stale values | Validation and disabled inactive fieldsets implemented, covered by mocked tests. Client checks do not replace server validation. |
 | P2 | No canonical on any page; privacy/thank-you lacked descriptions; thank-you OG URL pointed home | Generated canonical/social metadata and missing descriptions added. Existing claims in metadata still require approval. |
 | P2 | robots blocked thank-you but page had no noindex; sitemap lastmod was stale | Added crawlable noindex; regenerated four-page sitemap without invented modification dates. |
-| P2 | Missing main landmarks, no H1 on privacy/thank-you, unnamed option groups | Semantic headings/landmarks, skip link, group labels, error focus and reduced-motion support implemented. Visual verification pending. |
+| P2 | Missing main landmarks, no H1 on privacy/thank-you, unnamed option groups | Semantic headings/landmarks, skip link, group labels, error focus and reduced-motion support implemented. Mobile/desktop browser checks passed. |
 | P2 | Only `src`/`utm_source` recorded at direct form entry | Attribution across homepage navigation and full UTM fields remain a preparation item, not a working analytics integration. |
 | P2 | No test/build process; engineering docs could enter Pages output | Added reproducible checks, public-asset build allowlist and Jekyll exclusions. Remote CI and exclusions still need hosted verification. |
 | P3 | Repeated inline CSS; external English/Urdu fonts | No measured bottleneck available. Retained branding/fonts; defer CSS extraction and font self-hosting until browser measurements justify them. |
 
 ## Security
 
-No private-key material, credential files, server secrets, exposed admin route or privileged API key was identified in the inspected base tree. The Apps Script URL and Cloudflare beacon identifier are public client configuration, not server credentials. Full historic secret scanning and fresh dependency-advisory lookup are not complete; no rotation or history rewrite was performed.
+No private-key material, credential files, server secrets, exposed admin route or privileged API key was identified in the inspected base tree. The Apps Script URL and Cloudflare beacon identifier are public client configuration, not server credentials. Full historic secret scanning is not complete; no rotation or history rewrite was performed.
 
-No production npm dependencies. Test-only packages are lockfile-pinned and installed from the local cache with lifecycle scripts disabled. Offline `npm audit --omit=dev` reported zero findings; this does not establish that development dependencies are free of current vulnerabilities. Refresh their advisory audit before CI/release. Legacy jsdom transitive packages emitted deprecation warnings.
+No production npm dependencies. Test-only packages are lockfile-pinned and installed from the local cache with lifecycle scripts disabled. A fresh online `npm audit` including development packages reported zero vulnerabilities on 2026-10-22. This is an advisory database check, not proof of absence of all vulnerabilities. Legacy jsdom transitive packages emitted deprecation warnings.
 
 Server review must cover allowlisted fields, types/lengths, consent, body limits, rate limits, abuse controls, deduplication and spreadsheet formula injection. Do not put API tokens in browser files. Review Google Fonts, existing analytics and data transfers with counsel. Referrer policy now limits cross-origin referrer detail.
 
 ## Local verification
 
-`npm ci --offline --ignore-scripts --no-audit --no-fund`, `npm test`, `npm run build` and `git diff --check` are the release candidate checks. Final results are recorded in NEXT_STEPS.md. The static check covers five pages/four sitemap URLs, local paths/fragments, metadata, schema JSON and landmarks. Browser/production/backend checks remain separate gates.
+`npm ci --offline --ignore-scripts --no-audit --no-fund`, `npm test`, `npm run build` and `git diff --check` are the release candidate checks. Final results are recorded in NEXT_STEPS.md. The static check covers five pages/four sitemap URLs, local paths/fragments, metadata, schema JSON and landmarks. Browser checks and production baseline comparison now pass; backend persistence remains a separate gate.

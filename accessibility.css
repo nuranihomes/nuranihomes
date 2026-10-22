@@ -2,6 +2,10 @@
 .skip-link { position: absolute; inset-inline-start: 16px; top: -100px; z-index: 10; padding: 12px 18px; color: #faf7f1; background: #123c32; }
 .skip-link:focus { top: 12px; }
 :focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+@media (max-width: 400px) {
+  header > .wrap, .page-head .top { flex-wrap: wrap; }
+  header .top-right, .page-head .top-right { flex-basis: 100%; }
+}
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
