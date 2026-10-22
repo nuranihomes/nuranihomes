@@ -2,6 +2,7 @@
    Visible text is swapped; the answers sent to the Sheet stay in English. */
 (function () {
   var UR = {
+    "Skip to content": "مرکزی مواد پر جائیں",
     "Our first project runs in two stages: we secure DHA City land first, and build only once approvals and pre-sales are in place. We'll contact you to arrange a private conversation. We don't publish investment terms on this website.": "ہمارا پہلا پراجیکٹ دو مراحل میں ہے: ہم پہلے ڈی ایچ اے سٹی میں زمین حاصل کرتے ہیں، اور تعمیر صرف منظوریوں اور ابتدائی فروخت کے بعد شروع کرتے ہیں۔ ہم ایک نجی گفتگو کے لیے آپ سے رابطہ کریں گے۔ ہم اس ویب سائٹ پر سرمایہ کاری کی شرائط شائع نہیں کرتے۔",
     "DHA / SBCA approvals held for these projects": "ان منصوبوں کے لیے ڈی ایچ اے / ایس بی سی اے منظوریاں",
     "To retire into": "ریٹائرمنٹ کے بعد رہنے کے لیے",
@@ -349,12 +350,14 @@
   var MSG = {
     en: {
       incomplete: function (list) { return "Please complete: " + list.join(", ") + "."; },
+      unconfirmed: "We could not confirm receipt of your answers. Please email anurani@nuranihomes.com before submitting again.",
       notConnected: "This form is not connected yet. Please email anurani@nuranihomes.com.",
       failed: "We couldn't send your answers. Check your connection and try again.",
       sending: "Sending…", submit: "Submit"
     },
     ur: {
       incomplete: function () { return "براہِ کرم تمام لازمی سوالات (*) مکمل کریں۔"; },
+      unconfirmed: "آپ کے جوابات موصول ہونے کی تصدیق نہیں ہو سکی۔ دوبارہ جمع کرانے سے پہلے براہِ کرم anurani@nuranihomes.com پر ای میل کریں۔",
       notConnected: "یہ فارم ابھی منسلک نہیں ہے۔ براہِ کرم anurani@nuranihomes.com پر ای میل کریں۔",
       failed: "ہم آپ کے جوابات نہیں بھیج سکے۔ انٹرنیٹ کنکشن چیک کر کے دوبارہ کوشش کریں۔",
       sending: "بھیجا جا رہا ہے…", submit: "جمع کرائیں"
