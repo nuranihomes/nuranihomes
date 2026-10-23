@@ -1,0 +1,51 @@
+{
+  "status": "Prepared, not distributed. Approval and working lead delivery required before promotion.",
+  "objective": {
+    "real_visits": 2501,
+    "measurement_period": "Owner confirmation pending",
+    "baseline": null,
+    "forecast": null,
+    "paid_budget_approved": false
+  },
+  "measurement_access_needed": "Existing Cloudflare Web Analytics dashboard; GA4 or Search Console status not verified.",
+  "links": [
+    {
+      "channel": "Company Facebook page, once available",
+      "url": "https://nuranihomes.com/?utm_source=facebook&utm_medium=organic-social&utm_campaign=company-launch"
+    },
+    {
+      "channel": "Company Instagram profile, once available",
+      "url": "https://nuranihomes.com/?utm_source=instagram&utm_medium=organic-social&utm_campaign=company-launch"
+    },
+    {
+      "channel": "Approved partner referral",
+      "url": "https://nuranihomes.com/?utm_source=partner&utm_medium=referral&utm_campaign=company-launch"
+    },
+    {
+      "channel": "Consented WhatsApp introduction",
+      "url": "https://nuranihomes.com/?utm_source=whatsapp&utm_medium=referral&utm_campaign=company-launch"
+    }
+  ],
+  "funnel": [
+    "Real visits, excluding internal tests",
+    "Enquiry attempts",
+    "Confirmed saved leads",
+    "Qualified leads",
+    "Meetings"
+  ],
+  "counting_rule": "Do not count manual test emails, opaque form responses, bot traffic or page refreshes as leads. Compare visits and leads over the same date window.",
+  "release_requirements": [
+    "Confirm legal position for intended marketing",
+    "Verify the existing form writes once to the intended lead sheet",
+    "Confirm team notification and acknowledgement delivery",
+    "Approve website publication",
+    "Approve each public post before distribution"
+  ],
+  "search_topics_to_validate": [
+    "Saima Shield Towers project details",
+    "Saima Shield Towers location",
+    "Saima Shield Towers payment schedule",
+    "Saima Shield Towers approvals"
+  ],
+  "content_gate": "Only publish factual project answers backed by current approved documents. No invented prices, room counts, returns or search-volume estimates."
+}

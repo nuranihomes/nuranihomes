@@ -21,7 +21,7 @@ const liveFonts = process.env.NH_BROWSER_LIVE_FONTS === '1';
         const types = {'.html':'text/html','.js':'application/javascript','.css':'text/css','.png':'image/png','.svg':'image/svg+xml','.jpg':'image/jpeg','.ico':'image/x-icon','.webmanifest':'application/manifest+json'};
         return route.fulfill({contentType: types[path.extname(file)] || 'text/plain', body: fs.readFileSync(file)});
       });
-      for (const name of ['index','privacy','thank-you']) {
+      for (const name of ['index','privacy','thank-you','saima-shield-towers']) {
         const page = await context.newPage(), errors = [];
         page.on('pageerror', e => errors.push(e.message));
         await page.goto('https://nurani.test/' + name + '.html');
@@ -32,13 +32,13 @@ const liveFonts = process.env.NH_BROWSER_LIVE_FONTS === '1';
           assert.equal(await page.locator('h1').count(), 1);
           assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth+1), true, `${name}/${width}/${lang} overflow`);
           await page.screenshot({path: path.resolve(__dirname, `../.local/screenshots/launch-${name}-${width}-${lang}.png`), fullPage: true});
-          if (name === 'index' && width === 390) {
+          if (['index','saima-shield-towers'].includes(name) && width === 390) {
             await page.locator('header').screenshot({path: path.resolve(__dirname, `../.local/screenshots/launch-header-${lang}.png`)});
             await page.locator('.card').screenshot({path: path.resolve(__dirname, `../.local/screenshots/launch-card-${lang}.png`)});
           }
           checked++;
         }
-        if (name === 'index' && width === 390) {
+        if (['index','saima-shield-towers'].includes(name) && width === 390) {
           await page.locator('[data-lang=en]').click();
           const sent = [];
           await page.route('https://script.google.com/**', async route => {
@@ -58,7 +58,7 @@ const liveFonts = process.env.NH_BROWSER_LIVE_FONTS === '1';
           await page.getByText('We could not confirm receipt', {exact:false}).waitFor();
           assert.equal(sent.length,1);
           assert.equal(await page.locator('.submit').isDisabled(),true);
-          assert.equal(new URL(page.url()).pathname,'/index.html');
+          assert.equal(new URL(page.url()).pathname,'/' + name + '.html');
           await page.locator('[data-lang=ur]').click();
           await page.locator('#form-error').filter({hasText:'تصدیق'}).waitFor();
           await page.screenshot({path:path.resolve(__dirname,'../.local/screenshots/launch-form-result-390-ur.png'),fullPage:true});

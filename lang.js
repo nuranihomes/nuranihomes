@@ -308,6 +308,7 @@
     "or email": "یا ای میل کریں",
 
     // Privacy page
+    "Campaign labels from the link you used, where supplied.": "اگر موجود ہوں تو، آپ کے استعمال کردہ لنک سے مہم کی شناختی معلومات۔",
     "Privacy": "پرائیویسی",
     "Privacy notice": "پرائیویسی نوٹس",
     "Read our privacy notice": "ہمارا پرائیویسی نوٹس پڑھیں",

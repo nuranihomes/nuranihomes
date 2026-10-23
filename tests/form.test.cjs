@@ -2,13 +2,14 @@ const {test} = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const {JSDOM} = require('jsdom');
-function setup(search = '') {
-  const dom = new JSDOM(fs.readFileSync('index.html', 'utf8'), {
-    url: 'https://nuranihomes.com/' + search, runScripts: 'dangerously'
+function setup(search = '', page = 'index.html') {
+  const dom = new JSDOM(fs.readFileSync(page, 'utf8'), {
+    url: 'https://nuranihomes.com/' + (page === 'index.html' ? '' : page) + search, runScripts: 'dangerously'
   });
   const w = dom.window, calls = [];
   w.NH_FORM_ENDPOINT = 'https://script.google.com/macros/s/TEST_ONLY/exec';
   w.fetch = async (url, options) => { calls.push({url, options}); return {type: 'opaque', status: 0}; };
+  w.eval(fs.readFileSync('attribution.js', 'utf8'));
   w.eval(fs.readFileSync('forms.js', 'utf8'));
   const form = w.document.querySelector('#interest');
   form.elements.name.value = 'Test Only';
@@ -77,5 +78,38 @@ test('honeypot makes no request or success redirect', () => {
   const c = setup(); try {
     c.form.elements.company_website.value = 'bot'; c.submit();
     assert.equal(c.calls.length, 0); assert.equal(c.w.location.pathname, '/');
+  } finally { c.dom.window.close(); }
+});
+
+for (const query of ['', '?utm_source=partner&utm_medium=referral&utm_campaign=company-launch']) {
+  test('project enquiry keeps project context and campaign: ' + query, async () => {
+    const c = setup(query, 'saima-shield-towers.html'); try {
+      c.submit(); await c.settle();
+      assert.equal(c.calls.length, 1);
+      const data = c.calls[0].options.body;
+      assert.equal(data.get('project'), 'saima-shield-towers');
+      assert.equal(data.get('source'), query ? 'partner' : 'saima-shield-towers');
+      assert.equal(data.get('utm_campaign'), query ? 'company-launch' : null);
+      assert.match(c.status.textContent, /could not confirm receipt/);
+      assert.equal(c.button.disabled, true);
+    } finally { c.dom.window.close(); }
+  });
+}
+test('campaign survives home to project navigation without carrying personal query data', () => {
+  const c = setup('?utm_source=partner&utm_medium=referral&utm_campaign=company-launch&email=test@example.invalid&token=private'); try {
+    const url = new URL(c.w.document.querySelector('a[href*="saima-shield-towers.html"]').href);
+    assert.equal(url.searchParams.get('utm_source'), 'partner');
+    assert.equal(url.searchParams.get('utm_medium'), 'referral');
+    assert.equal(url.searchParams.get('utm_campaign'), 'company-launch');
+    assert.equal(url.searchParams.has('email'), false);
+    assert.equal(url.searchParams.has('token'), false);
+  } finally { c.dom.window.close(); }
+});
+test('free text, email and URLs are excluded from campaign fields', async () => {
+  const c = setup('?utm_source=test%40example.invalid&utm_campaign=https%3A%2F%2Fexample.invalid&utm_content=private%20message'); try {
+    c.submit(); await c.settle();
+    const data = c.calls[0].options.body;
+    assert.equal(data.get('source'), '');
+    for (const key of ['utm_source','utm_campaign','utm_content']) assert.equal(data.has(key), false);
   } finally { c.dom.window.close(); }
 });
