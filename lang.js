@@ -108,8 +108,8 @@
     "About you": "آپ کے بارے میں",
     "Anything else you'd like us to know?": "کوئی اور بات جو آپ ہمیں بتانا چاہیں؟",
     "Anything else you'd like to tell us?": "کوئی اور بات جو آپ ہمیں بتانا چاہیں؟",
-    "We use your details only to contact you about NuraniHomes and to understand demand. We never sell or share them. Email anurani@nuranihomes.com to have them removed at any time.":
-      "ہم آپ کی معلومات صرف نورانی ہومز کے بارے میں آپ سے رابطے اور طلب کو سمجھنے کے لیے استعمال کرتے ہیں۔ ہم انہیں کبھی فروخت یا شیئر نہیں کرتے۔ اپنی معلومات ہٹوانے کے لیے کسی بھی وقت anurani@nuranihomes.com پر ای میل کریں۔",
+    "We use your details only to contact you about NuraniHomes and to understand demand. We never sell or share them. Email info@nuranihomes.com to have them removed at any time.":
+      "ہم آپ کی معلومات صرف نورانی ہومز کے بارے میں آپ سے رابطے اور طلب کو سمجھنے کے لیے استعمال کرتے ہیں۔ ہم انہیں کبھی فروخت یا شیئر نہیں کرتے۔ اپنی معلومات ہٹوانے کے لیے کسی بھی وقت info@nuranihomes.com پر ای میل کریں۔",
 
     // Buyer form
     "For Homebuyers": "خریداروں کے لیے",
@@ -308,6 +308,7 @@
     "or email": "یا ای میل کریں",
 
     // Privacy page
+    "Campaign labels from the link you used, where supplied.": "اگر موجود ہوں تو، آپ کے استعمال کردہ لنک سے مہم کی شناختی معلومات۔",
     "Privacy": "پرائیویسی",
     "Privacy notice": "پرائیویسی نوٹس",
     "Read our privacy notice": "ہمارا پرائیویسی نوٹس پڑھیں",
@@ -349,13 +350,13 @@
   var MSG = {
     en: {
       incomplete: function (list) { return "Please complete: " + list.join(", ") + "."; },
-      notConnected: "This form is not connected yet. Please email anurani@nuranihomes.com.",
+      notConnected: "This form is not connected yet. Please email info@nuranihomes.com.",
       failed: "We couldn't send your answers. Check your connection and try again.",
       sending: "Sending…", submit: "Submit"
     },
     ur: {
       incomplete: function () { return "براہِ کرم تمام لازمی سوالات (*) مکمل کریں۔"; },
-      notConnected: "یہ فارم ابھی منسلک نہیں ہے۔ براہِ کرم anurani@nuranihomes.com پر ای میل کریں۔",
+      notConnected: "یہ فارم ابھی منسلک نہیں ہے۔ براہِ کرم info@nuranihomes.com پر ای میل کریں۔",
       failed: "ہم آپ کے جوابات نہیں بھیج سکے۔ انٹرنیٹ کنکشن چیک کر کے دوبارہ کوشش کریں۔",
       sending: "بھیجا جا رہا ہے…", submit: "جمع کرائیں"
     }

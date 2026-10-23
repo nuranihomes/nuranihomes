@@ -1,0 +1,14 @@
+.local/
+node_modules/
+dist/
+.env*
+*.jks
+*.keystore
+key.properties
+*.p8
+*.p12
+*.pem
+*.session
+*service-account*.json
+*service_account*.json
+.DS_Store

@@ -1,0 +1,16 @@
+# GitHub Pages builds with Jekyll. Keep engineering documents out of the website.
+exclude:
+  - AUDIT.md
+  - SEO_IMPLEMENTATION.md
+  - DIGITAL_INFRASTRUCTURE.md
+  - INTEGRATIONS_CHECKLIST.md
+  - COMPLIANCE_BLOCKERS.md
+  - NEXT_STEPS.md
+  - scripts
+  - tests
+  - package.json
+  - package-lock.json
+  - node_modules
+  - dist
+  - .local
+  - research

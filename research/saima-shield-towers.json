@@ -1,0 +1,33 @@
+{
+  "checked_on": "2026-10-23",
+  "purpose": "Internal source review. Not a public listing or permission to market.",
+  "developer_source": "https://saimabuilders.net/projects/saima-shield-towers/",
+  "developer_published_facts": {
+    "name": "Saima Shield Towers",
+    "city": "Karachi",
+    "type": "Residential",
+    "status": "Under construction",
+    "location_reference": "W4QQ+RQV, Zoramin Residency Society, Karachi"
+  },
+  "owner_source": {
+    "repository_commit": "f559095",
+    "status": "Under review, not yet for sale"
+  },
+  "documents_not_provided": [
+    "Project-specific SBCA approval and NOC",
+    "Land-title due diligence",
+    "Developer marketing authorisation",
+    "Approved apartment plans and current availability",
+    "Dated price list and payment schedule",
+    "Confirmed handover terms",
+    "UAE marketing permission and brokerage status"
+  ],
+  "owner_page_claims_not_independently_verified": [
+    "2 and 3 bedrooms and bathroom counts",
+    "42 monthly and 14 quarterly instalments",
+    "Drive times of 2 to 20 minutes",
+    "Price comparison with DHA and Clifton"
+  ],
+  "research_decision": "Keep owner copy in review; do not add prices, guaranteed returns, paid campaigns or claim approvals. Obtain supporting documents before publishing new commercial claims.",
+  "lead_delivery_blocker": "Existing Apps Script returns an unreadable opaque response. Need access to the deployed script and destination sheet to verify persistence and notification receipt. A manually sent email does not validate this flow."
+}
