@@ -106,6 +106,29 @@
   .points h3{font-size:21px;color:var(--green-deep);margin-bottom:10px}
   .points p{margin:0;color:var(--muted)}
 
+  .projects{background:var(--sand)}
+  .proj-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px 40px}
+  .proj-head p{margin:16px 0 0;color:var(--muted-2);font-size:18px;max-width:640px}
+  .proj{margin-top:48px;background:var(--ivory);border-radius:20px;overflow:hidden;display:flex;flex-wrap:wrap}
+  .proj-art{flex:1 1 300px;background:var(--green-deep);display:flex;align-items:flex-end;justify-content:center;min-height:260px;padding:32px 24px 0}
+  .proj-art svg{width:100%;max-width:300px;height:auto;display:block}
+  .proj-body{flex:999 1 420px;min-width:0;padding:36px}
+  .status{display:inline-flex;align-items:center;gap:8px;background:#efe4cf;color:var(--gold-text);border-radius:999px;padding:5px 14px;font-size:13px;font-weight:700;letter-spacing:.5px}
+  .status i{width:8px;height:8px;border-radius:50%;background:var(--gold)}
+  .proj-body h3{font-family:var(--serif);font-size:34px;font-weight:600;color:var(--green-deep);margin:16px 0 4px;line-height:1.1}
+  html[dir=rtl] .proj-body h3{font-family:var(--urdu);line-height:1.8;font-size:28px}
+  .proj-body .where{margin:0;color:var(--muted)}
+  .facts{list-style:none;padding:0;margin:24px 0 28px;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px 24px}
+  .facts li{border-top:1px solid var(--line);padding-top:12px}
+  .facts b{display:block;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:var(--gold-text)}
+  html[dir=rtl] .facts b{letter-spacing:0}
+  .facts span{color:var(--ink)}
+  .proj-ctas{display:flex;flex-wrap:wrap;gap:12px}
+  .btn-green{background:var(--green-deep);color:var(--ivory)}
+  .btn-green:hover{background:#163f35}
+  .btn-ghost{border:1px solid var(--green);color:var(--green-deep);font-weight:400}
+  .btn-ghost:hover{background:rgba(18,60,50,.06)}
+
   .register{background:var(--green);color:var(--ivory)}
   .register h2{color:var(--ivory)}
   .register .eyebrow{color:var(--gold-soft)}
@@ -116,7 +139,7 @@
   .fields .wide{grid-column:1/-1}
   .fields input,.fields select{font:inherit;font-weight:400;border:1px solid #b9b09e;border-radius:10px;padding:12px 14px;min-height:48px;background:#fff;color:var(--ink)}
   .req{color:#9a3412}
-  .hp{position:absolute;left:-9999px}
+  .hp{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
   .submit{margin-top:24px;width:100%;background:var(--green-deep);color:var(--ivory);border:0;border-radius:999px;padding:16px 24px;min-height:52px;font:inherit;font-weight:700;font-size:17px;cursor:pointer}
   .submit:hover{background:#163f35}
   .submit:disabled{opacity:.7;cursor:default}
@@ -139,7 +162,7 @@
   footer .small a{color:#9fb0a8}
 
   @media (max-width:860px){nav.main{display:none}}
-  @media (max-width:760px){.hero-art{display:none}.hero{padding:40px 0 72px}section.block{padding:72px 0}.card{padding:24px}}
+  @media (max-width:760px){.proj-body{padding:24px}.hero-art{display:none}.hero{padding:40px 0 72px}section.block{padding:72px 0}.card{padding:24px}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"RealEstateAgent","name":"NuraniHomes","url":"https://nuranihomes.com/","email":"anurani@nuranihomes.com","telephone":"+971524498297","areaServed":["Karachi","United Arab Emirates"],"logo":"https://nuranihomes.com/icon-512.png"}
@@ -156,6 +179,7 @@
     <nav class="main" aria-label="Main">
       <a href="#how" data-k="navHow">How it works</a>
       <a href="#standards" data-k="navStandards">Our standards</a>
+      <a href="#projects" data-k="navProjects">Projects</a>
       <a href="#why" data-k="navWhy">Why off-plan</a>
       <a href="#faq" data-k="navFaq">FAQ</a>
     </nav>
@@ -257,6 +281,46 @@
   </div>
 </section>
 
+<section id="projects" class="block projects">
+  <div class="wrap">
+    <div class="proj-head">
+      <div>
+        <p class="eyebrow" data-k="projEyebrow">Projects under review</p>
+        <h2 data-k="projTitle" style="max-width:640px">The first projects we are looking at.</h2>
+        <p data-k="projIntro">We share the projects we are reviewing so you can see what is coming. None of them is on sale through NuraniHomes yet.</p>
+      </div>
+    </div>
+    <article class="proj">
+      <div class="proj-art">
+        <svg viewBox="0 0 300 220" aria-hidden="true">
+          <g fill="#183f35" stroke="#d8bf94" stroke-width="2">
+            <rect x="30" y="70" width="70" height="150"/><rect x="115" y="20" width="72" height="200"/><rect x="202" y="50" width="70" height="170"/>
+          </g>
+          <g fill="#d8bf94" opacity=".8">
+            <rect x="42" y="86" width="16" height="10"/><rect x="72" y="86" width="16" height="10" opacity=".4"/><rect x="42" y="112" width="16" height="10" opacity=".4"/><rect x="72" y="112" width="16" height="10"/><rect x="42" y="138" width="16" height="10"/><rect x="72" y="138" width="16" height="10"/><rect x="42" y="164" width="16" height="10"/><rect x="72" y="164" width="16" height="10" opacity=".4"/>
+            <rect x="128" y="38" width="16" height="10"/><rect x="158" y="38" width="16" height="10"/><rect x="128" y="64" width="16" height="10" opacity=".4"/><rect x="158" y="64" width="16" height="10"/><rect x="128" y="90" width="16" height="10"/><rect x="158" y="90" width="16" height="10" opacity=".4"/><rect x="128" y="116" width="16" height="10"/><rect x="158" y="116" width="16" height="10"/><rect x="128" y="142" width="16" height="10" opacity=".4"/><rect x="158" y="142" width="16" height="10"/><rect x="128" y="168" width="16" height="10"/><rect x="158" y="168" width="16" height="10"/>
+            <rect x="214" y="66" width="16" height="10" opacity=".4"/><rect x="244" y="66" width="16" height="10"/><rect x="214" y="92" width="16" height="10"/><rect x="244" y="92" width="16" height="10"/><rect x="214" y="118" width="16" height="10"/><rect x="244" y="118" width="16" height="10" opacity=".4"/><rect x="214" y="144" width="16" height="10"/><rect x="244" y="144" width="16" height="10"/><rect x="214" y="170" width="16" height="10" opacity=".4"/><rect x="244" y="170" width="16" height="10"/>
+          </g>
+        </svg>
+      </div>
+      <div class="proj-body">
+        <span class="status"><i></i><span data-k="projStatus">Under review · not yet for sale</span></span>
+        <h3 data-k="saimaName">Saima Shield Towers</h3>
+        <p class="where" data-k="saimaWhere">Gulshan-e-Iqbal, Karachi · by Saima Builders &amp; Developers</p>
+        <ul class="facts">
+          <li><b data-k="factHomesL">Homes</b><span data-k="factHomes">2 and 3 bedroom apartments</span></li>
+          <li><b data-k="factPayL">Payment</b><span data-k="factPay">Instalments over about 4 years</span></li>
+          <li><b data-k="factSiteL">Setting</b><span data-k="factSite">Gated, multi-tower community</span></li>
+        </ul>
+        <div class="proj-ctas">
+          <a class="btn btn-green" href="/saima-shield-towers.html" data-k="projView">View project</a>
+          <a class="btn btn-ghost" href="/saima-shield-towers.html#interest" data-k="projNotify">Tell me when it is available</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
 <section id="register" class="block register">
   <div class="wrap two">
     <div class="side">
@@ -323,7 +387,7 @@
   <div class="wrap">
     <h2 data-k="faqTitle">Questions</h2>
     <div class="qa"><h3 data-k="q1">Is NuraniHomes licensed?</h3><p data-k="a1">We are applying for our Dubai brokerage licence and RERA approval to market Karachi property from the UAE. Until those are in place, we are only collecting interest, and nothing on this site is an offer to sell.</p></div>
-    <div class="qa"><h3 data-k="q2">Who are your developers?</h3><p data-k="a2">We work with established Karachi developers. We will publish each project, with its approvals, once it is cleared for marketing in the UAE.</p></div>
+    <div class="qa"><h3 data-k="q2">Who are your developers?</h3><p data-k="a2">We work with established Karachi developers. Projects we are reviewing, such as Saima Shield Towers, are listed above. We will publish full details, prices and approvals once a project is cleared for marketing in the UAE.</p></div>
     <div class="qa"><h3 data-k="q3">Do I need to travel to Karachi?</h3><p data-k="a3">No. We meet you in Dubai, and our Karachi team handles the paperwork. You are welcome to visit the site whenever you like.</p></div>
     <div class="qa"><h3 data-k="q4">How do payments work?</h3><p data-k="a4">Each project has its own instalment plan, set by the developer and given to you in writing before you commit.</p></div>
   </div>
@@ -376,10 +440,16 @@
     submit:'میری دلچسپی درج کریں', privacyNote:'ہم آپ کی معلومات صرف نورانی ہومز کے بارے میں رابطے کے لیے استعمال کرتے ہیں۔ ہم انہیں کبھی کسی کو نہیں دیتے۔',
     faqTitle:'سوالات',
     q1:'کیا نورانی ہومز لائسنس یافتہ ہے؟', a1:'ہم متحدہ عرب امارات سے کراچی کی پراپرٹی کی مارکیٹنگ کے لیے دبئی بروکریج لائسنس اور ریرا منظوری کے لیے درخواست دے رہے ہیں۔ تب تک ہم صرف دلچسپی جمع کر رہے ہیں، اور اس ویب سائٹ پر کچھ بھی فروخت کی پیشکش نہیں ہے۔',
-    q2:'آپ کے ڈویلپرز کون ہیں؟', a2:'ہم کراچی کے معروف ڈویلپرز کے ساتھ کام کرتے ہیں۔ ہر پراجیکٹ متحدہ عرب امارات میں مارکیٹنگ کی منظوری ملنے کے بعد اس کی منظوریوں کے ساتھ شائع کیا جائے گا۔',
+    q2:'آپ کے ڈویلپرز کون ہیں؟', a2:'ہم کراچی کے معروف ڈویلپرز کے ساتھ کام کرتے ہیں۔ جن پراجیکٹس کا ہم جائزہ لے رہے ہیں، جیسے صائمہ شیلڈ ٹاورز، وہ اوپر درج ہیں۔ کسی پراجیکٹ کو متحدہ عرب امارات میں مارکیٹنگ کی منظوری ملنے کے بعد ہم اس کی مکمل تفصیلات، قیمتیں اور منظوریاں شائع کریں گے۔',
     q3:'کیا مجھے کراچی جانا ہوگا؟', a3:'نہیں۔ ہم آپ سے دبئی میں ملتے ہیں اور کاغذی کارروائی ہماری کراچی ٹیم سنبھالتی ہے۔ آپ جب چاہیں سائٹ دیکھنے آسکتے ہیں۔',
     q4:'ادائیگی کیسے ہوتی ہے؟', a4:'ہر پراجیکٹ کا اپنا قسطوں کا منصوبہ ہوتا ہے جو ڈویلپر طے کرتا ہے اور آپ کے فیصلے سے پہلے تحریری طور پر دیا جاتا ہے۔',
     notice:'نورانی ہومز اپنا دبئی بروکریج لائسنس اور ریرا منظوری حاصل کرنے کی تیاری کر رہا ہے۔ ان کی منظوری تک یہ ویب سائٹ صرف دلچسپی جمع کرتی ہے اور کوئی پراپرٹی فروخت کے لیے پیش نہیں کرتی۔ بعد میں شیئر کی جانے والی کسی بھی پراجیکٹ کی تفصیلات متعلقہ منظوریوں سے مشروط ہوں گی۔',
+    navProjects:'پراجیکٹس',
+    projEyebrow:'زیرِ غور پراجیکٹس', projTitle:'وہ پہلے پراجیکٹس جن کا ہم جائزہ لے رہے ہیں۔',
+    projIntro:'ہم جن پراجیکٹس کا جائزہ لے رہے ہیں وہ آپ کے سامنے رکھتے ہیں تاکہ آپ دیکھ سکیں کیا آنے والا ہے۔ ان میں سے کوئی بھی ابھی نورانی ہومز کے ذریعے فروخت کے لیے دستیاب نہیں۔',
+    projStatus:'زیرِ غور · ابھی فروخت کے لیے نہیں', saimaName:'صائمہ شیلڈ ٹاورز', saimaWhere:'گلشنِ اقبال، کراچی · صائمہ بلڈرز اینڈ ڈویلپرز',
+    factHomesL:'گھر', factHomes:'2 اور 3 بیڈروم اپارٹمنٹس', factPayL:'ادائیگی', factPay:'تقریباً 4 سال کی قسطیں', factSiteL:'ماحول', factSite:'گیٹڈ، کئی ٹاورز پر مشتمل کمیونٹی',
+    projView:'پراجیکٹ دیکھیں', projNotify:'دستیاب ہونے پر مجھے بتائیں',
     privacy:'رازداری'
   };
   var MSG = {
