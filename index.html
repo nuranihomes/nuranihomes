@@ -135,6 +135,19 @@
   html[dir=rtl] .facts b{letter-spacing:0}
   .facts span{color:var(--ink)}
   .proj-ctas{display:flex;flex-wrap:wrap;gap:12px}
+  .more-head{margin:72px 0 0}
+  .more-head h3{font-family:var(--serif);font-size:28px;font-weight:600;color:var(--green-deep);margin:0}
+  html[dir=rtl] .more-head h3{font-family:var(--urdu);line-height:1.8;font-size:24px}
+  .more-head p{margin:12px 0 0;color:var(--muted-2);max-width:640px}
+  .proj-grid{list-style:none;padding:0;margin:32px 0 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+  .proj-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;display:flex;flex-direction:column}
+  .proj-card h4{font-family:var(--serif);font-size:24px;font-weight:600;color:var(--green-deep);margin:16px 0 4px;line-height:1.15}
+  html[dir=rtl] .proj-card h4{font-family:var(--urdu);line-height:1.8;font-size:21px}
+  .proj-card .where{margin:0;color:var(--muted);font-size:15px}
+  .proj-card .facts{grid-template-columns:1fr;margin:20px 0 24px;gap:10px}
+  .proj-card .proj-ctas{margin-top:auto}
+  .proj-card .btn{font-size:14px;padding:10px 16px}
+  .src-note{margin:24px 0 0;font-size:14px;color:var(--muted)}
   .btn-green{background:var(--green-deep);color:var(--ivory)}
   .btn-green:hover{background:#163f35}
   .btn-ghost{border:1px solid var(--green);color:var(--green-deep);font-weight:400}
@@ -366,6 +379,83 @@
         </div>
       </div>
     </article>
+    <div class="more-head">
+      <h3 data-k="moreTitle">More Saima Group projects we are reviewing</h3>
+      <p data-k="moreIntro">Five residential Saima Group projects in Karachi that are under construction now. We are checking the title, approvals and pricing on each.</p>
+    </div>
+    <ul class="proj-grid">
+      <li class="proj-card">
+        <span class="status"><i></i><span data-k="projStatus2">Under review · not yet for sale</span></span>
+        <h4 data-k="marName">Saima Marina Residence</h4>
+        <p class="where" data-k="marWhere">DHA Phase 8, Karachi</p>
+        <ul class="facts">
+          <li><b data-k="factHomesL">Homes</b><span data-k="marHomes">1 to 4 bedroom apartments and penthouses</span></li>
+          <li><b data-k="factSiteL">Setting</b><span data-k="marSite">Ground + 40 floors, 7 parking levels</span></li>
+          <li><b data-k="factStageL">Stage</b><span data-k="stageUC">Under construction, per the developer</span></li>
+        </ul>
+        <div class="proj-ctas">
+          <a class="btn btn-green" href="#register" data-k="notifyShort">Tell me more</a>
+          <a class="btn btn-ghost" href="https://saimabuilders.net/projects/saima-marina-residence/" target="_blank" rel="noopener" data-k="devPage">Developer’s page</a>
+        </div>
+      </li>
+      <li class="proj-card">
+        <span class="status"><i></i><span data-k="projStatus2">Under review · not yet for sale</span></span>
+        <h4 data-k="resName">Saima Residencia</h4>
+        <p class="where" data-k="resWhere">Gulzar-e-Hijri, Scheme 33, Karachi</p>
+        <ul class="facts">
+          <li><b data-k="factHomesL">Homes</b><span data-k="resHomes">Family apartments</span></li>
+          <li><b data-k="factSiteL">Setting</b><span data-k="resSite">Gated, with covered parking and a park</span></li>
+          <li><b data-k="factStageL">Stage</b><span data-k="stageUC">Under construction, per the developer</span></li>
+        </ul>
+        <div class="proj-ctas">
+          <a class="btn btn-green" href="#register" data-k="notifyShort">Tell me more</a>
+          <a class="btn btn-ghost" href="https://saimabuilders.net/projects/saima-residencia/" target="_blank" rel="noopener" data-k="devPage">Developer’s page</a>
+        </div>
+      </li>
+      <li class="proj-card">
+        <span class="status"><i></i><span data-k="projStatus2">Under review · not yet for sale</span></span>
+        <h4 data-k="preName">Saima Premium Residency</h4>
+        <p class="where" data-k="preWhere">Malir Link to Super Highway, Karachi</p>
+        <ul class="facts">
+          <li><b data-k="factHomesL">Homes</b><span data-k="preHomes">Family apartments</span></li>
+          <li><b data-k="factSiteL">Setting</b><span data-k="preSite">Gated, with gym and community centre</span></li>
+          <li><b data-k="factStageL">Stage</b><span data-k="stageUC">Under construction, per the developer</span></li>
+        </ul>
+        <div class="proj-ctas">
+          <a class="btn btn-green" href="#register" data-k="notifyShort">Tell me more</a>
+          <a class="btn btn-ghost" href="https://saimabuilders.net/projects/saima-premium-residency/" target="_blank" rel="noopener" data-k="devPage">Developer’s page</a>
+        </div>
+      </li>
+      <li class="proj-card">
+        <span class="status"><i></i><span data-k="projStatus2">Under review · not yet for sale</span></span>
+        <h4 data-k="townName">Saima Town Residence</h4>
+        <p class="where" data-k="townWhere">Saadi Town, Karachi</p>
+        <ul class="facts">
+          <li><b data-k="factHomesL">Homes</b><span data-k="townHomes">Family apartments</span></li>
+          <li><b data-k="factSiteL">Setting</b><span data-k="townSite">Gated, with covered parking</span></li>
+          <li><b data-k="factStageL">Stage</b><span data-k="stageUC">Under construction, per the developer</span></li>
+        </ul>
+        <div class="proj-ctas">
+          <a class="btn btn-green" href="#register" data-k="notifyShort">Tell me more</a>
+          <a class="btn btn-ghost" href="https://saimabuilders.net/projects/saima-town-residence/" target="_blank" rel="noopener" data-k="devPage">Developer’s page</a>
+        </div>
+      </li>
+      <li class="proj-card">
+        <span class="status"><i></i><span data-k="projStatus2">Under review · not yet for sale</span></span>
+        <h4 data-k="meaName">Saima Meadows Luxuria</h4>
+        <p class="where" data-k="meaWhere">Gulshan-e-Maymar, Karachi</p>
+        <ul class="facts">
+          <li><b data-k="factHomesL">Homes</b><span data-k="meaHomes">Larger 4 and 5 room apartments</span></li>
+          <li><b data-k="factSiteL">Setting</b><span data-k="meaSite">High-rise with private balconies</span></li>
+          <li><b data-k="factStageL">Stage</b><span data-k="stageUC">Under construction, per the developer</span></li>
+        </ul>
+        <div class="proj-ctas">
+          <a class="btn btn-green" href="#register" data-k="notifyShort">Tell me more</a>
+          <a class="btn btn-ghost" href="https://saimabuilders.net/projects/saima-meadows-luxuria/" target="_blank" rel="noopener" data-k="devPage">Developer’s page</a>
+        </div>
+      </li>
+    </ul>
+    <p class="src-note" data-k="srcNote">Details are taken from Saima Group’s website and have not yet been verified by us. Prices, sizes and approvals will be published once a project is cleared.</p>
   </div>
 </section>
 
@@ -439,7 +529,7 @@
   <div class="wrap">
     <h2 data-k="faqTitle">Questions</h2>
     <div class="qa"><h3 data-k="q1">Is NuraniHomes licensed?</h3><p data-k="a1">We are setting up NuraniHomes as a real estate consultancy in Dubai. Until our licence is in place, we are only collecting interest, and nothing on this site is an offer to sell.</p></div>
-    <div class="qa"><h3 data-k="q2">Who are your developers?</h3><p data-k="a2">We work with established Karachi developers, including a leading developer we partner with on projects tailored to buyers abroad. Projects we are reviewing, such as Saima Shield Towers, are listed above. We will publish full details, prices and approvals once a project is cleared.</p></div>
+    <div class="qa"><h3 data-k="q2">Who are your developers?</h3><p data-k="a2">We work with established Karachi developers, including a leading developer we partner with on projects tailored to buyers abroad. Projects we are reviewing, such as Saima Shield Towers and five other Saima Group projects, are listed above. We will publish full details, prices and approvals once a project is cleared.</p></div>
     <div class="qa"><h3 data-k="q3">Do I need to travel to Karachi?</h3><p data-k="a3">No. We meet you in Dubai or by video call, and our Karachi team handles the paperwork. You are welcome to visit the site whenever you like.</p></div>
     <div class="qa"><h3 data-k="q5">Do you sell property or take payments?</h3><p data-k="a5">No. We advise you and support you through the purchase, but you buy from the developer and pay them directly, under a written agreement with them.</p></div>
     <div class="qa"><h3 data-k="q4">How do payments work?</h3><p data-k="a4">Each project has its own instalment plan, set by the developer and given to you in writing before you commit.</p></div>
@@ -494,7 +584,7 @@
     submit:'میری دلچسپی درج کریں', privacyNote:'ہم آپ کی معلومات صرف نورانی ہومز کے بارے میں رابطے کے لیے استعمال کرتے ہیں۔ ہم انہیں کبھی کسی کو نہیں دیتے۔',
     faqTitle:'سوالات',
     q1:'کیا نورانی ہومز لائسنس یافتہ ہے؟', a1:'ہم نورانی ہومز کو دبئی میں رئیل اسٹیٹ کنسلٹنسی کے طور پر قائم کر رہے ہیں۔ لائسنس ملنے تک ہم صرف دلچسپی جمع کر رہے ہیں، اور اس ویب سائٹ پر کچھ بھی فروخت کی پیشکش نہیں ہے۔',
-    q2:'آپ کے ڈویلپرز کون ہیں؟', a2:'ہم کراچی کے معروف ڈویلپرز کے ساتھ کام کرتے ہیں، جن میں ایک ممتاز ڈویلپر بھی شامل ہے جس کے ساتھ ہم بیرونِ ملک خریداروں کے لیے خاص پراجیکٹس پر شراکت کرتے ہیں۔ جن پراجیکٹس کا ہم جائزہ لے رہے ہیں، جیسے صائمہ شیلڈ ٹاورز، وہ اوپر درج ہیں۔ کسی پراجیکٹ کی منظوری کے بعد ہم اس کی مکمل تفصیلات، قیمتیں اور منظوریاں شائع کریں گے۔',
+    q2:'آپ کے ڈویلپرز کون ہیں؟', a2:'ہم کراچی کے معروف ڈویلپرز کے ساتھ کام کرتے ہیں، جن میں ایک ممتاز ڈویلپر بھی شامل ہے جس کے ساتھ ہم بیرونِ ملک خریداروں کے لیے خاص پراجیکٹس پر شراکت کرتے ہیں۔ جن پراجیکٹس کا ہم جائزہ لے رہے ہیں، جیسے صائمہ شیلڈ ٹاورز اور صائمہ گروپ کے پانچ دیگر پراجیکٹس، وہ اوپر درج ہیں۔ کسی پراجیکٹ کی منظوری کے بعد ہم اس کی مکمل تفصیلات، قیمتیں اور منظوریاں شائع کریں گے۔',
     q3:'کیا مجھے کراچی جانا ہوگا؟', a3:'نہیں۔ ہم آپ سے دبئی میں یا ویڈیو کال پر ملتے ہیں اور کاغذی کارروائی ہماری کراچی ٹیم سنبھالتی ہے۔ آپ جب چاہیں سائٹ دیکھنے آسکتے ہیں۔',
     q4:'ادائیگی کیسے ہوتی ہے؟', a4:'ہر پراجیکٹ کا اپنا قسطوں کا منصوبہ ہوتا ہے جو ڈویلپر طے کرتا ہے اور آپ کے فیصلے سے پہلے تحریری طور پر دیا جاتا ہے۔',
     notice:'نورانی ہومز کو دبئی میں رئیل اسٹیٹ کنسلٹنسی کے طور پر قائم کیا جا رہا ہے۔ لائسنس ملنے تک یہ ویب سائٹ صرف دلچسپی جمع کرتی ہے اور کوئی پراپرٹی فروخت کے لیے پیش نہیں کرتی۔ نورانی ہومز پراپرٹی فروخت نہیں کرتا اور نہ ہی خریداروں سے ادائیگی وصول کرتا ہے؛ خریداری براہِ راست ڈویلپر سے ہوتی ہے۔ بعد میں شیئر کی جانے والی کسی بھی پراجیکٹ کی تفصیلات متعلقہ منظوریوں سے مشروط ہوں گی۔',
@@ -524,7 +614,35 @@
     a5:'نہیں۔ ہم آپ کو مشورہ دیتے ہیں اور خریداری میں آپ کی مدد کرتے ہیں، لیکن آپ ڈویلپر سے خریدتے ہیں اور اس کے ساتھ تحریری معاہدے کے تحت براہِ راست اسے ادائیگی کرتے ہیں۔',
     trust4:'اعلیٰ معیار کی تکمیل',
     trust5:'واضح اور شفاف قیمتیں',
-    privacy:'رازداری'
+    privacy:'رازداری',
+    moreTitle:'صائمہ گروپ کے مزید پراجیکٹس جن کا ہم جائزہ لے رہے ہیں',
+    moreIntro:'کراچی میں صائمہ گروپ کے پانچ رہائشی پراجیکٹس جو اس وقت زیرِ تعمیر ہیں۔ ہم ہر ایک کی زمین کی ملکیت، منظوریوں اور قیمتوں کی جانچ کر رہے ہیں۔',
+    projStatus2:'زیرِ غور · ابھی فروخت کے لیے نہیں',
+    factStageL:'مرحلہ',
+    stageUC:'ڈویلپر کے مطابق زیرِ تعمیر',
+    devPage:'ڈویلپر کا صفحہ',
+    notifyShort:'مجھے بتائیں',
+    srcNote:'تفصیلات صائمہ گروپ کی ویب سائٹ سے لی گئی ہیں اور ہم نے ابھی ان کی تصدیق نہیں کی۔ قیمتیں، سائز اور منظوریاں پراجیکٹ کی منظوری کے بعد شائع کی جائیں گی۔',
+    marName:'صائمہ مرینا ریزیڈنس',
+    marWhere:'ڈی ایچ اے فیز 8، کراچی',
+    marHomes:'1 سے 4 بیڈروم اپارٹمنٹس اور پینٹ ہاؤسز',
+    marSite:'گراؤنڈ + 40 منزلیں، پارکنگ کی 7 منزلیں',
+    resName:'صائمہ ریزیڈینشیا',
+    resWhere:'گلزارِ ہجری، اسکیم 33، کراچی',
+    resHomes:'فیملی اپارٹمنٹس',
+    resSite:'گیٹڈ، ڈھکی ہوئی پارکنگ اور پارک کے ساتھ',
+    preName:'صائمہ پریمیم ریزیڈنسی',
+    preWhere:'ملیر لنک ٹو سپر ہائی وے، کراچی',
+    preHomes:'فیملی اپارٹمنٹس',
+    preSite:'گیٹڈ، جم اور کمیونٹی سینٹر کے ساتھ',
+    townName:'صائمہ ٹاؤن ریزیڈنس',
+    townWhere:'سعدی ٹاؤن، کراچی',
+    townHomes:'فیملی اپارٹمنٹس',
+    townSite:'گیٹڈ، ڈھکی ہوئی پارکنگ کے ساتھ',
+    meaName:'صائمہ میڈوز لکژوریا',
+    meaWhere:'گلشنِ معمار، کراچی',
+    meaHomes:'بڑے 4 اور 5 کمروں کے اپارٹمنٹس',
+    meaSite:'بالکونیوں والی بلند عمارت'
   };
   var MSG = {
     en:{missing:'Please add your name, WhatsApp number and country.', notConnected:'This form is not connected yet. Please email anurani@nuranihomes.com.', failed:"We couldn't send your details. Check your connection and try again.", sending:'Sending…'},
