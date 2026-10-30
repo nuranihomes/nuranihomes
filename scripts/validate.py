@@ -35,6 +35,7 @@ for name, page in pages.items():
     assert [a['content'] for t,a in page.tags if t=='meta' and a.get('property')=='og:url']==[expected]
     for key in ['og:title','og:description','og:image','og:type']:
         assert len([a for t,a in page.tags if t=='meta' and a.get('property')==key and a.get('content')])==1,(name,key)
+    assert [a['content'] for t,a in page.tags if t=='meta' and a.get('name')=='twitter:image']==[a['content'] for t,a in page.tags if t=='meta' and a.get('property')=='og:image'], (name,'inconsistent share image')
     for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>',source,re.S):
         schema=json.loads(raw); assert schema['@context']=='https://schema.org'
         assert {x['@type'] for x in schema['@graph']}=={'Organization','WebSite','WebPage'}
@@ -52,10 +53,10 @@ for name, page in pages.items():
                 assert any(x.get('id')==url.fragment for t,x in pages[target].tags),(name,'fragment',url.fragment)
         if 'aria-labelledby' in a:
             assert all(label in ids for label in a['aria-labelledby'].split())
-    if name=='thank-you.html':
+    if name in ['thank-you.html','404.html']:
         assert any(t=='meta' and a.get('name')=='robots' and 'noindex' in a.get('content','') for t,a in page.tags)
 urls=[e.text for e in ET.parse(ROOT/'sitemap.xml').iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')]
-assert set(urls)=={origin+'/',*(origin+'/'+n for n in pages if n not in ['index.html','thank-you.html','buyers.html','partners.html'])}
+assert set(urls)=={origin+'/',*(origin+'/'+n for n in pages if n not in ['index.html','thank-you.html','404.html','buyers.html','partners.html'])}
 assert 'Disallow: /thank-you.html' not in (ROOT/'robots.txt').read_text()
 assert 'no-cors' not in (ROOT/'buyers.html').read_text()  # only shared transport owns submission
 assert 'location.href' not in (ROOT/'forms.js').read_text()

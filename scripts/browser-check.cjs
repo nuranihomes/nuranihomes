@@ -71,6 +71,15 @@ const liveFonts = process.env.NH_BROWSER_LIVE_FONTS === '1';
         await page.close();
       }
       if (width === 390) {
+        const missing = await context.newPage();
+        await missing.goto('https://nurani.test/404.html');
+        assert.equal(await missing.locator('h1').textContent(), "This page isn't here.");
+        assert.equal(await missing.locator('meta[name=robots]').getAttribute('content'), 'noindex, follow');
+        assert.equal(await missing.evaluate(() => document.documentElement.scrollWidth <= innerWidth+1), true);
+        await missing.screenshot({path: path.resolve(screenshotRoot, '404-mobile.png'), fullPage: true});
+        await missing.getByRole('link', {name: 'Back to home'}).click();
+        await missing.waitForURL('https://nurani.test/');
+        await missing.close();
         for (const name of ['buyers','partners']) {
           const page = await context.newPage();
           await page.goto(`https://nurani.test/${name}.html?utm_source=mock-test&lang=ur`);
