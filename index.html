@@ -116,6 +116,18 @@
   .points h3{font-size:21px;color:var(--green-deep);margin-bottom:10px}
   .points p{margin:0;color:var(--muted)}
 
+
+  .karachi{background:var(--sand)}
+  .stats{list-style:none;padding:0;margin:0 0 56px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+  .stats li{background:var(--ivory);border-radius:16px;padding:24px}
+  .stats b{display:block;font-family:var(--serif);font-size:44px;font-weight:600;line-height:1;color:var(--green-deep)}
+  .stats span{display:block;margin-top:10px;font-size:15px;color:var(--muted-2)}
+  .karachi .points{gap:40px 32px}
+  .k-note{margin:48px 0 0;padding:20px 24px;border-inline-start:3px solid var(--gold);background:var(--ivory);border-radius:0 12px 12px 0;color:var(--muted-2);font-size:15px;max-width:860px}
+  html[dir=rtl] .k-note{border-radius:12px 0 0 12px}
+  .k-src{margin:16px 0 0;font-size:13px;color:var(--muted);max-width:860px}
+  .k-src a{color:var(--muted)}
+
   .projects{background:var(--ivory)}
   .proj-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px 40px}
   .proj-head p{margin:16px 0 0;color:var(--muted-2);font-size:18px;max-width:640px}
@@ -205,6 +217,7 @@
       <span class="logo-name"><b>NuraniHomes</b><small data-k="tagline">Karachi property advisers</small></span>
     </a>
     <nav class="main" aria-label="Main">
+      <a href="#karachi" data-k="navKarachi">Why Karachi</a>
       <a href="#how" data-k="navHow">How it works</a>
       <a href="#services" data-k="navServices">Services</a>
       <a href="#standards" data-k="navStandards">Our standards</a>
@@ -285,6 +298,39 @@
   </div>
 </section>
 <div class="jali-band" aria-hidden="true"></div>
+
+<section id="karachi" class="block karachi">
+  <div class="wrap">
+    <p class="eyebrow" data-k="kEyebrow">Why Karachi</p>
+    <h2 data-k="kTitle" style="max-width:760px">Pakistan’s largest city, and its gateway to the world.</h2>
+    <p class="why-intro" data-k="kIntro">Karachi is home to more than 20 million people, Pakistan’s main seaport and its business capital. For buyers abroad, that means steady demand for homes, a deep rental market and a city that is becoming better connected every year.</p>
+    <ul class="stats">
+      <li><b data-k="k1n">20m+</b><span data-k="k1l">people live in Karachi, Pakistan’s largest city (2023 census)</span></li>
+      <li><b data-k="k2n">~7%</b><span data-k="k2l">average gross rental yield on Karachi homes, early 2026</span></li>
+      <li><b data-k="k3n">10–40%</b><span data-k="k3l">rise in Karachi apartment prices over two years to early 2026</span></li>
+      <li><b data-k="k4n">$41.6bn</b><span data-k="k4l">sent home by overseas Pakistanis in 2025–26, a record</span></li>
+    </ul>
+    <div class="points">
+      <div><h3 data-k="kp1t">Rental income and growth</h3><p data-k="kp1b">Karachi homes have averaged gross rental yields of around 7%, and more for smaller apartments. Apartment prices rose by roughly 10–40% over the two years to early 2026, depending on the area.</p></div>
+      <div><h3 data-k="kp2t">More families than homes</h3><p data-k="kp2b">Pakistan is short of more than 10 million homes, and the gap grows by about 400,000 a year. In Karachi, much of the land that is bought is held rather than built on, so well-planned, finished apartments stay in short supply.</p></div>
+      <div><h3 data-k="kp3t">Better linked to the rest of Pakistan</h3><p data-k="kp3b">The M-6 motorway from Hyderabad to Sukkur is moving into construction, and a new Karachi–Hyderabad motorway is planned to join it, linking Karachi by motorway to the north of the country. In the city, the Red Line rapid bus route along University Road is being built.</p></div>
+      <div><h3 data-k="kp4t">Life by the sea</h3><p data-k="kp4b">Karachi is Pakistan’s largest coastal city. Clifton, DHA and newer waterfront schemes along the Arabian Sea and Korangi Creek offer sea views and beachfront living that few other Pakistani cities can match.</p></div>
+      <div><h3 data-k="kp5t">Where Pakistan does business</h3><p data-k="kp5b">Karachi’s two ports handle most of Pakistan’s sea trade, and the city is home to the stock exchange, the central bank and the head offices of many of the country’s largest companies. That brings jobs, and with them, tenants.</p></div>
+      <div><h3 data-k="kp6t">Overseas Pakistanis are investing at home</h3><p data-k="kp6b">Money sent home reached a record $41.6 billion in 2025–26, with the UAE among the largest sources. Many families are putting it into homes: for parents, to rent out, or for their own return.</p></div>
+    </div>
+    <p class="k-note" data-k="kNote">These figures are averages from published third-party sources, not a forecast or a promise of returns. Prices, rents and the rupee can fall as well as rise, and returns in dollars depend on the exchange rate. We will give you honest, project-specific advice before you buy.</p>
+    <p class="k-src"><span data-k="kSrc">Sources:</span>
+      <a href="https://www.globalpropertyguide.com/asia/pakistan/rental-yields" rel="noopener" target="_blank">Global Property Guide</a> ·
+      <a href="https://www.dawn.com/news/1973318" rel="noopener" target="_blank">Dawn</a> ·
+      <a href="https://tribune.com.pk/story/2601776/housing-crisis-deepens-as-63-lack-shelter" rel="noopener" target="_blank">Express Tribune</a> ·
+      <a href="https://profit.pakistantoday.com.pk/2026/07/09/pakistan-receives-record-dollar416-billion-workers-remittances-in-fy26" rel="noopener" target="_blank">Profit (State Bank data)</a> ·
+      <a href="https://propakistani.pk/2026/02/11/federal-minister-announces-official-launch-date-for-m-6-motorway-project/" rel="noopener" target="_blank">ProPakistani</a> ·
+      <a href="https://www.app.com.pk/national/pre-feasibility-of-karachi-hyderabad-motorway-project-completes/" rel="noopener" target="_blank">APP</a> ·
+      <a href="https://tribune.com.pk/story/2625358/brt-red-line-picks-up-steam" rel="noopener" target="_blank">Express Tribune</a> ·
+      <a href="https://thenews.com.pk/latest/1098032-karachis-population-stands-at-203-million-in-7th-census" rel="noopener" target="_blank">The News</a>
+    </p>
+  </div>
+</section>
 
 <section id="how" class="block">
   <div class="wrap">
@@ -556,6 +602,21 @@
     stdIntro:'ہم غلط پراجیکٹس کے بجائے کم پراجیکٹس تجویز کرنا پسند کرتے ہیں۔ اگر کوئی پراجیکٹ ان میں سے کسی شرط پر پورا نہ اترے تو ہم اس کی سفارش نہیں کرتے۔',
     c1:'متعلقہ کراچی اتھارٹی سے منظور شدہ تعمیراتی نقشے', c2:'زمین کی واضح ملکیت، جس کی ہم خود تصدیق کرتے ہیں', c3:'ایسا قابلِ اعتماد ڈویلپر جس کی مکمل اور آباد عمارتیں ہوں',
     c4:'واضح اور شفاف قیمت: مکمل قیمت اور قسطوں کا شیڈول تحریری طور پر، بغیر کسی پوشیدہ چارج کے', c5:'اعلیٰ معیار کی تکمیل، خریداری سے پہلے تحریری طور پر طے شدہ', c6:'مناسب قیمتیں، کام کرنے والے خاندانوں کی پہنچ میں',
+    navKarachi:'کراچی کیوں',
+    kEyebrow:'کراچی کیوں', kTitle:'پاکستان کا سب سے بڑا شہر، اور دنیا کے لیے اس کا دروازہ۔',
+    kIntro:'کراچی دو کروڑ سے زیادہ لوگوں کا گھر، پاکستان کی مرکزی بندرگاہ اور اس کا کاروباری دارالحکومت ہے۔ بیرونِ ملک خریداروں کے لیے اس کا مطلب ہے گھروں کی مسلسل مانگ، کرائے کی بڑی مارکیٹ، اور ایک ایسا شہر جو ہر سال بہتر طور پر جڑ رہا ہے۔',
+    k1n:'2 کروڑ+', k1l:'لوگ کراچی میں رہتے ہیں، جو پاکستان کا سب سے بڑا شہر ہے (مردم شماری 2023)',
+    k2n:'تقریباً 7%', k2l:'کراچی کے گھروں پر کرائے کی اوسط مجموعی آمدنی، 2026 کے آغاز میں',
+    k3n:'10 سے 40%', k3l:'2026 کے آغاز تک دو برسوں میں کراچی کے اپارٹمنٹس کی قیمتوں میں اضافہ',
+    k4n:'41.6 ارب ڈالر', k4l:'بیرونِ ملک پاکستانیوں نے مالی سال 2026 میں وطن بھیجے، جو ایک ریکارڈ ہے',
+    kp1t:'کرائے کی آمدنی اور قدر میں اضافہ', kp1b:'کراچی کے گھروں پر کرائے کی اوسط مجموعی آمدنی تقریباً 7% رہی ہے، اور چھوٹے اپارٹمنٹس پر اس سے زیادہ۔ 2026 کے آغاز تک دو برسوں میں علاقے کے لحاظ سے اپارٹمنٹس کی قیمتیں تقریباً 10 سے 40 فیصد بڑھیں۔',
+    kp2t:'گھروں سے زیادہ خاندان', kp2b:'پاکستان میں ایک کروڑ سے زیادہ گھروں کی کمی ہے، اور یہ کمی ہر سال تقریباً چار لاکھ بڑھ جاتی ہے۔ کراچی میں خریدی گئی زمین کا بڑا حصہ تعمیر کے بجائے روک کر رکھا جاتا ہے، اس لیے اچھی منصوبہ بندی سے بنے مکمل اپارٹمنٹس کم ہی دستیاب ہیں۔',
+    kp3t:'باقی پاکستان سے بہتر رابطہ', kp3b:'حیدرآباد سے سکھر تک ایم-6 موٹروے کی تعمیر شروع ہو رہی ہے، اور اس سے ملانے کے لیے کراچی-حیدرآباد نئی موٹروے کا منصوبہ ہے، جس سے کراچی موٹروے کے ذریعے ملک کے شمال سے جڑ جائے گا۔ شہر کے اندر یونیورسٹی روڈ پر ریڈ لائن بس منصوبہ زیرِ تعمیر ہے۔',
+    kp4t:'سمندر کے کنارے زندگی', kp4b:'کراچی پاکستان کا سب سے بڑا ساحلی شہر ہے۔ کلفٹن، ڈی ایچ اے اور بحیرۂ عرب اور کورنگی کریک کے ساتھ نئے واٹر فرنٹ منصوبے سمندر کے نظارے اور ساحل پر رہائش پیش کرتے ہیں، جو پاکستان کے کم ہی شہروں میں ممکن ہے۔',
+    kp5t:'جہاں پاکستان کاروبار کرتا ہے', kp5b:'پاکستان کی زیادہ تر سمندری تجارت کراچی کی دو بندرگاہوں سے ہوتی ہے، اور اسٹاک ایکسچینج، اسٹیٹ بینک اور ملک کی کئی بڑی کمپنیوں کے صدر دفاتر یہیں ہیں۔ اس سے روزگار آتا ہے، اور روزگار کے ساتھ کرایہ دار۔',
+    kp6t:'بیرونِ ملک پاکستانی وطن میں سرمایہ کاری کر رہے ہیں', kp6b:'مالی سال 2026 میں وطن بھیجی گئی رقم ریکارڈ 41.6 ارب ڈالر تک پہنچی، اور متحدہ عرب امارات سب سے بڑے ذرائع میں شامل ہے۔ بہت سے خاندان یہ رقم گھروں میں لگا رہے ہیں: والدین کے لیے، کرائے پر دینے کے لیے، یا اپنی واپسی کے لیے۔',
+    kNote:'یہ اعداد و شمار شائع شدہ بیرونی ذرائع سے لی گئی اوسط ہیں، یہ کوئی پیش گوئی یا منافع کی ضمانت نہیں۔ قیمتیں، کرائے اور روپیہ کم بھی ہو سکتے ہیں اور بڑھ بھی سکتے ہیں، اور ڈالر میں منافع شرحِ تبادلہ پر منحصر ہے۔ خریداری سے پہلے ہم آپ کو ہر پراجیکٹ کے بارے میں دیانت دارانہ مشورہ دیں گے۔',
+    kSrc:'ذرائع:',
     whyEyebrow:'آف پلان کیوں', whyTitle:'کراچی میں گھر، تعمیر کے دوران ادائیگی کے ساتھ۔',
     whyBody:'آف پلان کا مطلب ہے کہ آپ عمارت مکمل ہونے سے پہلے خریدتے ہیں اور تعمیر کے ساتھ ساتھ قسطوں میں ادائیگی کرتے ہیں، جس سے ایک اچھا گھر ماہانہ تنخواہ کی پہنچ میں آجاتا ہے۔',
     w1t:'لاگت تقسیم کریں', w1b:'ایک بڑی رقم یکمشت دینے کے بجائے تعمیر کے دوران قسطیں۔',
