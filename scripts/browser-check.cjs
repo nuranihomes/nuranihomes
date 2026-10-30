@@ -2,13 +2,17 @@
 const {chromium} = require('playwright');
 const fs = require('node:fs');
 const path = require('node:path');
+const os = require('node:os');
+const screenshotRoot = process.env.CI
+  ? path.resolve(__dirname, '../.local/screenshots', String(Date.now()))
+  : path.join(os.homedir(), 'Downloads/memo junk/Screenshots/nurani-homes', String(Date.now()));
 const assert = require('node:assert/strict');
 const root = path.resolve(__dirname, '../dist');
 const liveFonts = process.env.NH_BROWSER_LIVE_FONTS === '1';
 (async () => {
   const browser = await chromium.launch();
   try {
-    fs.mkdirSync(path.resolve(__dirname, '../.local/screenshots'), {recursive: true});
+    fs.mkdirSync(screenshotRoot, {recursive: true});
     let checked = 0;
     for (const width of [320,390,768,1440]) {
       const context = await browser.newContext({viewport: {width, height: 900}});
@@ -31,10 +35,10 @@ const liveFonts = process.env.NH_BROWSER_LIVE_FONTS === '1';
           assert.equal(await page.locator('html').getAttribute('lang'), lang);
           assert.equal(await page.locator('h1').count(), 1);
           assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth+1), true, `${name}/${width}/${lang} overflow`);
-          await page.screenshot({path: path.resolve(__dirname, `../.local/screenshots/launch-${name}-${width}-${lang}.png`), fullPage: true});
+          await page.screenshot({path: path.resolve(screenshotRoot, `launch-${name}-${width}-${lang}.png`), fullPage: true});
           if (['index','saima-shield-towers'].includes(name) && width === 390) {
-            await page.locator('header').screenshot({path: path.resolve(__dirname, `../.local/screenshots/launch-header-${lang}.png`)});
-            await page.locator('.card').screenshot({path: path.resolve(__dirname, `../.local/screenshots/launch-card-${lang}.png`)});
+            await page.locator('header').screenshot({path: path.resolve(screenshotRoot, `launch-header-${lang}.png`)});
+            await page.locator('.card').screenshot({path: path.resolve(screenshotRoot, `launch-card-${lang}.png`)});
           }
           checked++;
         }
@@ -61,7 +65,7 @@ const liveFonts = process.env.NH_BROWSER_LIVE_FONTS === '1';
           assert.equal(new URL(page.url()).pathname,'/' + name + '.html');
           await page.locator('[data-lang=ur]').click();
           await page.locator('#form-error').filter({hasText:'تصدیق'}).waitFor();
-          await page.screenshot({path:path.resolve(__dirname,'../.local/screenshots/launch-form-result-390-ur.png'),fullPage:true});
+          await page.screenshot({path:path.resolve(screenshotRoot,'launch-form-result-390-ur.png'),fullPage:true});
         }
         assert.deepEqual(errors, []);
         await page.close();

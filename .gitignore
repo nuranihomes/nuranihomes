@@ -12,3 +12,6 @@ key.properties
 *service-account*.json
 *service_account*.json
 .DS_Store
+
+# Private business coordination. Share only the reviewed handoff manually.
+.chatgpt-sync/

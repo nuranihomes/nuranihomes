@@ -14,3 +14,6 @@ exclude:
   - dist
   - .local
   - research
+  - apps-script
+  - .chatgpt-sync
+  - AGENTS.md
